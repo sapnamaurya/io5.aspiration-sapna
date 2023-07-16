@@ -3,177 +3,234 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>header main footer</title>
     <style>
       * {
         padding: 0px;
         margin: 0px;
         box-sizing: border-box;
+        font-size: 62.5%;
       }
-      .header {
-        background-color: aliceblue;
-        width: 80%;
-        margin: auto;
+      .sitehead {
+        background-color: white;
       }
-      .name {
-        display: inline;
-        padding: 10px;
+      .symbol {
+        margin-left: 10%;
+      }
+      .lets {
+        display: inline-block;
+        font-size: 2rem;
+        padding: 1.5%;
       }
       .btn {
-        display: inline;
-        margin-left: 50%;
         background-color: blue;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        margin-left: 30%;
         color: white;
-        border-radius: 4px;
-        padding: 5px;
-      }
-      .tag {
-        margin-left: 80%;
-      }
-      .header1 {
-        background-color: blueviolet;
-        margin: auto;
-      }
-      .navbar {
-        display: inline;
-        margin: 8px;
-      }
-      .header2 {
-        margin-bottom: 11px;
-      }
-      .form {
-        display: block;
-        background-color: #f19469;
-        width: 100%;
-        height: 70vh;
-      }
-      .formpart {
-        width: 80%;
-        margin: auto;
-        background-color: #da6127;
-        height: 69.9vh;
+        padding: 0.7rem 1rem;
+        font-size: 2rem;
       }
       .icon {
-        margin-left: 8%;
+        margin-left: 25%;
+        padding: 2px;
       }
-      .icon a {
-        margin: 0 1%;
+      .header2 {
+        margin-left: 10%;
       }
-      .icon2 {
-        margin-left: 8%;
-        /* background-color: rgb(91, 116, 142);
-        /* width: 100%; */
-        /* height: 14vh;
-        display: block; */
+      .name {
+        color: grey;
+        font-size: 2rem;
+        display: inline-block;
+        padding: 0.7rem;
+      }
+      .form {
+        background-color: #f19469;
+        width: 100%;
+        height: 75%;
+      }
+      .formcenter {
+        background-color: #f26724;
+        width: 80%;
+        height: 75vh;
+        margin-left: 10%;
+      }
+      .paymentmode {
+        margin-left: 10%;
+      }
+      .payment {
+        display: inline-block;
+        padding: 1rem;
+      }
+      b {
+        font-size: 2rem;
       }
       .paragraph {
-        display: inline-block;
+        width: 25%;
         text-align: end;
-        width: 39%;
-        padding: 0% 0% 0 14%;
+        font-size: 2rem;
+        display: inline block;
+        margin-left: 70%;
       }
-      .logo {
-        display: inline;
-        width: 50px;
-        /* height: 50px; */
-        border-radius: 50%;
-        margin: 1%;
-      }
-
-      .icon3 {
-        display: inline;
-        margin-left: 40%;
-        /* padding: 12px 10px; */
-      }
-      .background {
-        background-color: rgb(84, 84, 157);
-      }
-      .spantagleft {
-        color: white;
+      .paragraph2 {
         display: inline-block;
-        text-align: center;
-        width: 95%;
-        padding: 0% 0% 0 14%;
+        font-size: 4rem;
+
+        color: white;
+        /* width: 50px; */
       }
-      strong {
-        color: rgb(140, 140, 197);
+      .lastsection {
+        background-color: rgb(33, 60, 217);
+      }
+      .p1 {
+        margin-left: 10%;
+      }
+      .icon4 {
+        margin-left: 60%;
+      }
+      .onlinemode {
       }
     </style>
   </head>
   <body>
-    <!-- this is header part -->
-    <section>
-      <div class="header">
-        <img src="lets.png" alt="logo" width="30px" />
-        <h3 class="name">Lets code</h3>
-        <button class="btn">Upgrade</button>
-        <img src="button.png" class="tag" alt="tag" width="90px" />
-        <div class="header2">
-          <dl>
-            <dd class="navbar">Team overview</dd>
-            <dd class="navbar">Sites</dd>
-            <dd class="navbar">Builds</dd>
-            <dd class="navbar">Integration</dd>
+    <header class="sitehead">
+      <img src="lets.png" class="symbol" alt="symbol" width=60" height="40" />
+      <p class="lets">lets code</p>
+      <button class="btn">Upgrade</button>
+      <img class="icon" src="button.png" alt="button" width="150" height="40" />
+      <div>
+        <ul class="header2">
+          <a href="#"><li class="name">Time Overview</li></a>
 
-            <dd class="navbar">Domains</dd>
-            <dd class="navbar">Members</dd>
-            <dd class="navbar">Audit Log</dd>
-            <dd class="navbar">Billing</dd>
-            <dd class="navbar">Team Setting</dd>
-            <br />
-          </dl>
-        </div>
+          <li class="name">Sites</li>
+          <li class="name">Builds</li>
+          <li class="name">integration</li>
+          <li class="name">Domain</li>
+          <li class="name">Member</li>
+          <li class="name">Audit Log</li>
+          <li class="name">Billing</li>
+          <li class="name">Team Sitting</li>
+        </ul>
       </div>
-    </section>
-    <!-- this is form part -->
+    </header>
+
     <div class="form">
-      <form class="formpart"></form>
+      <div class="formcenter"></div>
     </div>
-    <section>
-      <!-- this is site map -->
-      <div class="icon">
-        <a href="#"><img src="SAP.png" alt="mastercard" width="700px" /></a>
 
-        <p class="paragraph">
-          copyright A@-www.irtc.co.in. All Rights Reserved Designed and hosted
-          by
-          <strong>CSIR Compatible Browsers</strong>
-        </p>
-      </div>
-      <!-- this is footer part -->
-      <div class="background">
-        <div class="icon2">
-          <p class="spanTagleft">Get Connected with us on social networks</p>
-          <div class="icon3">
-            <a href="#"
-              ><img src="twit.png" class="logo" alt="twiter" width="30px"
-            /></a>
-            <a href="#">
-              <img src="thumb.png" class="logo" alt="thumb" width="30px"
-            /></a>
-            <a href="#"
-              ><img src="you.png" class="logo" alt="youtube" width="30px"
-            /></a>
-            <a href="#"
-              ><img src="ins.png" class="logo" alt="instagram" width="30px"
-            /></a>
-            <a href="#"
-              ><img src="fac.png" class="logo" alt="facebook" width="30px"
-            /></a>
-            <a href="#">
-              <img src="mess.png" class="logo" alt="messenger" width="30px"
-            /></a>
-            <a href="#">
-              <img src="loca.png" class="logo" alt="lovcation" width="30px"
-            /></a>
-            <a href="#"
-              ><img src="spo.png" class="logo" alt="spotify" width="30px"
-            /></a>
-            <a href="#"
-              ><img src="bro.png" class="logo" alt="browser" width="30px" />
-            </a>
-          </div>
-        </div>
-      </div>
+    <section class="paymentmode">
+      <img
+        class="payment"
+        src="veri.png"
+        alt="verify image"
+        width="60"
+        height="60"
+      />
+      <img
+        class="payment"
+        src="master.png"
+        alt="master card"
+        width="60"
+        height="60"
+      />
+
+      <img
+        class="payment"
+        src="snap.png"
+        alt="safe image"
+        width="60"
+        height="60"
+      />
+      <img
+        class="payment"
+        src="verify.png"
+        alt="verify image"
+        width="60"
+        height="60"
+      />
+      <img
+        class="payment"
+        src="irtc.png"
+        alt="irtc image"
+        width="60"
+        height="60"
+      />
+      <img
+        class="payment"
+        src="cris.png"
+        alt="cris image"
+        width="60"
+        height="60"
+      />
+      <img
+        class="payment"
+        src="rupay.png"
+        alt="rupay image"
+        width="60"
+        height="60"
+      />
+      <p class="paragraph">
+        A copyright A 2023 -www.irctc.co.in All Right Reserved Designed and
+        Hosted by
+        <b style="color: rgb(107, 107, 187)" ;>Cris Compatible Browsers</b>
+      </p>
     </section>
+    <footer class="lastsection">
+      <div class="p1">
+        <p class="paragraph2">Get Connected with us on social networks</p>
+      </div>
+      <div class="icon4">
+        <img
+          class="onlinemode"
+          src=" 		https://img.icons8.com/color/60/facebook-new.png"
+          alt="icon 1"
+          width="60"
+          height="60"
+        />
+        <img
+          class="onlinemode"
+          src=" https://img.icons8.com/color/60/twitter-circled--v1.png"
+          alt="icon 2"
+          width="60"
+          height="60"
+        />
+        <img
+          class="onlinemode"
+          src="	https://img.icons8.com/color/60/pinterest--v1.png "
+          alt="icon 3"
+          width="60"
+          height="60"
+        />
+        <img
+          class="onlinemode"
+          src=" 	https://img.icons8.com/color/60/youtube--v1.png"
+          alt="icon 4"
+          width="55"
+          height="55"
+        />
+        <img
+          class="onlinemode"
+          src=" https://img.icons8.com/color/60/telegram-app--v1.png"
+          alt="icon 5"
+          width="55"
+          height="55"
+        />
+        <img
+          class="onlinemode"
+          src=" https://img.icons8.com/color/48/whatsapp--v1.png"
+          alt="icon 6"
+          width="55"
+          height="55"
+        />
+        <img
+          class="onlinemode"
+          src="	https://cdn-icons-png.flaticon.com/128/3955/3955024.png "
+          alt="icon 7"
+          width="50"
+          height="50"
+        />
+      </div>
+    </footer>
   </body>
 </html>
