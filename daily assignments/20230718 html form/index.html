@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8/" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>student login form</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 62.5%;
+      }
+      .heading {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 1%;
+      }
+      .main-contain {
+        background-color: #6a5acd;
+        border: 1px solid #0505f2;
+        width: 50%;
+        margin: auto;
+      }
+      .form-contain {
+        font-size: 2.9rem;
+        margin-left: 2%;
+        margin-top: 1%;
+      }
+      .detail .title {
+        display: inline-block;
+      }
+      .gender-container {
+        font-size: 2rem;
+        margin-top: 1.1%;
+      }
+
+      .gdr {
+        font-size: 2rem;
+        display: inline-block;
+        margin-left: 11%;
+        color: white;
+      }
+      .hobby {
+        display: inline-block;
+        font-size: 2.1rem;
+        color: white;
+        margin-left: 10.5%;
+      }
+      .hby {
+        font-size: 2rem;
+        margin-top: 1.4%;
+      }
+      .hobby-list {
+        font-size: 1.4rem;
+        margin-top: 2%;
+        color: white;
+      }
+      .hobby-last {
+        color: white;
+        font-size: 1.4rem;
+        margin-left: 17.4%;
+      }
+      .blank {
+        margin-top: 2%;
+        border: 1px solid #c9a1a1;
+        width: 23%;
+        height: 14px;
+      }
+      .name {
+        font-size: 2rem;
+      }
+      .marks {
+        display: inline-block;
+      }
+      .degrees {
+        display: inline-block;
+        font-size: 2rem;
+        margin-left: 2.9%;
+        color: white;
+        margin-top: 2%;
+      }
+      .degree {
+        font-size: 1rem;
+      }
+      .label {
+        font-size: 1.4rem;
+        margin-top: 2%;
+        color: white;
+      }
+      .labl {
+        font-size: 1.4rem;
+        margin-top: 3%;
+        color: white;
+      }
+      .title {
+        display: inline-block;
+        font-size: 1.3rem;
+        color: white;
+      }
+      .title1 {
+        display: inline-block;
+        font-size: 1.3rem;
+        color: white;
+        margin-left: 7%;
+        margin-top: 2%;
+      }
+      .title2 {
+        display: inline-block;
+        font-size: 1.3rem;
+        color: white;
+        margin-left: 5%;
+        margin-top: 2%;
+      }
+      .title3 {
+        display: inline-block;
+        font-size: 1.3rem;
+        color: white;
+        margin-left: 5%;
+        margin-top: 2%;
+      }
+      .title4 {
+        display: inline-block;
+        font-size: 1.3rem;
+        color: white;
+        margin-left: 5%;
+        margin-top: 2%;
+      }
+      .title5 {
+        display: inline-block;
+        font-size: 1.3rem;
+        color: white;
+        margin-left: 5%;
+        margin-top: 2%;
+      }
+      .qualify {
+        font-size: 1.4rem;
+        color: white;
+      }
+      .personal-detail1 {
+        margin-left: 8.3%;
+        margin-top: 2%;
+        border: 1px solid #c9a1a1;
+        width: 23%;
+      }
+      .personal-detail2 {
+        margin-left: 8.6%;
+        margin-top: 2%;
+        border: 1px solid #c9a1a1;
+        width: 23%;
+      }
+      .personal-detail3 {
+        margin-left: 4.62%;
+        margin-top: 2%;
+        border: 1px solid #c9a1a1;
+        width: 23%;
+      }
+      .personal-detail4 {
+        margin-left: 10.53%;
+        margin-top: 2%;
+        border: 1px solid #c9a1a1;
+        width: 23%;
+        height: 56px;
+      }
+      .personal-detail5 {
+        margin-left: 4.66%;
+        margin-top: 2%;
+        border: 1px solid #c9a1a1;
+        width: 23%;
+      }
+      .personal-detail6 {
+        margin-left: 13.5%;
+        margin-top: 2%;
+        border: 1px solid #c9a1a1;
+        width: 23%;
+      }
+      .personal-detail7 {
+        margin-left: 9.94%;
+        margin-top: 2%;
+        border: 1px solid #c9a1a1;
+        width: 23%;
+      }
+      .personal-detail8 {
+        margin-left: 13.2%;
+        margin-top: 2%;
+        border: 1px solid #c9a1a1;
+        width: 23%;
+      }
+      .personal-detail9 {
+        margin-left: 10.9%;
+        margin-top: 2%;
+        border: 1px solid #c9a1a1;
+        width: 23%;
+      }
+      .personal-detail10 {
+        margin-left: 6.89%;
+        margin-top: 2%;
+        border: 1px solid #c9a1a1;
+        width: 23%;
+      }
+      .personal-detail11 {
+        margin-left: 9.6%;
+        margin-top: 2%;
+        border: 1px solid #c9a1a1;
+        width: 23%;
+      }
+      .btn1 {
+        border-radius: 4px;
+        margin-left: 38%;
+
+        font-size: 1.3rem;
+        height: 20px;
+        width: 9%;
+        margin-top: 2%;
+        background-color: #ddd9d9;
+      }
+      .btn2 {
+        border-radius: 4px;
+
+        font-size: 1.3rem;
+        height: 20px;
+        width: 9%;
+        margin-top: 2%;
+        background-color: #ddd9d9;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="head-container">
+      <p class="heading">STUDENT REGISTRATION FORM</p>
+      <main class="main-contain">
+        <div class="form-contain">
+          <div class="detail">
+            <label class="label" for="first_name">First name</label>
+            <input
+              class="personal-detail1"
+              id="first_name"
+              type="character"
+              maxlenght="30"
+            />
+            <p class="title">(max 30 character a-z and A-Z)</p>
+          </div>
+
+          <div class="detail">
+            <label class="label" for="last_name">Last name</label>
+            <input
+              class="personal-detail2"
+              id="first_name"
+              type="text"
+              maxlenght="30"
+            />
+            <p class="title">(max 30 character a-z and A-Z)</p>
+          </div>
+
+          <div class="detail">
+            <label class="label" for="birth">Date of birth</label>
+            <input class="personal-detail10" id="birth" type="date" />
+          </div>
+
+          <div class="detail">
+            <label class="label" for="email">Email ID</label>
+            <input class="personal-detail11" id="email" type="text" />
+          </div>
+
+          <div class="detail">
+            <label class="label" for="mobile">Mobile Number</label>
+            <input class="personal-detail3" id="mobile" type="number" />
+            <p class="title">(10 Digit number)</p>
+          </div>
+
+          <div class="gender-container">
+            <label class="labl" for="gender">Gender</label>
+            <div class="gdr">
+              <label for="gender-type1">Male</label>
+              <input id="gender-type1" type="radio" />
+
+              <label for="gender-type2">Female</label>
+              <input id="gender-type2" type="radio" />
+            </div>
+          </div>
+
+          <div class="detail">
+            <label class="label" for="address">Address</label>
+            <input class="personal-detail4" id="address" type="text" />
+          </div>
+
+          <div class="detail">
+            <label class="label" for="mobile">Mobile Number</label>
+            <input class="personal-detail5" id="mobile" type="number" />
+          </div>
+
+          <div class="detail">
+            <label class="label" for="city">City</label>
+            <input
+              class="personal-detail6"
+              id="city"
+              type="text"
+              maxlenght="30"
+            />
+            <p class="title">(max 30 character a-z and A-Z)</p>
+          </div>
+
+          <div class="detail">
+            <label class="label" for="pin">Pin Code</label>
+            <input
+              class="personal-detail7"
+              id="pin"
+              type="number"
+              minlength="6"
+            />
+            <p class="title">(6digit number)</p>
+          </div>
+
+          <div class="detail">
+            <label class="label" for="stat">State</label>
+            <input class="personal-detail8" id="stat" type="state" max="30" />
+            <p class="title">(max 30 character a-z and A-Z)</p>
+          </div>
+
+          <div class="detail">
+            <label class="label" for="cntry">Country</label>
+            <input
+              class="personal-detail9"
+              id="cntry"
+              type="text"
+              value="India"
+            />
+          </div>
+
+          <div class="hby">
+            <label class="hobby-list">Hobbies</label>
+            <div class="hobby">
+              <label for="hobby1">Drawing</label>
+              <input id="hobby1" type="checkbox" />
+              <label for="hobby2">Singing</label>
+              <input id="hobby2" type="checkbox" />
+              <label for="hobby3">Dancing</label>
+              <input id="hobby3" type="checkbox" />
+              <label for="hobby4">sketching</label>
+              <input id="hobby4" type="checkbox" /><br />
+            </div>
+          </div>
+
+          <label class="hobby-last" for="hobby5">other</label>
+          <input id="hobby5" type="checkbox" />
+          <input class="blank" type="text" />
+
+          <div class="qualify">
+            <label class="qualify" for="qualify">Qualification</label>
+            <p class="title1">Sr.no</p>
+            <p class="title2">Examination</p>
+            <p class="title3">Board</p>
+            <p class="title4">Percentage</p>
+            <p class="title5">Year of passing</p>
+          </div>
+          <!-- <br /> -->
+          <!-- <div class="name">
+            <p class="marks">1. class X</p>
+            <input />
+            <input />
+            <input />
+            <br />
+            <p class="marks">2. Class XII</p>
+            <input />
+            <input />
+            <input />
+            <br />
+            <p class="marks">3. Graduation</p>
+            <input />
+            <input />
+            <input />
+            <br />
+            <p class="marks">4. Master</p>
+            <input />
+            <input />
+            <input />
+            <br />
+            <p class="marks">(10 char max)</p>
+            <p class="marks">(upto 2 decimal)</p>
+          </div>-->
+
+          <div>
+            <label class="label" class="degree">Course Applied for</label>
+            <div class="degrees">
+              <label for="degree">BCA</label>
+              <input id="degree" type="checkbox" />
+              <label for="degree">BSC</label>
+              <input id="degree" type="checkbox" />
+              <label for="degree">BCom</label>
+              <input id="degree" type="checkbox" />
+              <label for="degree">BA</label>
+              <input id="degree" type="checkbox" />
+            </div>
+          </div>
+          <div>
+            <button class="btn1">Submit</button>
+            <button class="btn2">Reset</button>
+          </div>
+        </div>
+      </main>
+    </header>
+  </body>
+</html>
