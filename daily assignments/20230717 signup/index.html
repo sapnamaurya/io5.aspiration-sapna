@@ -45,7 +45,7 @@
     }
     .image2 {
       width: 22px;
-      height: 13px;
+      height: 17px;
       border-radius: 15px;
       margin-left: 181px;
     }
@@ -103,7 +103,7 @@
     }
     .image4 {
       display: inline-block;
-      width: 52%;
+      width: 100%;
       height: 83vh;
       border: 1px solid black;
       margin-left: 0%;
@@ -112,10 +112,9 @@
     }
     .form-section {
       width: 49%;
-      height: 82.91vh;
+      height: 82.8vh;
       border: 1px solid white;
-      /* margin-left: 52%; */
-      /* margin-top: -57.7%; */
+
       background-color: white;
     }
     .detail {
@@ -130,79 +129,132 @@
       margin-left: 6%;
     }
     .fname {
-      margin-left: 103px;
+      margin-left: 99.6px;
       margin-top: 4%;
-      height: 19px;
+      height: 23px;
+      font-size: 10px;
+      color: #141313;
       width: 234px;
+      padding: 2%;
+      background-color: #fcf8f8;
+      border-color: #cbc4c4;
     }
     .email {
       margin-left: 17%;
+      color: #141313;
       margin-top: 4%;
-      height: 19px;
+      height: 23px;
+      font-size: 10px;
       width: 234px;
+      padding: 2%;
+      background-color: #fcf8f8;
+      border-color: #cbc4c4;
     }
     .pnumber {
-      margin-left: 16%;
+      margin-left: 71px;
       margin-top: 4%;
-      height: 19px;
+      height: 23px;
+      color: #141313;
+      font-size: 10px;
       width: 234px;
+      padding: 2%;
+      background-color: #fcf8f8;
+      border-color: #cbc4c4;
     }
     .pass {
       margin-left: 23%;
-      margin-top: 5%;
-      height: 19px;
+      margin-top: 4%;
+      height: 23px;
+      font-size: 10px;
+      color: #141313;
       width: 234px;
+      padding: 2%;
+      background-color: #fcf8f8;
+      border-color: #cbc4c4;
     }
     .web {
       margin-left: 25%;
       margin-top: 4%;
-      height: 19px;
+      color: #141313;
+      height: 23px;
+      font-size: 10px;
+      padding: 2%;
       width: 234px;
+      background-color: #fcf8f8;
+      border-color: #cbc4c4;
     }
     .btn {
-      border-radius: 6px;
+      display: inline-block;
+      font-size: 12px;
+      padding: 2.5% 1% 2.5% 1%;
+      border-radius: 25px;
       color: white;
       background-color: black;
-      display: inline-block;
-      width: 30%;
-      padding: 1%;
-      margin-top: 17%;
+      width: 28%;
+
+      margin-top: 5%;
+    }
+
+    .break {
+      border-color: #f8f7f7;
+      margin-top: 5%;
     }
     b {
       font-size: 100%;
     }
     .or {
       text-align: center;
-      margin-top: 3.5%;
-      color: #857c7c;
+      /* margin-top: 5%; */
+      color: #a69e9e;
     }
     .sign {
       text-align: center;
-      margin-top: 3.5%;
-      color: #857c7c;
+      margin-top: 5%;
+      color: #a69e9e;
     }
     .tagss {
       margin-left: 31%;
       border-radius: 50%;
-      margin-top: 3%;
+      margin-top: 4%;
     }
     .tagg {
       border-radius: 50%;
       margin-left: 2%;
-      margin-top: 3%;
+      margin-top: 4%;
     }
     .tags {
       border-radius: 50%;
       margin-left: 2%;
-      margin-top: 3%;
+      margin-top: 4%;
     }
 
     .line {
       display: inline-block;
-      margin-left: 10%;
+      margin-left: 33%;
+      margin-top: 3%;
+      color: #a69e9e;
     }
     .link {
       display: inline-block;
+    }
+    .condition {
+      margin-top: 6%;
+    }
+    .cond {
+      color: #a69e9e;
+    }
+    .heading {
+      margin-left: 21.5%;
+      margin-top: -24%;
+      color: white;
+    }
+    .heading1 {
+      margin-left: 15%;
+      margin-top: 2.5%;
+      color: white;
+      font-size: 15pxx;
+      width: 61%;
+      text-align: center;
     }
   </style>
 </head>
@@ -247,57 +299,72 @@
     <div class="main-container">
       <h1>Sign#10</h1>
       <div class="form-container">
-        <img
-          class="image4"
-          src="background image.png"
-          alt="background image"
-          width=" 100%"
-          height="600vh"
-        />
+        <div>
+          <img
+            class="image4"
+            src="background image.png"
+            alt="background image"
+            width=" 100%"
+            height="600vh"
+          />
+          <h2 class="heading">Welcome to signup form</h2>
+          <p class="heading1">
+            Far far away behind the word mountains <br />far away from the
+            countries vokolia and consonantia,there live the blind text.
+          </p>
+        </div>
         <div class="form-section">
           <h1 class="detail">Create an account</h1>
           <div class="identity">
-            <lable for="full-name">Full name</lable>
-            <input
-              class="fname"
-              id="full-name "
-              type="text"
-              placeholder="Full name"
-            />
+            <div>
+              <lable for="full-name">Full name</lable>
+              <input
+                class="fname"
+                id="full-name "
+                type="text"
+                placeholder="Full name"
+              />
+              <br />
+              <lable for="email-address">Email address</lable>
+              <input
+                class="email"
+                id="email-address "
+                type="text"
+                placeholder="Email address"
+              />
+              <br />
+              <lable for="phn-number">Phone Number</lable>
+              <input
+                class="pnumber"
+                id="phn-number "
+                type="number"
+                placeholder="Phone number"
+              />
+              <br />
+              <lable for="password">Password</lable>
+              <input
+                class="pass"
+                id="password"
+                type="password"
+                placeholder="Password"
+              />
+              <br />
+              <lable for="website">Website</lable>
+              <input
+                class="web"
+                id="website "
+                type="text"
+                placeholder="Website"
+              />
+            </div>
             <br />
-            <lable for="email-address">Email address</lable>
-            <input
-              class="email"
-              id="email-address "
-              type="text"
-              placeholder="Email address"
-            />
-            <br />
-            <lable for="phn-number">Phone Number</lable>
-            <input
-              class="pnumber"
-              id="phn-number "
-              type="number"
-              placeholder="Phone number"
-            />
-            <br />
-            <lable for="password">Password</lable>
-            <input
-              class="pass"
-              id="password"
-              type="password"
-              placeholder="Password"
-            />
-            <br />
-            <lable for="website">Website</lable>
-            <input
-              class="web"
-              id="website "
-              type="text"
-              placeholder="Website"
-            />
+            <input id="label" class="condition" type="checkbox" />
+            <label class="cond" for="label"
+              >I agree all statements in term os service</label
+            >
             <br />
             <button class="btn"><b>Create an account</b></button>
+            <hr class="break" />
             <p class="or">or</p>
             <p class="sign">Signup with this services</p>
             <div>
