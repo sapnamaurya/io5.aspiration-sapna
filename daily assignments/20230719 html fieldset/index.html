@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>form</title>
+    <style>
+      .main-container {
+        margin: auto;
+        width: 35%;
+        border: 1px solid black;
+        height: 98vh;
+        border-radius: 4px;
+        background-color: #f6e2e6;
+      }
+      .heading {
+        margin-left: 3.5%;
+        color: #583d3d;
+      }
+      fieldset {
+        margin-left: 4%;
+        display: inline-block;
+        width: 88%;
+      }
+      .fname {
+        margin-top: 2%;
+        display: block;
+      }
+      .input1 {
+        margin-top: 2%;
+        display: block;
+        border-radius: 4px;
+        border-color: rgb(193, 191, 191);
+      }
+      .lname {
+        margin-top: 2%;
+        display: block;
+      }
+      .input2 {
+        margin-top: 2%;
+        display: block;
+        margin-bottom: 4%;
+        border-radius: 4px;
+        border-color: rgb(193, 191, 191);
+      }
+      .input3 {
+        display: block;
+        margin-top: 2%;
+        border-radius: 4px;
+        border-color: rgb(193, 191, 191);
+      }
+      .input4 {
+        margin-top: 4%;
+        margin-left: 3.7%;
+        border-radius: 4px;
+        border-color: rgb(193, 191, 191);
+        color: grey;
+      }
+      .drinks {
+        display: block;
+      }
+      .drinks1 {
+        display: inline-block;
+      }
+      .drinks2 {
+        display: inline-block;
+        margin-top: 1%;
+      }
+      .drinks3 {
+        display: inline-block;
+        margin-bottom: 2%;
+        margin-top: 1%;
+      }
+
+      .drinks4 {
+        display: inline-block;
+        margin-top: 2%;
+      }
+      p {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <main class="main-container">
+        <form>
+          <div class="heading">
+            <h1>Basic HTML Form</h1>
+          </div>
+          <fieldset>
+            <legend>Name</legend>
+            <div>
+              <label class="fname" for="first_name">First name</label>
+              <input class="input1" id="first-name" type="text" />
+            </div>
+            <div>
+              <label class="lname" for="last_name">Last name</label>
+              <input class="input2" id="last-name" type="text" />
+            </div>
+          </fieldset>
+          <fieldset class="fiedlset1">
+            <legend>Other Questions</legend>
+            <!-- <div> -->
+            <label class="drinks">Choose a drinks</label>
+            <div>
+              <input type="radio" />
+              <label class="drinks2">coffee</label>
+            </div>
+            <div>
+              <input type="radio" />
+              <label class="drinks2">tea</label>
+            </div>
+            <div>
+              <input type="radio" />
+              <label class="drinks3">hot chocolate</label>
+            </div>
+            <div>
+              <label>What icr-cream do you like?</label>
+              <div>
+                <input type="radio" />
+                <label class="drinks2">Chocolate</label>
+              </div>
+              <div>
+                <input type="radio" />
+                <label class="drinks2">Chocolate pudding</label>
+              </div>
+              <div>
+                <input type="radio" />
+                <label class="drinks2">chocolate peanut butter</label>
+              </div>
+              <div>
+                <input type="radio" />
+                <label class="drinks2">Vanilla</label>
+              </div>
+              <div>
+                <input type="radio" />
+                <label class="drinks3">Strawberry</label>
+              </div>
+            </div>
+            <div>
+              <label class="drinks4">Select a school:</label>
+              <input class="input3" type="text" placeholder="harvard" />
+            </div>
+            <div>
+              <label for="comment" class="drinks4"
+                >Please provide comments:</label
+              >
+              <textarea id="comment" class="input3" type="text"></textarea>
+            </div>
+            <!-- <div>
+                <label class="drinks4">Select a school:</label>
+                <input class="input3" type="text" placeholder="harvard" />
+              </div> -->
+          </fieldset>
+          <input class="input4" type="submit" />
+        </form>
+      </main>
+    </header>
+  </body>
+</html>
