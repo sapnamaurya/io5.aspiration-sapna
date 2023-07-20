@@ -12,24 +12,419 @@
       }
       .background {
         border: 1px solid black;
-        height: 100vh;
-        width: 70%;
-        margin: auto;
+        height: 1000vh;
+        width: 72%;
+        margin: 1%auto;
       }
       .header-container {
         border: 1px solid black;
-        height: 10vh;
+        height: 19vh;
         width: 96%;
-        margin: 2% auto;
+        margin: 2% 2% 0 2%;
+      }
+
+      .logo {
+        width: 57px;
+        height: 17vh;
+      }
+      .para {
+        margin-left: 6%;
+        margin-bottom: 1%;
+      }
+      .form-container {
+        border: 1px solid black;
+        height: 15vh;
+        width: 96%;
+      }
+      .title {
+        /* margin-top: 0.5%;
+        margin-bottom: %; */
+        border: 1px solid black;
+        height: 102%;
+        border: none;
+      }
+      .app-type {
+        width: 26%;
+        margin-left: 13%;
+      }
+      .sec {
+        font-size: 17px;
+      }
+      .name {
+        display: block;
+      }
+      .inp1 {
+        width: 100%;
+        margin: 0.5%;
+      }
+      .gen {
+        margin-left: 3%;
+      }
+      .vote {
+        margin-left: 3%;
+        width: 25%;
+      }
+      .employ {
+        width: 83%;
+        margin-left: 3%;
+      }
+      .mark {
+        width: 81%;
+      }
+      .house {
+        width: 80%;
       }
     </style>
   </head>
   <body>
     <section class="background">
-      <header class="header-container">
-        <main>
-          <form></form>
-        </main>
+      <header>
+        <div class="header-container">
+          <img class="logo" src="satyamev-removebg-preview.png" alt="logo" />
+          <div style="text-align: center; margin-top: -9.6%">
+            <h3>Passport Application Form</h3>
+            <h4>Government of India, Ministry of External Affairs</h4>
+          </div>
+          <p class="para">
+            Please read the Passport Instruction Booklet carefully before
+            filling the form. Furnishing of incorrect information/ suppression
+            of information would lead to rejection of application and would
+            attract penal provisions as prescribed under the Passports Act,
+            1967. Please produce your original documents at the time of
+            submission of the form. All fields marked with (*) are mandatory to
+            fill.
+          </p>
+          <div style="background: #dedada; height: 4vh">
+            <h3 class="title">Service Required</h3>
+          </div>
+
+          <main style="margin-top: 1%">
+            <section class="sec">
+              <div style="margin-top: 2%">
+                <label for="apply">Applying for *</label>
+                <input class="app-type" id="apply" list="passport" />
+                <datalist id="passport">
+                  <option value="Fresh Passport"></option>
+                  <option value="Re-issue Passport"></option>
+                </datalist>
+              </div>
+              <div style="margin-top: 2%">
+                <label>Type of Application *</label>
+                <div style="margin-left: 14%; display: inline-block">
+                  <input id="opt" type="radio" />
+                  <label for="opt">Normal</label>
+                </div>
+                <div style="margin-left: 6%; display: inline-block">
+                  <input id="opt" type="radio" />
+                  <label for="opt">Tatkal</label>
+                </div>
+              </div>
+              <div style="margin-top: 2%">
+                <label>Type of Passport Booklet *</label>
+                <div style="margin-left: 10.5%; display: inline-block">
+                  <input id="opt" type="radio" />
+                  <label for="opt">30 Pages</label>
+                </div>
+                <div style="margin-left: 5.3%; display: inline-block">
+                  <input id="opt" type="radio" />
+                  <label for="opt">60 Pages</label>
+                </div>
+              </div>
+              <h3
+                style="
+                  background: #dedada;
+                  border: 1px solid black;
+                  margin-top: 1.7%;
+                  height: 4vh;
+                  border: none;
+                "
+              >
+                <b>Application detail</b>
+              </h3>
+              <div>
+                <label class="name" for="name"
+                  >Applicant's Given Name (Given Name means First Name followed
+                  by middle Name (if any)) *</label
+                >
+                <input class="inp1" id="name" type="text" />
+                <label class="name" for="name">Surname</label>
+                <input class="inp1" id="name" type="text" />
+              </div>
+              <div style="margin-top: 1%">
+                <label for="gender">Gender *</label>
+                <input class="gen" id="apply" list="option-gender" />
+                <datalist id="option-gender">
+                  <option value="Male"></option>
+                  <option value="Female"></option>
+                </datalist>
+              </div>
+              <div style="margin-top: 1%">
+                <label>Are you known by any other names(aliases)? *</label>
+                <div style="margin-left: 4.5%; display: inline-block">
+                  <input id="opt" type="radio" />
+                  <label for="opt">Yes</label>
+                </div>
+                <div style="margin-left: 5%; display: inline-block">
+                  <input id="opt" type="radio" />
+                  <label for="opt">No</label>
+                </div>
+              </div>
+              <div style="margin-top: 1%">
+                <label>Have you ever changed your name ? *</label>
+                <div style="margin-left: 10%; display: inline-block">
+                  <input id="opt" type="radio" />
+                  <label for="opt">Yes</label>
+                </div>
+                <div style="margin-left: 5%; display: inline-block">
+                  <input id="opt" type="radio" />
+                  <label for="opt">No</label>
+                </div>
+              </div>
+              <div style="margin-top: 1%">
+                <label for="birth">Date of Birth (DD/MM/YYYY) *</label>
+                <input class="date" id="birth" type="date" />
+              </div>
+              <h3
+                style="
+                  background: #dedada;
+                  border: 1px solid black;
+                  margin-top: 1.7%;
+                  height: 4vh;
+                  border: none;
+                "
+              >
+                <b>Place of birth</b>
+              </h3>
+              <div>
+                <label>Is your Place of Birth out of India? *</label>
+                <input style="margin-left: 12%" id="opt" type="radio" />
+                <label for="opt">Yes</label>
+                <input style="margin-left: 4%" id="opt" type="radio" />
+                <label for="opt">No</label>
+              </div>
+              <div style="margin-top: 1%">
+                <label for="place">Village or Town or City *</label>
+                <input class="app-type" id="place" type="text" />
+              </div>
+              <div style="margin-top: 1%">
+                <label for="place">Marital Status *</label>
+                <input class="gen" id="status" list="martial status" />
+                <datalist id="martial status">
+                  <option value="Married"></option>
+                  <option value="Widow/Widower"></option>
+                  <option value="Divorced"></option>
+                  <option value="seperated"></option>
+                </datalist>
+
+                <label style="margin-left: 4%" for="citizen"
+                  >Citizenship of India by *</label
+                >
+                <input
+                  class="gen"
+                  id="citizen"
+                  list="citizenship"
+                  placeholder="Registration/Neutralization"
+                />
+                <datalist id="citizenship">
+                  <option value="Birth"></option>
+                  <option value="Registration/neutralization"></option>
+                  <option value="Descent"></option>
+                </datalist>
+              </div>
+              <div style="margin-top: 1%">
+                <label for="pan">PAN (If available)*</label>
+                <input class="vote" id="pan" />
+                <label for="voter">Voter ID (If available)</label>
+                <input class="vote" id="voter" />
+              </div>
+              <div style="margin-top: 1%">
+                <label for="employ">Employment Type *</label>
+                <input class="employ" id="employ" list="employment" />
+                <datalist id="employment">
+                  <option value="Government"></option>
+                  <option value="Homemaker"></option>
+                  <option value="Not Employed"></option>
+                  <option value="Other"></option>
+                  <option
+                    value="Owner,partner and Director of the company,which are member of CII,ASSOCHAM,FICCI"
+                  ></option>
+                  <option value="Private"></option>
+                  <option value="Psu"></option>
+                  <option value="Retired government servanr"></option>
+                  <option value="Retired private service"></option>
+                  <option value="Selfemployed"></option>
+                  <option value="Student"></option>
+                  <option value="Statutory body"></option>
+                </datalist>
+              </div>
+              <div style="margin-top: 1%">
+                <label for="parent"
+                  >Is either of your parent (in case of minor)/ spouse, a
+                  government servant? *</label
+                >
+                <input class="gen" id="parent" list="parents" />
+                <datalist id="parents">
+                  <option value="Yes"></option>
+                  <option value="NO"></option>
+                </datalist>
+              </div>
+              <div style="margin-top: 1%">
+                <label for="place"
+                  >Are you eligible for Non-ECR category? *</label
+                >
+                <input class="gen" id="status" list="category" />
+                <datalist id="category">
+                  <option value="yes"></option>
+                  <option value="NO"></option>
+                </datalist>
+
+                <label style="margin-left: 4%" for="citizen"
+                  >Educational Qualification *</label
+                >
+                <input class="gen" id="citizen" list="class" />
+                <datalist id="class">
+                  <option value="7th pass or less"></option>
+                  <option value="between 8th and 9th standard"></option>
+                  <option value="10th pass or above"></option>
+                  <option value="Graduate and above"></option>
+                </datalist>
+              </div>
+              <div style="margin-top: 1%">
+                <label for="pan">Visible Distinguishing Mark</label>
+                <input class="mark" id="pan" />
+              </div>
+              <div style="margin-top: 1%">
+                <label for="apply">Aadhaar Number *</label>
+                <input class="app-type" id="apply" type="number" />
+              </div>
+              <div
+                style="
+                  border: 1px solid black;
+                  height: auto;
+                  width: auto;
+                  margin-top: 1%;
+                "
+              >
+                <p>
+                  I, the holder of above mentioned Aadhaar Number , hereby give
+                  my consent to Passport Seva to obtain my Aadhaar Number, Name
+                  and Fingerprint/Iris for authentication with UIDAI. I have no
+                  objection using my identity and biometric information for
+                  validation with Aadhaar (CIDR) database only for the purpose
+                  of authentication.
+                </p>
+                <div>
+                  <label>I agree</label>
+                  <div style="display: inline-block; margin-left: 4%">
+                    <label for="apply">Yes</label>
+                    <input id="apply" type="checkbox" />
+                    <label for="apply">No</label>
+                    <input id="apply" type="checkbox" />
+                  </div>
+                </div>
+              </div>
+              <h3
+                style="
+                  background: #dedada;
+                  border: 1px solid black;
+                  margin-top: 1.7%;
+                  height: 4vh;
+                  border: none;
+                "
+              >
+                <b
+                  >Family Details (Father/Mother/Legal Guardian details; at
+                  least one is mandatory.) *</b
+                >
+              </h3>
+              <div>
+                <label class="name" for="name"
+                  >Father's Given Name (Given Name means First Name followed by
+                  Middle Name (If any))</label
+                >
+                <input class="inp1" id="name" type="text" />
+                <label class="name" for="name">Surname</label>
+                <input class="inp1" id="name" type="text" />
+                <label class="name" for="name"
+                  >Legal Guardian's Given Name (if applicable)
+                </label>
+                <input class="inp1" id="name" type="text" />
+                <label class="name" for="name">Surname</label>
+                <input class="inp1" id="name" type="text" />
+                <label class="name" for="name"
+                  >Mother's Given Name (Given Name means First Name followed by
+                  Middle Name (If any))
+                </label>
+                <input class="inp1" id="name" type="text" />
+                <label class="name" for="name">Surname</label>
+                <input class="inp1" id="name" type="text" />
+              </div>
+              <h3
+                style="
+                  background: #dedada;
+                  border: 1px solid black;
+                  margin-top: 1.7%;
+                  height: 4vh;
+                  border: none;
+                "
+              >
+                <b
+                  >Present Residential Address Details (where applicant
+                  presently resides)</b
+                >
+              </h3>
+              <div>
+                <label>Is your present address out of India? *</label>
+                <input style="margin-left: 12%" id="opt" type="radio" />
+                <label for="opt">Yes</label>
+                <input style="margin-left: 4%" id="opt" type="radio" />
+                <label for="opt">No</label>
+              </div>
+              <div style="margin-top: 1%">
+                <label for="pan">House No. and Street Name *</label>
+                <input class="house" id="pan" />
+              </div>
+              <div style="margin-top: 1%">
+                <label for="pan">Village or Town or City *</label>
+                <input class="vote" id="pan" />
+                <label for="voter">Region/Country</label>
+                <input class="vote" id="voter" list="region" />
+                <datalist id="region">
+                  <option value="Tajikistan"></option>
+                  <option
+                    value="
+Tanzania"
+                  ></option>
+                  <option
+                    value="
+Thailand"
+                  ></option>
+                  <option
+                    value="
+Togo"
+                  ></option>
+                  <option value="Tonga"></option>
+                  <option
+                    value="
+Trinidad and Tobago"
+                  ></option>
+                  <option value="Tunisia"></option>
+                  <option
+                    value="
+Turkey"
+                  ></option>
+                  <option value="Turkmenistan"></option>
+                </datalist>
+              </div>
+              <div style="margin-top: 1%">
+                <label for="pan">Village or Town or City *</label>
+                <input class="vote" id="pan" />
+                <label for="voter">Distric/country</label>
+                <input class="vote" id="voter" />
+              </div>
+            </section>
+          </main>
+        </div>
       </header>
     </section>
   </body>
