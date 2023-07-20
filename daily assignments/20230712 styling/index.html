@@ -5,23 +5,39 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="sapna" description="this is about styling" />
     <title>the table</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+    </style>
   </head>
 
   <body>
     <section>
-      <h1>
-        <dl>
-          <dd>TIME TABLE</dd>
-        </dl>
-      </h1>
+      <p
+        style="
+          margin-top: 1%;
+          font-size: 261%;
+          text-align: center;
+          margin-bottom: -1%;
+        "
+      >
+        <b>TIME TABLE</b>
+      </p>
       <table
         style="
+          margin: auto;
           border: 5px solid grey;
           border-collapse: collapse;
           text-align: center;
+          height: 85vh;
+          margin: 2%auto;
+          width: 64%;
         "
       >
-        <thead style="border: 1px solid black">
+        <thead style="border: 1px solid black; font-size: 136%; height: 18%">
           <tr style="border: 1px solid black">
             <th style="border: 1px solid black"><b>Day/period</b></th>
             <th style="border: 1px solid black">
@@ -57,60 +73,84 @@
         </thead>
         <tbody style="border: 1px solid black">
           <tr style="border: 1px solid black">
-            <td style="border: 1px solid black"><b>Monday</b></td>
-            <td style="border: 1px solid black">Eng</td>
-            <td style="border: 1px solid black">Math</td>
-            <td style="border: 1px solid black">chem</td>
-            <td style="border: 1px solid black" rowspan="6">
-              <b> L<br />U<br />N<br />C<br />H</b>
+            <td style="font-size: 145%; border: 1px solid rgb(3, 2, 2)">
+              <b>Monday</b>
             </td>
-            <td style="border: 1px solid black" colspan="3">Lab</td>
-            <td style="border: 1px solid black">Phy</td>
+            <td style="font-size: 132%; border: 1px solid black">Eng</td>
+            <td style="font-size: 132%; border: 1px solid black">Math</td>
+            <td style="font-size: 132%; border: 1px solid black">chem</td>
+            <td style="font-size: 132%; border: 1px solid black" rowspan="6">
+              <b style="font-size: 280%"> L<br />U<br />N<br />C<br />H</b>
+            </td>
+            <td style="font-size: 132%; border: 1px solid black" colspan="3">
+              Lab
+            </td>
+            <td style="font-size: 132%; border: 1px solid black">Phy</td>
           </tr>
 
           <tr style="border: 1px solid black">
-            <td style="border: 1px solid black"><b>Tuesday</b></td>
-            <td style="border: 1px solid black" colspan="3">Lab</td>
-            <td style="border: 1px solid black">Eng</td>
-            <td style="border: 1px solid black">Chem</td>
-            <td style="border: 1px solid black">Maths</td>
-            <td style="border: 1px solid black">Sports</td>
+            <td style="font-size: 145%; border: 1px solid black">
+              <b>Tuesday</b>
+            </td>
+            <td style="font-size: 132%; border: 1px solid black" colspan="3">
+              Lab
+            </td>
+            <td style="font-size: 132%; border: 1px solid black">Eng</td>
+            <td style="font-size: 132%; border: 1px solid black">Chem</td>
+            <td style="font-size: 132%; border: 1px solid black">Maths</td>
+            <td style="font-size: 132%; border: 1px solid black">Sports</td>
           </tr>
 
           <tr style="border: 1px solid black">
-            <td style="border: 1px solid black"><b>Wednesday</b></td>
-            <td style="border: 1px solid black">Math</td>
-            <td style="border: 1px solid black">Phy</td>
-            <td style="border: 1px solid black">Eng</td>
-            <td style="border: 1px solid black">chem</td>
-            <td style="border: 1px solid black" colspan="3">Library</td>
+            <td style="font-size: 145%; border: 1px solid black">
+              <b>Wednesday</b>
+            </td>
+            <td style="font-size: 132%; border: 1px solid black">Math</td>
+            <td style="font-size: 132%; border: 1px solid black">Phy</td>
+            <td style="font-size: 132%; border: 1px solid black">Eng</td>
+            <td style="font-size: 132%; border: 1px solid black">chem</td>
+            <td style="font-size: 132%; border: 1px solid black" colspan="3">
+              Library
+            </td>
           </tr>
 
           <tr style="border: 1px solid black">
-            <td style="border: 1px solid black"><b>Thursday</b></td>
-            <td style="border: 1px solid black">Phy</td>
-            <td style="border: 1px solid black">Eng</td>
-            <td style="border: 1px solid black">Chem</td>
-            <td style="border: 1px solid black" colspan="3">Lab</td>
-            <td style="border: 1px solid black">Math</td>
+            <td style="font-size: 145%; border: 1px solid black">
+              <b>Thursday</b>
+            </td>
+            <td style="font-size: 132%; border: 1px solid black">Phy</td>
+            <td style="font-size: 132%; border: 1px solid black">Eng</td>
+            <td style="font-size: 132%; border: 1px solid black">Chem</td>
+            <td style="font-size: 132%; border: 1px solid black" colspan="3">
+              Lab
+            </td>
+            <td style="font-size: 132%; border: 1px solid black">Math</td>
           </tr>
 
           <tr style="border: 1px solid black">
-            <td style="border: 1px solid black"><b>Friday</b></td>
-            <td style="border: 1px solid black" colspan="3">Lab</td>
-            <td style="border: 1px solid black">Math</td>
-            <td style="border: 1px solid black">Chem</td>
-            <td style="border: 1px solid black">Eng</td>
-            <td style="border: 1px solid black">Phy</td>
+            <td style="font-size: 145%; border: 1px solid black">
+              <b>Friday</b>
+            </td>
+            <td style="font-size: 132%; border: 1px solid black" colspan="3">
+              Lab
+            </td>
+            <td style="font-size: 132%; border: 1px solid black">Math</td>
+            <td style="font-size: 132%; border: 1px solid black">Chem</td>
+            <td style="font-size: 132%; border: 1px solid black">Eng</td>
+            <td style="font-size: 132%; border: 1px solid black">Phy</td>
           </tr>
 
           <tr style="border: 1px solid black">
-            <td style="border: 1px solid black"><b>Saturday</b></td>
-            <td style="border: 1px solid black">Eng</td>
-            <td style="border: 1px solid black">Chem</td>
-            <td style="border: 1px solid black">Maths</td>
-            <td style="border: 1px solid black" colspan="3">Seminar</td>
-            <td style="border: 1px solid black">Sports</td>
+            <td style="font-size: 145%; border: 1px solid black">
+              <b>Saturday</b>
+            </td>
+            <td style="font-size: 132%; border: 1px solid black">Eng</td>
+            <td style="font-size: 132%; border: 1px solid black">Chem</td>
+            <td style="font-size: 132%; border: 1px solid black">Maths</td>
+            <td style="font-size: 132%; border: 1px solid black" colspan="3">
+              Seminar
+            </td>
+            <td style="font-size: 132%; border: 1px solid black">Sports</td>
           </tr>
         </tbody>
       </table>
