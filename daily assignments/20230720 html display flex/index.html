@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>display flex</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      header {
+        background-color: #e6ecf0;
+      }
+      .head-contain {
+        background-color: white;
+
+        height: 7vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        color: grey;
+      }
+      .para {
+        margin-left: 12%;
+        font-size: 20px;
+        color: grey;
+      }
+      .para1 {
+        margin-left: 3%;
+      }
+      .img {
+        margin-left: 15%;
+        width: 44px;
+        border-radius: 60px;
+      }
+      .btn {
+        height: 4.9vh;
+        width: 77px;
+        margin-left: 32%;
+        border-radius: 22px;
+        border: none;
+        background-color: #0067ff;
+        color: white;
+      }
+      .btn1 {
+        padding: 2%;
+        height: 4.2vh;
+        width: 79px;
+        margin-left: 33%;
+        border-radius: 22px;
+        border: 1px solid #0067ff;
+        background-color: white;
+        color: #0067ff;
+        margin-bottom: 2%;
+      }
+      .main-container {
+        background-color: #e6ecf0;
+        border: 1px solid black;
+        height: 93vh;
+        border: none;
+        display: flex;
+      }
+      .design {
+        width: 19%;
+        border: 1px solid black;
+        height: 30vh;
+
+        margin: 1% 0 0 14%;
+        background-color: white;
+        border: none;
+      }
+      .design1 {
+        margin-left: 1%;
+        width: 32%;
+        height: 66vh;
+      }
+      .design2 {
+        margin-left: 1%;
+        height: 33vh;
+      }
+      .internal-part {
+        text-align: center;
+
+        background-color: black;
+
+        height: 12vh;
+        width: 100%;
+      }
+      .head-name {
+        display: flex;
+        color: white;
+        font-size: 40px;
+        justify-content: center;
+      }
+      .follow {
+        margin-left: 6%;
+        margin-top: 4%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="head-contain">
+        <a class="para" href="#"><b>Home</b></a>
+        <a class="para para1" href="#"><b>Moments</b></a>
+        <a class="para para1" href="#"><b>Notification</b></a>
+        <a class="para para1" href="#"><b>Messages</b></a>
+        <img class="img" src="twist.png" alt="twiter" width="10px" />
+        <button class="btn"><b>Tweet</b></button>
+      </div>
+      <main>
+        <div class="main-container">
+          <div class="design">
+            <div class="internal-part">
+              <p class="head-name"><b style="margin-top: 6%">Ratatouille</b></p>
+            </div>
+            <div style="margin-top: -9%; display: flex">
+              <img
+                src="remy-removebg-preview.png"
+                alt="remy"
+                style="margin-left: 5%; height: 76px; width: 76px"
+              />
+
+              <div style="text-align: center; margin-left: 4%; margin-top: 10%">
+                <p class="title1">
+                  <b><u>Remy</u></b>
+                </p>
+                <p class="title2">@remy</p>
+              </div>
+            </div>
+            <div style="margin-left: 7%; margin-top: 5%; display: flex">
+              <h3>Tweets</h3>
+              <h3 style="margin-left: 7%">Following</h3>
+              <h3 style="margin-left: 7%">Followers</h3>
+            </div>
+            <div
+              style="
+                margin-left: 10%;
+                color: rgb(17, 57, 221);
+                margin-top: 5%;
+                display: flex;
+              "
+            >
+              <h3>5040</h3>
+              <h3 style="margin-left: 20%">536</h3>
+              <h3 style="margin-left: 22%">1040</h3>
+            </div>
+          </div>
+          <div class="design design1">
+            <div style="margin: 3% 2% 5% 2%">
+              <img
+                style="width: 62px; float: left"
+                src="remy-removebg-preview.png"
+                alt="remy"
+              />
+              <p style="margin-left: 15%"><b>Remy</b> @remy NOv 19</p>
+              <p style="margin-left: 15%">
+                I'm talking this class called CS1320 and the TAs are all so
+                cool!
+              </p>
+            </div>
+            <hr />
+            <div style="margin: 3% 2% 2% 2%">
+              <img
+                style="width: 62px; float: left"
+                src="remy-removebg-preview.png"
+                alt="remy"
+                width="30px"
+              />
+              <p style="margin-left: 15%"><b>Remy</b> @remy NOv 19</p>
+              <p style="margin-left: 15%">
+                It's 2007.You just got home from elementary schoool.Your mom has
+                pizza bagels in the oven.Ratatouille is in theater.Life is good.
+              </p>
+            </div>
+            <hr />
+            <div style="margin: 3% 2% 7% 2%">
+              <img
+                style="width: 62px; margin-top: -2%; float: left"
+                src="remy-removebg-preview.png"
+                alt="remy"
+                width="30px"
+              />
+              <p><b>Remy</b> @remy NOv 19</p>
+              <p>Lets's make some pasta!</p>
+            </div>
+            <hr />
+            <div style="margin: 3% 2% 7% 2%">
+              <img
+                style="width: 62px; margin-top: -2%; float: left"
+                src="remy-removebg-preview.png"
+                alt="remy"
+                width="30px"
+              />
+              <p><b>Remy</b> @remy NOv 19</p>
+              <p>Lets's make some pasta!</p>
+            </div>
+            <hr />
+            <div style="margin: 3% 2% 5% 2%">
+              <img
+                style="width: 62px; margin-top: -2%; float: left"
+                src="remy-removebg-preview.png"
+                alt="remy"
+                width="30px"
+              />
+              <p><b>Remy</b> @remy NOv 19</p>
+              <p>Lets's make some pasta!</p>
+            </div>
+          </div>
+          <div class="design design2">
+            <h2 class="follow">Who to follow</h2>
+            <div style="margin-top: 3%; display: flex; align-items: center">
+              <img
+                style="
+                  margin-left: 6%;
+
+                  width: 47px;
+                  float: left;
+                "
+                src="panda.png"
+                alt="panda"
+                width="10px"
+              />
+              <p style="margin-left: 4%"><b>Panda</b></p>
+              <p>@panda</p>
+            </div>
+            <button class="btn1">Follow</button>
+            <hr />
+            <div style="margin-top: 3%; display: flex; align-items: center">
+              <img
+                style="
+                  margin-left: 6%;
+
+                  width: 47px;
+                  float: left;
+                "
+                src="remy-removebg-preview.png"
+                alt="panda"
+                width="10px"
+              />
+              <p style="margin-left: 4%"><b>CS1320TA</b></p>
+              <p>@cs1320ta</p>
+            </div>
+            <button class="btn1">Follow</button>
+          </div>
+        </div>
+      </main>
+    </header>
+  </body>
+</html>
