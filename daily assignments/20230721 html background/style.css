@@ -3,19 +3,88 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: black;
-}
+
 .background {
-  background-image: url(./back.jpg);
-  margin: 9% 0% 5% 15%;
-  width: 70%;
-  height: 65vh;
-  border: 1px solid rgb(233, 226, 226);
+  background-image: url(./black.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
-header {
-  border: 1px solid black;
-  width: 100%;
-  height: 6vh;
+.head-container {
+  margin-left: 3%;
+  display: flex;
+}
+h1 {
+  color: white;
+  font-size: 14rem;
+}
+.navbar {
+  margin: 1.4%;
+  font-size: 6rem;
+  display: flex;
+}
+.size {
+  margin-left: 63%;
+}
+a {
+  margin-left: 27%;
+  color: white;
+}
+input {
+  border-radius: 93px;
+  padding: 15%;
+  width: 132%;
+  font-size: 4rem;
+  color: white;
+  background-color: rgb(243, 43, 73);
+}
+h4 {
+  margin-left: 3.5%;
+  font-size: 4rem;
+  color: grey;
+  margin-top: 9%;
+}
+
+.name {
+  margin-left: 3%;
+  margin-top: 1%;
+}
+h2 {
+  color: white;
+  font-size: 5rem;
+  margin-left: 3.5%;
+  margin-top: 1%;
+}
+.inp {
+  border-color: rgb(243, 43, 73);
+  margin-top: 3%;
+  padding: none;
+  margin-left: 3.5%;
+  padding: 0.7%;
+  width: 25%;
+  font-size: 4rem;
+  color: rgb(212, 204, 204);
+  background-color: white;
+}
+.inp1 {
+  width: 7%;
+  border-color: rgb(243, 43, 73);
+  margin-top: 1%;
+  padding: none;
+  margin-left: -7.5%;
+  padding: 0.5%;
+  font-size: 4rem;
+  color: white;
+  background-color: rgb(243, 43, 73);
+}
+.footer {
+  margin-top: 13%;
+}
+.tag {
+  margin-left: 8%;
+  margin-top: 12.5%;
+}
+.tag1 {
+  margin-top: 12.5%;
+  margin-left: 2%;
 }
