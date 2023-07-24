@@ -25,10 +25,12 @@ h1 {
 }
 .size {
   margin-left: 63%;
+  text-decoration: none;
 }
 a {
   margin-left: 27%;
   color: white;
+  text-decoration: none;
 }
 input {
   border-radius: 93px;
