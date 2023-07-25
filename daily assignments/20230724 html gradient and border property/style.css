@@ -1,0 +1,395 @@
+body {
+  background-color: black;
+}
+* {
+  padding: 0;
+  margin: 0;
+  background-origin: border-box;
+}
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  width: 150px;
+  height: 120px;
+}
+/* this is belong to gardient property--linear gradient with direction top ,bottom,left ,right */
+.box1 {
+  background-image: linear-gradient(to left, brown, rgb(153, 108, 123), green);
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+}
+.img1 {
+  margin: 4% 0% 0% 23%;
+}
+.box2 {
+  background-image: linear-gradient(to top, pink, blue, red);
+
+  border-bottom-right-radius: 60px;
+  border-top-right-radius: 60px;
+}
+.box3 {
+  background-image: linear-gradient(to bottom, #81ffef, #f067b4);
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+}
+.box4 {
+  background-image: linear-gradient(to right, #4158d0, #c850c0, #ffcc70);
+  border-bottom-right-radius: 60px;
+  border-top-right-radius: 60px;
+}
+.box5 {
+  background-image: linear-gradient(45deg, #646d9c, #2c262b, #e46e07);
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+}
+.box6 {
+  background-image: linear-gradient(120deg, #082ff2, #e43812, #0e8e50);
+  border-bottom-right-radius: 60px;
+  border-top-right-radius: 60px;
+}
+/* linear-gradient end */
+/* then radial gradient start */
+.box7 {
+  background-image: radial-gradient(circle, #0a30ee, #23cf10, #d2d510);
+
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+}
+.box8 {
+  background-image: radial-gradient(#646d9c, #2c262b, #e46e07);
+
+  border-bottom-right-radius: 60px;
+  border-top-right-radius: 60px;
+}
+.box9 {
+  background-image: radial-gradient(
+    ellipse at center,
+    #1d3acf,
+    #e6bbdf,
+    #140a02
+  );
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+}
+.box10 {
+  background-image: radial-gradient(ellipse at top, #0d86d7, #d28125, #c20be2);
+  border-bottom-right-radius: 60px;
+  border-top-right-radius: 60px;
+}
+.box12 {
+  background-image: radial-gradient(
+    ellipse at bottom,
+    #21516f,
+    #b38249,
+    #44044e
+  );
+
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+}
+.box13 {
+  background-image: radial-gradient(ellipse at left, #0dd789, #d28125, #c20be2);
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+}
+.box14 {
+  background-image: radial-gradient(
+    ellipse at right,
+    #0db5d7,
+    #bbce5e,
+    #c61a4b
+  );
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+}
+.box15 {
+  background-image: radial-gradient(circle at top, #555eb6, #a9c90d, #e10745);
+
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+}
+.box18 {
+  background-image: radial-gradient(
+    circle at bottom,
+    #1123d3,
+    #bdce6c,
+    #d35076
+  );
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+}
+.box19 {
+  background-image: radial-gradient(circle at left, #111642, #b4d612, #84082c);
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+}
+.box20 {
+  background-image: radial-gradient(circle at right, #8218d1, #becc78, #d91d54);
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+}
+/* radial gradient end */
+/* conic gradient start */
+.box22 {
+  background-image: conic-gradient(#8218d1, #becc78, #d91d54);
+
+  border-radius: 50%;
+}
+.box23 {
+  background-color: #02bfff;
+  background-image: conic-gradient(
+    #8218d1 80deg,
+    #c6eb10 120deg,
+    #e32d62 180deg
+  );
+  border-radius: 50%;
+}
+.box24 {
+  background-image: conic-gradient(from 90deg, #1c3eab, #cc1d7d, #cf9fac);
+  border-radius: 50%;
+}
+.box26 {
+  background-image: repeating-conic-gradient(#8218d1 10%, #c6eb10 20%, red 15%);
+  border-radius: 50%;
+}
+.box27 {
+  background-image: repeating-conic-gradient(
+    #360a58 0deg,
+    #360a58 15deg,
+    #56b73d 15deg,
+    #56b73d 90deg
+  );
+  border-radius: 50%;
+}
+.box29 {
+  background-image: repeating-conic-gradient(
+    #cbe412 0deg,
+    #cbe412 15deg,
+    brown 15deg,
+    brown 30deg
+  );
+
+  border-radius: 50%;
+}
+.box30 {
+  background-image: repeating-conic-gradient(
+    #cbe412 0deg,
+    #cbe412 15deg,
+    brown 15deg,
+    brown 60deg
+  );
+  border-radius: 50%;
+}
+.box31 {
+  background-image: repeating-conic-gradient(
+    #7b12e4 0deg,
+    #7b12e4 90deg,
+    rgb(207, 14, 14) 90deg,
+    rgb(207, 14, 14) 180deg
+  );
+  border-bottom-left-radius: 78px;
+  border-top-left-radius: 95px;
+  border-bottom-right-radius: 109px;
+}
+.box34 {
+  background-image: repeating-conic-gradient(
+    #a2d016 0deg,
+    #7b12e4 90deg,
+    rgb(201, 192, 192) 90deg,
+    rgb(207, 14, 14) 180deg
+  );
+  border-bottom-left-radius: 78px;
+  border-top-left-radius: 95px;
+  border-bottom-right-radius: 109px;
+}
+.box35 {
+  background-image: repeating-conic-gradient(
+    #d5b512 0deg,
+    #12a4c1 30deg,
+    rgb(177, 134, 134) 30deg,
+    rgb(186, 59, 140) 90deg
+  );
+  border-bottom-left-radius: 78px;
+  border-top-left-radius: 95px;
+  border-bottom-right-radius: 109px;
+}
+.box36 {
+  background-image: repeating-conic-gradient(
+    #e7d579 0deg,
+    #678085 45deg,
+    rgb(58, 36, 36) 45deg,
+    rgb(220, 184, 207) 90deg,
+    rgb(81, 151, 101) 90deg,
+    rgb(77, 77, 221) 120deg,
+    rgb(145, 17, 17) 120deg,
+    rgb(186, 205, 212) 180deg
+  );
+  border-bottom-left-radius: 78px;
+  border-top-left-radius: 95px;
+  border-bottom-right-radius: 109px;
+}
+.box37 {
+  background-image: repeating-conic-gradient(
+    at 15%,
+    #cbe412 0deg,
+    #cbe412 15deg,
+    brown 15deg,
+    brown 60deg
+  );
+  border-bottom-left-radius: 78px;
+  border-top-left-radius: 95px;
+  border-bottom-right-radius: 109px;
+}
+.box38 {
+  background-image: repeating-conic-gradient(
+    at 30%,
+    #e7d579 0deg,
+    #678085 45deg,
+    rgb(58, 36, 36) 45deg,
+    rgb(220, 184, 207) 90deg,
+    rgb(81, 151, 101) 90deg,
+    rgb(77, 77, 221) 120deg,
+    rgb(145, 17, 17) 120deg,
+    rgb(186, 205, 212) 180deg
+  );
+  border-bottom-left-radius: 78px;
+  border-top-left-radius: 95px;
+  border-bottom-right-radius: 109px;
+}
+.box39 {
+  background-image: repeating-conic-gradient(
+    at 15% 30%,
+    #746416 0deg,
+    #5cb2c3 45deg,
+    rgb(162, 91, 91) 45deg,
+    rgb(173, 91, 143) 90deg,
+    rgb(64, 204, 104) 90deg,
+    rgb(79, 79, 133) 120deg,
+    rgb(196, 124, 124) 120deg,
+    rgb(78, 107, 117) 180deg
+  );
+  border-bottom-left-radius: 78px;
+  border-top-left-radius: 95px;
+  border-bottom-right-radius: 109px;
+}
+.box40 {
+  background-image: repeating-conic-gradient(
+    at 85% 120%,
+    #d5b512 0deg,
+    #12a4c1 30deg,
+    rgb(177, 134, 134) 30deg,
+    rgb(186, 59, 140) 90deg
+  );
+  border-bottom-left-radius: 78px;
+  border-top-left-radius: 95px;
+  border-bottom-right-radius: 109px;
+}
+.box42 {
+  background-image: repeating-conic-gradient(
+    at 45% 90%,
+    #d8c97c 0deg,
+    #a4d0d8 30deg,
+    rgb(219 188 188) 30deg,
+    rgb(167 156 163) 90deg
+  );
+  border-bottom-right-radius: 60px;
+  border-top-right-radius: 60px;
+}
+.box44 {
+  background-image: repeating-conic-gradient(
+    at 90%,
+    #62c464 0deg,
+    #5c51d4 30deg,
+    rgb(188 56 56) 30deg,
+    rgb(198 174 37) 90deg
+  );
+
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+}
+.box45 {
+  background-image: repeating-conic-gradient(
+    at 45% 15%,
+    #96b796 0deg,
+    #8e88c8 30deg,
+    rgb(188 112 112) 30deg,
+    rgb(129 117 51) 90deg
+  );
+  border-bottom-right-radius: 60px;
+  border-top-right-radius: 60px;
+}
+.box47 {
+  background-image: repeating-conic-gradient(
+    at 0% 45%,
+    #5dd282 0deg,
+    #5b86aa 30deg,
+    rgb(214 77 77) 30deg,
+    rgb(225 169 131) 90deg
+  );
+  border-bottom-right-radius: 60px;
+  border-top-right-radius: 60px;
+}
+.box49 {
+  background-image: repeating-conic-gradient(
+    at 0% 180%,
+    #b6cabc 0deg,
+    #3d75a3 30deg,
+    rgb(219 152 152) 30deg,
+    rgb(24 10 1) 90deg
+  );
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+}
+.box50 {
+  background-image: repeating-conic-gradient(
+    at 60%,
+    #80ba91 0deg,
+    #2e475b 30deg,
+    rgb(209 141 141) 30deg,
+    rgb(61 57 54) 90deg
+  );
+  border-bottom-right-radius: 60px;
+  border-top-right-radius: 60px;
+}
+.box55 {
+  background-image: repeating-conic-gradient(
+    at 20% 45%,
+    #abbfb1 0deg,
+    #2b3a46 30deg,
+    rgb(185 131 96) 30deg,
+    rgb(84 54 32) 90deg
+  );
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+}
+.box58 {
+  background-image: linear-gradient(145deg, #082ff2, #e43812, #0e8e50);
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+}
+.box62 {
+  background-image: linear-gradient(15deg, #4d63cc, #d55336, #2a8257);
+  border-bottom-left-radius: 78px;
+  border-top-left-radius: 95px;
+  border-bottom-right-radius: 109px;
+}
+.box64 {
+  background-image: linear-gradient(95deg, #3c52bc, #d2978a, #6abf96);
+  border-bottom-left-radius: 78px;
+  border-top-left-radius: 95px;
+  border-bottom-right-radius: 109px;
+}
+.box67 {
+  background-image: radial-gradient(ellipse at 145%, #1c0602, #de7d0c, #44044e);
+  border-bottom-left-radius: 78px;
+  border-top-left-radius: 95px;
+  border-bottom-right-radius: 109px;
+}
+.box70 {
+  background-image: linear-gradient(45deg, #112793, #9a5343, #21b26c);
+  border-bottom-left-radius: 78px;
+  border-top-left-radius: 95px;
+  border-bottom-right-radius: 109px;
+}
