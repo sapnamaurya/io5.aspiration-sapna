@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.background {
+  background-image: url(./beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 160vh;
+}
+
+.font0 {
+  background-color: white;
+  border: 1px solid white;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+}
+.inp1 {
+  padding: 1%;
+  width: 22%;
+
+  height: 4.9vh;
+}
+.inp2 {
+  padding: 1%;
+  margin-left: 1.5%;
+  width: 24rem;
+  height: 4.9vh;
+}
+.inp3 {
+  width: 20%;
+  margin-left: 1%;
+}
+.range {
+  margin-left: 4%;
+  margin-top: 0.6%;
+}
+.navbar {
+  margin-left: 2%;
+  font-size: 1.4rem;
+  font-size: 1.3rem;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.font {
+  border: 1px solid white;
+  width: 22%;
+  height: 40vh;
+  margin-top: 3%;
+  border-radius: 8px;
+  color: white;
+}
+.font1 {
+  filter: sepia(0.4);
+  background-image: url(./eng111.webp);
+  background-size: cover;
+  color: black;
+}
+.font2 {
+  background-image: url(./images.jpg);
+  background-size: cover;
+  color: black;
+}
+.font3 {
+  background-image: url(./eng5.jpg);
+  background-size: cover;
+  color: #890707;
+}
+.font4 {
+  background-image: url(./eng2.webp);
+  background-size: cover;
+  color: #930515c9;
+  filter: brightness(0.8);
+}
+.font5 {
+  filter: contrast(0.9);
+  background-image: url(./eng3.jpg);
+  background-size: cover;
+  color: black;
+}
+.font6 {
+  filter: opacity(0.7);
+  background-image: url(./eng4.jpg);
+  background-size: cover;
+  color: black;
+}
+.font7 {
+  filter: contrast(2);
+  background-image: url(./201410-1.png);
+  background-size: cover;
+  color: #a94848;
+  filter: brightness(0.8);
+}
+.font8 {
+  filter: sepia(1);
+  background-image: url(./eng11.jpg);
+  background-size: cover;
+  color: black;
+}
+.font9 {
+  filter: sepia(0.7);
+  background-image: url(./eng10.jpg);
+  background-size: cover;
+  color: black;
+}
+.font10 {
+  background-image: url(./eng6.jpg);
+  background-size: cover;
+  color: black;
+}
+.font11 {
+  background-image: url(./aur.jpg);
+  background-size: cover;
+  color: black;
+}
+.font12 {
+  background-image: url(./eng8.jpg);
+  background-size: cover;
+  color: black;
+}
+.internal-font {
+  margin-top: 5%;
+  display: flex;
+  margin-left: 6%;
+  color: black;
+  font-weight: bold;
+}
+.styl {
+  margin-left: 56%;
+  color: rgb(79 72 72);
+}
+.styl1 {
+  margin-left: 6%;
+  margin-top: 1%;
+  color: rgb(44, 41, 41);
+}
+.styl2 {
+  font-size: xx-large;
+  margin-top: 15%;
+  margin-left: 6%;
+}
+.styl3 {
+  font-size: xx-large;
+  color: #d6194a;
+  margin-left: 6%;
+  margin-top: 10%;
+}
+.styl4 {
+  font-family: "Zeyada", cursive;
+  font-size: xx-large;
+  margin-top: 15%;
+  margin-left: 6%;
+  font-weight: bold;
+  line-height: 33px;
+  word-spacing: 10px;
+}
+.styl5 {
+  font-family: "Courgette", cursive;
+  font-size: xx-large;
+  margin-top: 12%;
+  margin-left: 6%;
+  font-weight: bold;
+}
+.styll {
+  margin-left: 63%;
+  color: rgb(78, 74, 74);
+}
+.styl6 {
+  font-family: "Lumanosimo", cursive;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 9%;
+  margin-left: 6%;
+}
+.styl7 {
+  font-family: "Victor Mono", monospace;
+  font-size: x-large;
+  margin-top: 11%;
+
+  text-align: center;
+}
+.styl8 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: x-large;
+  margin-top: 7%;
+
+  text-align: center;
+}
+.styl9 {
+  font-family: "Dancing Script", cursive;
+  font-size: xxx-large;
+  margin-top: 7%;
+
+  text-align: center;
+}
+.styl10 {
+  font-family: "Abril Fatface", cursive;
+  font-size: xx-large;
+  margin-top: 7%;
+
+  text-align: center;
+}
+.styl11 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: xx-large;
+  margin-top: 7%;
+
+  text-align: center;
+}
+.styl12 {
+  font-family: "Indie Flower", cursive;
+  font-size: xx-large;
+  margin-top: 7%;
+  font-weight: bold;
+  text-align: center;
+}
+.styl13 {
+  font-family: "Satisfy", cursive;
+  font-size: xx-large;
+  margin-top: 7%;
+  font-weight: bold;
+  text-align: center;
+}
