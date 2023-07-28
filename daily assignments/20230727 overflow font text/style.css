@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 6.25%;
+}
+.title-cont {
+  display: flex;
+  justify-content: space-between;
+}
+.img-cont {
+  margin-left: 14%;
+  margin-top: 5%;
+}
+.title {
+  margin-left: 6%;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 147px;
+  height: 22vh;
+  font-family: "Alfa Slab One", cursive;
+  margin-left: 7%;
+}
+.content1 {
+  margin-left: 8%;
+  font-size: medium;
+  display: inline-block;
+}
+.content2 {
+  display: inline-block;
+  font-size: medium;
+  margin-left: 9%;
+}
+.content3 {
+  background-color: #cbdcf0;
+  margin: 0.7% 0% 0;
+  width: 119%;
+
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.content4 {
+  color: blue;
+  font-size: large;
+  text-align: right;
+  margin-top: 3%;
+}
+.content5 {
+  margin-top: 1%;
+  text-align: center;
+  font-size: 12px;
+}
+.content6 {
+  font-size: small;
+  margin-left: 4%;
+}
+.content7 {
+  font-size: small;
+  margin-left: 20%;
+}
+.int-cont {
+  width: 17%;
+  display: flex;
+}
+.img1 {
+  height: 25vh;
+  width: 160px;
+}
+.img2 {
+  margin-right: 10%;
+  margin-top: 2%;
+  height: 157px;
+  width: 160px;
+}
+section {
+  display: flex;
+  justify-content: space-evenly;
+}
+.int-cont1 {
+  background-color: white;
+  overflow-x: auto;
+  margin-left: 1%;
+  width: 20%;
+
+  height: 8vh;
+  margin-top: 0.7%;
+}
+.int-cont2 {
+  background-color: white;
+  overflow-x: auto;
+  width: 20%;
+
+  height: 8vh;
+  margin-top: 0.7%;
+}
+.int-cont3 {
+  background-color: white;
+  width: 20%;
+
+  height: 8vh;
+  margin-top: 0.7%;
+}
+.int-cont4 {
+  background-color: white;
+  width: 20%;
+
+  height: 8vh;
+  margin-top: 0.7%;
+}
+.line {
+  margin-top: 0.6%;
+  display: flex;
+  justify-content: space-around;
+}
+.title1 {
+  line-height: 108%;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 65px;
+  height: 19vh;
+  margin-left: 14%;
+  font-family: "Anton", sans-serif;
+}
+span {
+  line-height: 108%;
+  margin-bottom: 0;
+  font-size: 65px;
+  margin-top: 0;
+  font-family: "Anton", sans-serif;
+
+  color: red;
+}
+.ul1 {
+  margin-left: 15%;
+  width: 51%;
+  display: flex;
+}
+li {
+  font-size: x-large;
+}
