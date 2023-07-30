@@ -108,6 +108,7 @@ h3 {
 .anchor {
   display: flex;
   font-size: medium;
+  text-decoration: none;
 }
 .img9 {
   width: 24px;
