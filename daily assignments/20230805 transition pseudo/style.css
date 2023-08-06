@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ff730021;
+}
+.main {
+  margin: 6%auto;
+  /* top: 2%; */
+  position: relative;
+  border: 1px solid black;
+  width: 42%;
+  height: 75vh;
+}
+.bar {
+  width: 6%;
+  border: 1px solid black;
+  position: absolute;
+  bottom: 0;
+}
+.main-cont1 {
+}
+.main-cont1:hover {
+}
+
+.main-cont2:hover {
+}
+.main-cont3 {
+}
+.main-cont3:hover {
+}
+.main-cont4 {
+}
+.main-cont4:hover {
+}
+.main-cont5 {
+}
+.main-cont5:hover {
+}
+.main-cont6 {
+}
+.main-cont6:hover {
+}
+.main-cont7 {
+}
+.main-cont7:hover {
+}
+.main-cont8 {
+}
+.main-cont8:hover {
+}
+.main-cont9 {
+}
+.main-cont9:hover {
+}
+.main-cont10 {
+}
+.main-cont10:hover {
+}
+.main-cont11 {
+}
+.main-cont11:hover {
+}
+.main-cont12 {
+}
+.main-cont12:hover {
+}
+.main-cont13 {
+}
+.main-cont13:hover {
+}
+.main-cont14 {
+}
+.main-cont14:hover {
+}
+.main-cont15 {
+}
+.main-cont16 {
+}
+.main-cont17 {
+}
