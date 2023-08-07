@@ -1,0 +1,251 @@
+# HTML:
+#             Hyper text markup language
+            
+#             What is styling?
+#             To provide an attractive look and design for pleasing user.
+
+#              CSS- 
+#              Cascading Style Sheet
+#  <!--
+#         1. inline styling
+#         2. internal Styling
+#         3. External Styling
+
+
+#         Selector:
+#         1. Select by tag name
+#         2. select by class name
+#         3. Select by ID
+#         4. select by nth child
+#     -->
+#  <!--
+#       1. HTML structure
+#       2. online website edit 
+#       3. extensions installation
+#       4. commenting
+#       5. Tags
+#           intro
+#           types
+
+#           intro:      <what> opening Tag
+#                       </what> Closing Tag
+#                           Example <h1></h1>, <p></p>, <a></a>, <div>, <span>
+#                       <this /> self closing tags
+#                             <hr />, <br />, <img /> , <input />
+
+#           Semantic Tags
+#           Non-semantic tags
+
+
+#           Semantic Tags : self explanatory
+#                 header, footer,  aside, section, main, 
+#           Non-semantic tags : 
+#                 h1, p, a, b, br, 
+
+#     -->
+
+#     Heading tags We have 6 types of heading Tags from h1 - h6
+
+# <!--
+#         heading - h1, h2, h3, h4, h5, h6
+#         p
+#         a
+#         img
+#         formatting
+#                 b, strong, i, u, em, sup, sub, small, mark, del, ins
+#         hr,
+#         br
+#     # -->
+    #    1. label
+    #         Used to describe input type
+    #             for: it connects with input ID to target input box
+
+    #    2. input
+    #         used to create forms
+    #         display : inline
+    #         self closing
+    #             attributes:
+    #                 id: it is unique in entire DOM(HTML) and helps to target input
+    #                 class
+    #                 type: Type defines what kinda of input box it is
+    #                     -> text
+    #                     -> number
+    #                     -> password
+    #                     -> email
+    #                     -> tel
+    #                     -> date
+    #                     -> time
+    #                     -> month
+    #                     -> radio
+    #                     -> checkbox
+    #                     -> button
+    #                 maxlength: Provides validation to input box's character
+    #                 minlength
+    #                 placeholder: Put indication inside the input box ex: Enter your name
+    #                 required:
+    #                 disabled:
+# flex-direction: row;
+#   /*row
+#               column
+#             */
+#   flex-wrap: wrap;
+#   /*wrap
+#               no-wrap
+#             */
+#   justify-content: space-between;
+#   /*
+#       center 
+
+#       start
+#       left
+#       flex-start
+
+#       end
+#       right
+#       flex-end
+
+#       space-between --> provide space in between children, there is not gap on left and right
+#       space-around --> provide space in between children, there is gap on left and right, 
+#                 left right gaps are half as compare to children gap
+#               space-evenly --> provide space in between children, there is equal gap on left, right, and in between children
+#             */
+#   align-items: center;
+#   /*
+#                 center : put all children at center of parent
+                
+#                 start : put all children at top of parent
+#                 left : : put all children at top of parent
+#                 flex-start : : put all children at top of parent
+          
+#                 end : : put all children at end of parent
+#                 right : : put all children at end of parent
+#                 flex-end : : put all children at end of parent
+          
+#                 stretch --> increase or stretch the height of children till parents height,  It will not work if children have their own height 
+       
+<!--
+        1. background-repeat : To repeat any background
+            /* background-repeat: no-repeat; */ . If you don't want to repeat background images
+            /* background-repeat-x: no-repeat; */ if you don't want repeat BG image on x-axis
+            /* background-repeat-y: no-repeat; */ if you don't want repeat BG image on y-axis
+            /* background-size: cover; */ if you want to fill entire width of image to parent
+            /* background-repeat: round; */ is used to adjust images to entire parent
+            background-repeat: space; is used to fill parent with actual size of image whether it is leaving some space
+    
+    
+        2. background-position: use it without background repeat property
+                background-position: center; */   to position your image at center of parent  
+                /* background-position: bottom; */ to position your image at bottom-center of parent
+                /* background-position: left; */  to position your image at left of parent
+                /* background-position: right; */  to position your image at right of parent
+                background-position: top;  to position your image at top-center of parent
+
+        3. background-position-x: to position any image at top  x axis, 
+                background-position-x: center;; // center at top
+                background-position-x: left;; // left at top
+                background-position-x: right;; // right at top
+
+        4. background-position-y: to position images according to vertical adjustment
+                background-position-y: top; // images will start form top edge
+                background-position-y: center; // images will start form center, images could be trimmed from top/bottom
+                background-position-y: bottom; // images will start form bottom, images could be trimmed from top
+                background-position-y: 20%;  // main image line will go down, if we provide %age
+
+        5. background-size - to provide size of given image
+                background-size: cover;  : cover will add single image according to width and height of parent
+                /* background-size: contain;  images will be added according to size of parent. 
+                background-size: 6%;  by using this we can adjust the size of background image
+                /* background-size: 200px 100px; This is used to provide height and width of background image
+
+        6. Filters
+            1. blur
+                filter: blur(10px); it will blur the image
+            2. 
+        -->
+        <!-- .brightness 
+        /* filter: brightness(2); to increase brightness */
+        /* filter: brightness(0.2); to increase brightness
+ */
+ /*            X   Y   Spread  color   */
+ filter: drop-shadow(20px 10px 20px rgb(235, 10, 10)); -->
+ <!-- border properties -->
+  <!-- border-top: 2px solid rgb(42, 5, 115);
+  border-bottom: 2px solid rgb(42, 5, 115);
+  border-right: 2px solid rgb(42, 5, 115);
+  border-left: 2px solid rgb(42, 5, 115);
+
+  border-inline: 2px double red;
+  border-inline-end: 2px solid red;
+  border-inline-start: 2px dashed red; -->
+
+  
+<!-- 
+ blockquote + cite
+    q -> quote
+    pre
+    abbr + title
+    cite
+    code
+    kbd
+    bdo + dir
+            dir= ltr
+            dir=rtl
+    direction
+            direction= ltr
+            direction=rtl    
+    unicode-bidi
+            direction:rtl
+            unicode-bidi: embed;
+            unicode-bidi: bidi-override;
+    white-space
+            white-space: normal;
+            white-space: pre;
+            white-space: pre-line;
+            white-space: nowrap;
+            white-space: break-space;
+    text-align
+            text-align:center
+            text-align:left;
+            text-align:right;
+            text-align:justify;
+    text-decoration
+            text-decoration: none;
+    text-decoration-line
+            text-decoration-line: overline;
+            text-decoration-line: underline;
+            text-decoration-line: line-through;
+            text-decoration-line: overline underline;
+    text-decoration-style
+            text-decoration-style: solid;
+            text-decoration-style: dashed;
+            text-decoration-style: dotted;
+            text-decoration-style: wavy;
+            text-decoration-style: double;
+    text-decoration-color
+            text-decoration-color: red;
+            text-decoration-color: #45ab78;
+    text-decoration-thickness
+            text-decoration-thickness: auto;
+            text-decoration-thickness: 5px;
+            text-decoration-thickness: 10%;
+    text-decoration---shorthand
+            text-decoration: line-type style color thickness
+            text-decoration: line-though wavy white 2px
+   -->
+   <!--
+    Transition
+        use to transit(changing one state to another state) 
+        transition-property
+            target any css property on which you want to apply transition(animation)
+                transition-property: width;
+        transition-duration
+            timing of animation(transition)
+        transition-timing-function
+                speed of transition
+            linear: transit in same speed
+            ease-in: fast start- slow end
+            ease-out: slow start-fast end
+            ease-in-out: slow fast slow
+        transition-delay: 2s
+            to put any delay to start transition
+  -->
