@@ -226,7 +226,7 @@ body {
   z-index: -1;
   left: 28%;
   top: 15%;
-  transform: rotate(313deg);
+  transform: rotate(307deg);
   border-radius: 25% 25%0 0;
   position: absolute;
   width: 18%;
@@ -245,21 +245,21 @@ body {
 .extra1 {
   left: 19%;
   transform: rotate(17deg);
-  background: #3c8bd0;
   top: 33%;
   position: absolute;
   width: 14%;
   height: 12vh;
+  background: rgb(60, 139, 208);
 }
 .extra2 {
   z-index: -1;
   left: 40%;
-  transform: rotate(63deg);
-  background: #3c8bd0;
+  transform: rotate(57deg);
   top: 8%;
   position: absolute;
   width: 14%;
   height: 12vh;
+  background: rgb(60, 139, 208);
 }
 .left-fing {
 }

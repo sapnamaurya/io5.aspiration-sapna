@@ -3,81 +3,693 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  background: #ff730021;
-}
 .main {
-  margin: 6%auto;
-  /* top: 2%; */
+  display: flex;
+  left: 0.5%;
+  width: 100%;
   position: relative;
-  border: 1px solid black;
-  width: 42%;
-  height: 75vh;
-}
-.bar {
-  width: 6%;
-  border: 1px solid black;
-  position: absolute;
-  bottom: 0;
-}
-.main-cont1 {
-}
-.main-cont1:hover {
 }
 
+.bar {
+  background-color: #62232b;
+  width: 2%;
+  position: absolute;
+  top: 0;
+  border: 1px solid black;
+}
+.main-cont1 {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  height: 25vh;
+}
+.main-cont1:hover {
+  height: 29vh;
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+}
+.main-cont2 {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+
+  height: 49vh;
+  left: 2.5%;
+}
 .main-cont2:hover {
+  height: 53vh;
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
 }
 .main-cont3 {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+
+  height: 38vh;
+  left: 5%;
 }
 .main-cont3:hover {
+  height: 42vh;
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
 }
 .main-cont4 {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+
+  height: 76vh;
+  left: 7.5%;
 }
 .main-cont4:hover {
+  height: 73vh;
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
 }
 .main-cont5 {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+
+  left: 10%;
+  height: 35vh;
 }
 .main-cont5:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 40vh;
 }
 .main-cont6 {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+
+  left: 12.5%;
+  height: 25vh;
 }
 .main-cont6:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 29vh;
 }
 .main-cont7 {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+
+  left: 15%;
+  height: 14vh;
 }
 .main-cont7:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 19vh;
 }
+
 .main-cont8 {
+  left: 17.5%;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+
+  height: 35vh;
 }
 .main-cont8:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 40vh;
 }
 .main-cont9 {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+
+  left: 20%;
+  height: 30vh;
 }
 .main-cont9:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 35vh;
 }
 .main-cont10 {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+
+  left: 22.5%;
+  height: 21vh;
 }
 .main-cont10:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 27vh;
 }
 .main-cont11 {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+
+  left: 25%;
+  height: 35vh;
 }
 .main-cont11:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 40vh;
 }
 .main-cont12 {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+
+  left: 27.5%;
+  height: 43vh;
 }
 .main-cont12:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 49vh;
 }
 .main-cont13 {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+
+  left: 30%;
+  height: 23vh;
 }
 .main-cont13:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 28vh;
 }
 .main-cont14 {
+  left: 32.5%;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+
+  height: 57vh;
 }
 .main-cont14:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 62vh;
 }
 .main-cont15 {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+
+  left: 35%;
+  height: 19vh;
+}
+.main-cont15:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 24vh;
 }
 .main-cont16 {
+  left: 37.5%;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+
+  height: 43vh;
+}
+.main-cont16:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 48vh;
 }
 .main-cont17 {
+  left: 40%;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+
+  height: 34vh;
+}
+.main-cont17:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 50vh;
+}
+.main-cont18 {
+  left: 42.5%;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+
+  height: 25vh;
+}
+.main-cont18:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 50vh;
+}
+.main-cont19 {
+  left: 45%;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+
+  height: 53vh;
+}
+.main-cont19:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 70vh;
+}
+.main-cont20 {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+
+  left: 47.5%;
+  height: 45vh;
+}
+.main-cont20:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 70vh;
+}
+.main-cont21 {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+
+  left: 50%;
+  height: 28vh;
+}
+.main-cont21:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 55vh;
+}
+.main-cont22 {
+  left: 52.5%;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+
+  height: 61vh;
+}
+.main-cont22:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 66vh;
+}
+.main-cont23 {
+  left: 55%;
+  height: 38vh;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+.main-cont23:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 42vh;
+}
+.main-cont24 {
+  left: 57.5%;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+
+  height: 30vh;
+}
+.main-cont24:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 35vh;
+}
+.main-cont25 {
+  left: 60%;
+  height: 21vh;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.main-cont25:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 65vh;
+}
+
+.main-cont26 {
+  left: 62.5%;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+
+  height: 26vh;
+}
+.main-cont26:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 35vh;
+}
+.main-cont27 {
+  left: 65%;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+
+  height: 41vh;
+}
+.main-cont27:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 45vh;
+}
+.main-cont28 {
+  left: 67.5%;
+  height: 69vh;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.main-cont28:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 74vh;
+}
+.main-cont29 {
+  left: 70%;
+  height: 30vh;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.main-cont29:hover {
+  height: 35vh;
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+}
+.main-cont30 {
+  left: 72.5%;
+  height: 57vh;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.main-cont30:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 61vh;
+}
+.main-cont31 {
+  left: 75%;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+
+  height: 52vh;
+}
+.main-cont31:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 59vh;
+}
+.main-cont32 {
+  left: 77.5%;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+
+  height: 15vh;
+}
+.main-cont32:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 20vh;
+}
+.main-cont33 {
+  left: 80%;
+  height: 41vh;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.main-cont33:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 46vh;
+}
+.main-cont34 {
+  left: 82.5%;
+  height: 61vh;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.main-cont34:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 67vh;
+}
+.main-cont35 {
+  left: 85%;
+  height: 34vh;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.main-cont35:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 40vh;
+}
+.main-cont36 {
+  left: 87.5%;
+  height: 46vh;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.main-cont36:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 51vh;
+}
+.main-cont37 {
+  left: 90%;
+  height: 26vh;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.main-cont37:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 33vh;
+}
+.main-cont38 {
+  left: 92.5%;
+  height: 17vh;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.main-cont38:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 22vh;
+}
+.main-cont39 {
+  height: 30vh;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+
+  left: 95%;
+}
+.main-cont39:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 35vh;
+}
+.main-cont40 {
+  width: 1.8%;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+
+  left: 97.5%;
+  height: 23vh;
+}
+.main-cont40:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(198, 39, 79),
+    rgb(112, 30, 172),
+    rgb(161, 48, 28)
+  );
+  height: 30vh;
 }
