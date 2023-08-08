@@ -24,7 +24,7 @@
   height: 25vh;
 }
 .main-cont1:hover {
-  height: 29vh;
+  height: 40vh;
   background-image: linear-gradient(
     to bottom left,
     rgb(198, 39, 79),
@@ -41,7 +41,7 @@
   left: 2.5%;
 }
 .main-cont2:hover {
-  height: 53vh;
+  height: 60vh;
   background-image: linear-gradient(
     to bottom left,
     rgb(198, 39, 79),
@@ -58,7 +58,7 @@
   left: 5%;
 }
 .main-cont3:hover {
-  height: 42vh;
+  height: 50vh;
   background-image: linear-gradient(
     to bottom left,
     rgb(198, 39, 79),
@@ -75,7 +75,7 @@
   left: 7.5%;
 }
 .main-cont4:hover {
-  height: 73vh;
+  height: 72vh;
   background-image: linear-gradient(
     to bottom left,
     rgb(198, 39, 79),
@@ -98,7 +98,7 @@
     rgb(112, 30, 172),
     rgb(161, 48, 28)
   );
-  height: 40vh;
+  height: 50vh;
 }
 .main-cont6 {
   transition-property: all;
@@ -115,7 +115,7 @@
     rgb(112, 30, 172),
     rgb(161, 48, 28)
   );
-  height: 29vh;
+  height: 40vh;
 }
 .main-cont7 {
   transition-property: all;
@@ -132,7 +132,7 @@
     rgb(112, 30, 172),
     rgb(161, 48, 28)
   );
-  height: 19vh;
+  height: 30vh;
 }
 
 .main-cont8 {
