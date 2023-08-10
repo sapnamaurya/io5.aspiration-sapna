@@ -24,7 +24,7 @@ body {
   width: 42%;
   border: 68px solid white;
   animation-name: large-circle;
-  animation-duration: 1s;
+  animation-duration: 6s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }

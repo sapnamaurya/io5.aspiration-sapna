@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.solar-system {
+  background: url(https://thumbs.gfycat.com/BlissfulIcyCoypu-size_restricted.gif);
+  width: 100%;
+  height: 100vh;
+}
+.sun {
+  left: 51%;
+  position: absolute;
+  top: 43%;
+}
+.movement2 {
+  height: 28.8vh;
+  border: 2px dotted white;
+  width: 14%;
+  position: relative;
+  border-radius: 50%;
+  top: 35%;
+  left: 47.2%;
+  animation-name: mercury;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes mercury {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.movement3 {
+  border-radius: 50%;
+  bottom: 0%;
+  position: relative;
+  left: 44%;
+  height: 41vh;
+  width: 20%;
+  border: 2px dotted white;
+  animation-name: venus;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes venus {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.movement4 {
+  border-radius: 50%;
+  bottom: 47%;
+  position: relative;
+  left: 41%;
+  height: 53.4vh;
+  width: 26%;
+  border: 2px dotted white;
+  animation-name: earth;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes earth {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.movement5 {
+  border-radius: 50%;
+  bottom: 105%;
+  position: relative;
+  left: 38.5%;
+  height: 64vh;
+  width: 31%;
+  border: 2px dotted white;
+  animation-name: mars;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes mars {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.movement6 {
+  border-radius: 50%;
+  bottom: 175%;
+  position: relative;
+  left: 35%;
+  height: 78vh;
+  width: 38%;
+  border: 2px dotted white;
+  animation-name: jupiter;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes jupiter {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.movement7 {
+  border-radius: 50%;
+  bottom: 259%;
+  position: relative;
+  left: 32%;
+  height: 90.4vh;
+  width: 44%;
+  border: 2px dotted white;
+  animation-name: saturn;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes saturn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.movement8 {
+  border-radius: 50%;
+  bottom: 356%;
+  position: relative;
+  left: 29%;
+  height: 102.69vh;
+  width: 50%;
+  border: 2px dotted white;
+  animation-name: uranus;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes uranus {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.movement9 {
+  border-radius: 50%;
+  bottom: 466%;
+  position: relative;
+  left: 26%;
+  height: 115.09vh;
+  width: 56%;
+  border: 2px dotted white;
+  animation-name: neptune;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes neptune {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.img1 {
+  left: -5%;
+  position: absolute;
+  top: 2%;
+}
+.img2 {
+  left: 81%;
+  position: absolute;
+  top: 60%;
+}
+.img3 {
+  left: 69%;
+  position: absolute;
+  top: 1%;
+}
+.img4 {
+  left: 17%;
+  position: absolute;
+  bottom: -3%;
+}
+.img5 {
+  left: -5%;
+  position: absolute;
+  top: 33%;
+}
+.img6 {
+  right: 1%;
+  position: absolute;
+  top: 73%;
+}
+.img7 {
+  left: 8%;
+  position: absolute;
+  top: 11%;
+}
+.img8 {
+  right: 8%;
+  position: absolute;
+  top: 11%;
+}
+.name {
+  text-shadow: 2px 2px 8px #be9292;
+  box-shadow: -1px 5px 7px #a57777;
+  padding: 1%;
+  margin-top: 1%;
+  border-radius: 50px 0 50px 0;
+  position: absolute;
+  font-size: 5rem;
+  height: 16%;
+  width: 31%;
+  border: 4px solid #8d7171;
+  color: #946e6e;
+}
