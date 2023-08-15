@@ -1,0 +1,284 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 6.25%;
+}
+body {
+  height: 200vh;
+  margin: auto;
+  border: 1px solid black;
+  width: 90%;
+}
+.title-cont {
+  display: flex;
+}
+.img-cont {
+  margin-top: 4%;
+}
+.title {
+  margin-bottom: 0;
+  margin-top: 2px;
+  font-size: 134px;
+  height: 19vh;
+  font-family: "Alfa Slab One", cursive;
+  margin-left: 19%;
+}
+.content1 {
+  margin-left: 19%;
+  font-size: large;
+  display: inline-block;
+}
+.content2 {
+  display: inline-block;
+  font-size: large;
+  margin-left: 9%;}
+.content3 {
+  background-color: #cbdcf0;
+  margin: 0.7% 9.3% 0;
+  width: 106.5%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.content4 {
+  color: blue;
+  font-size: large;
+  text-align: right;
+  margin-top: 3%;
+}
+.content5 {
+  margin-top: 1%;
+  text-align: center;
+  font-size: 16px;
+}
+.content6 {
+  font-size: small;
+  margin-left: 5%;
+}
+.content7 {
+  font-size: small;
+  margin-right: 3%;
+}
+.int-cont {
+
+  width: 13%;
+  display: flex;
+}
+.img1 {
+  margin-left: 43%;
+  height: 25vh;
+  width: 204px;
+}
+.img2 {
+  margin-right: 3%;
+  margin-top: 1%;
+  height: 192px;
+  width: 198px;
+}
+section {
+  display: flex;
+  justify-content: space-evenly;
+}
+.int-cont1 {
+  background-color: white;
+  overflow-x: auto;
+  margin-left: 1%;
+  width: 20%;
+  height: 8vh;
+  margin-top: 0.7%;
+}
+.int-cont2 {
+  background-color: white;
+  overflow-x: auto;
+  width: 20%;
+  height: 8vh;
+  margin-top: 0.7%;
+}
+.int-cont3 {
+  background-color: white;
+  width: 20%;
+
+  height: 8vh;
+  margin-top: 0.7%;
+}
+.int-cont4 {
+  background-color: white;
+  width:20%;
+
+  height: 8vh;
+  margin-top: 0.7%;
+}
+.line {
+  margin-top: 0.6%;
+  display: flex;
+  justify-content: space-between;
+}
+.title1 {
+  line-height: 108%;
+  margin-bottom: 0;
+  margin-top: 17px;
+  font-size: 73.5px;
+  height: 9vh;
+  margin-left: 4%;
+  font-family: "Anton", sans-serif;
+}
+.title2 {
+  margin-top: 1%;
+  margin-left: 6%;
+  justify-content: space-between;
+  display: flex;margin-top: 1%;
+}
+span {
+  margin-bottom: 0;
+  font-size: 73.5px;
+  margin-top: 0;
+  font-family: "Anton", sans-serif;
+  color: red;
+}
+.span2 {
+  font-size: 46px;
+  color: red;
+  font-family: none;
+}
+li {
+  font-size: 23px;    width: 89%;
+}
+.para-cont {
+  justify-content: space-between;margin-top: 2%;
+  display: flex;
+}
+.para-cont1 {
+  margin-left: 4%;
+  width: 33%;
+}
+p {
+  font-size: large;
+}
+.img {
+  margin-left: 1%;
+  width: 95%;
+  height: 67vh;
+}
+.img3 {
+  height: 36vh;
+  height: 43%;
+  width: 25%;
+  margin-left: 9%;
+  margin-top: -17%;
+  box-shadow: 0px 0px 1px 7px white;
+}
+.img4 {
+  margin-top: 4%;
+  margin-left: 2%;
+  height: 10%;
+  width: 107px;
+}
+.img5 {
+  margin: 3% 2% 0% 2%;
+  height: 9vh;
+  width: 17%;
+}
+.img6 {
+  margin-left: 1%;
+  height: 41vh;
+  width: 38%;
+}
+b {
+  font-size: large;
+}
+.highlight {
+  font-family: none;
+  font-size: 98px;
+  margin-right: 2%;
+  float: left;
+  height: 96px;
+  margin-top: -5%;
+}
+.para {
+  text-indent: 5%;
+}
+.para6 {
+  margin-top: -2%;
+  margin-left: 69%;
+  font-size: x-small;
+}
+.span1 {
+  margin-bottom: 0;
+  font-size: 15.5px;
+  margin-top: 0;
+
+  color: red;
+}
+.para5 {
+  margin-left: 4%;
+}
+.para7 {
+  font-size: small;
+  overflow-x: auto;
+  margin-left: 3%;
+  width: 48%;
+  height: 44.6vh;
+  margin-top: 0.7%;
+}
+.para-8 {
+  margin: 4.5% 2% 0%;
+  height: 7vh;
+  background-color: white;
+}
+.para9 {
+  background-color: white;
+  margin: 4% 2% 0% 0%;
+  height: 8vh;
+}
+.para10 {
+  font-size: 46px;
+}
+.para11 {
+  height: 40vh;
+  overflow-x: auto;
+  width: 52%;
+}
+.para12 {
+  margin-left: 2%;
+  overflow-x: auto;
+  font-size: 18px;
+  height: 40vh;
+  width: 50%;
+  background-color: #dfe7d0;
+}
+hr {
+  width: 96%;
+  margin-left: 2%;
+  margin-top: 4%;
+}
+.last-cont {
+  height: 57vh;
+  margin-left: 2%;
+  margin-top: 2%;
+  background-color: #eef1f6;
+  width: 54%;
+}
+.container {
+  display: flex;
+}
+.side-cont {
+  margin-top: 2%;
+  height: 58vh;
+  padding: 1%;
+  width: 50%;
+}
+h1 {
+  margin-top: 2%;
+  text-align: center;
+  font-size: x-large;
+}
+.container2 {
+  margin-left: 7%;
+  margin-top: 2%;
+}
+.para-img {
+  float: right;
+  display: flex;
+}

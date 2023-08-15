@@ -7,14 +7,14 @@ body {
   width: 100%;
   height: 100vh;
   font-family: "Vollkorn", serif;
-
+font-size: large;
   background-color: #d9edf7;
 }
 header {
   margin: auto;
 
   width: 94%;
-  height: 146px;
+  height: 187px;
 }
 .nav-bar1 {
   width: 100%;
@@ -81,13 +81,11 @@ h2 {
   color: #202afe;
   padding: 0.3%;
 }
-.nav-third {
+.nav-third {height: 5vh;
   display: flex;
   width: 100%;
-  height: 5vh;
   padding: 0.5%;
-
-  color: white;
+color: white;
   background-image: linear-gradient(to top, #1a7cb5, #3fabcb);
 }
 label {
@@ -109,12 +107,12 @@ select:hover {
 }
 
 .btn2 {
+  font-size: medium;
   background: #d6f388;
   color: red;
   border-radius: 4px;
   width: 107%;
-  height: 4vh;
-  padding: 4.5%;
+  height: 3.5vh;
   margin-top: -4%;
   transition-property: all;
   border: none;
@@ -123,11 +121,12 @@ select:hover {
   border: 3px solid black;
 }
 .btn3 {
+  font-size: medium;
   background: #d6f388;
   color: red;
   border-radius: 4px;
-  width: 104%;
-  height: 4vh;
+  width: 108%;
+  height: 3.5vh;
   margin-left: 10%;
   transition-property: all;
   padding: 4.5%;
@@ -138,7 +137,7 @@ select:hover {
   border: 3px solid black;
 }
 main {
-  height: 68%;
+  height: 63%;
   background: white;
   margin: auto;
 
@@ -151,41 +150,55 @@ main {
   margin-top: 1%;
   width: 14%;
 }
-.img2 {
+.img2 {    margin-left: 0.7%;
   margin-top: 1%;
-  width: 14%;
+  width: 14.2%;
 }
-.img3 {
+.imgggg{
+  margin-left: .99%;
+}
+.img3 {    margin-left: 2.2%;
   margin-top: 1%;
   width: 16%;
 }
-.img4 {
-  margin-top: 1%;
-  width: 16%;
+.imgg{
+  margin-left: .5%;
 }
-.img5 {
+.img4 {    margin-left: 2.7%;
   margin-top: 1%;
-  width: 17%;
+  width: 13%;
+}
+.imggg{
+  margin-left: 2.4%;
+}
+.img5 {    margin-left: 2%;
+  margin-top: 1%;
+  width: 15%;
 }
 .img6 {
   margin-top: 1%;
 
-  width: 21%;
+  width: 17%;
 }
-.pics {
+/* .pics {
   margin-left: 16%;
-}
+} */
 .para {
   text-align: center;
 }
 .img7 {
-  width: 18%;
+  width: 16%;margin-left: 0.5%;
+}
+.imggggg{
+  margin-left: -1.1%;
 }
 .img8 {
-  margin-left: -1.5%;
+  margin-left: 2%;
   width: 16%;
 }
-
+.img9{
+  margin-left: -1%;
+}
 footer {
   background: #1ca6ef;
   height: 14vh;
@@ -206,7 +219,7 @@ li {
   list-style: none;
   color: white;
 }
-.imgaes {
+.imgaes {    margin-left: 2%;
   margin-top: 1%;
 }
 .picture1:hover {
