@@ -144,72 +144,70 @@
   0% {
     left: 0%;
     top: 52.2%;
-  }
-  5% {
+}
+5% {
     transform: rotate(0deg);
-  }
-  10% {
-    left: 18.7%;
-    top: 52.2%;
-  }
-  15% {
-    transform: rotate(-90deg);
-  }
-  20% {
+}
+10% {
     left: 18.5%;
-    top: 32.8%;
-  }
-  25% {
-    transform: rotate(0deg);
-  }
-  30% {
-    left: 30.5%;
-    top: 33%;
-  }
-  35% {
+    top: 52.2%;
+}
+15% {
     transform: rotate(-90deg);
-  }
-  40% {
-    left: 31%;
+}
+20% {
+    left: 18.5%;
+    top: 32%;
+}
+25% {
+    transform: rotate(0deg);
+}
+30% {
+    left: 30%;
+    top: 32%;
+}
+35% {
+    transform: rotate(-90deg);
+}
+40% {
+    left: 30%;
     top: 20.7%;
-  }
-
-  45% {
+}
+45% {
     transform: rotate(0deg);
-  }
-  50% {
-    left: 46%;
+}
+50% {
+    left: 44%;
     top: 20.1%;
-  }
-  55% {
+}
+55% {
     transform: rotate(90deg);
-  }
-  60% {
-    left: 46.4%;
+}
+60% {
+    left: 44%;
     top: 31.7%;
-  }
-  65% {
+}
+65% {
     transform: rotate(0deg);
-  }
-  70% {
-    left: 57.5%;
+}
+70% {
+    left: 55%;
     top: 32.7%;
-  }
-  75% {
+}
+75% {
     transform: rotate(90deg);
-  }
-  80% {
-    left: 58%;
+}
+80% {
+    left: 55%;
     top: 52.2%;
-  }
-  85% {
+}
+85% {
     transform: rotate(0deg);
-  }
-
-  100% {
-    left: 97%;
+}
+100% {
+    left: 100%;
     top: 52.2%;
-  }
+}
 }
 .image {
   border-radius: 50%;
@@ -231,77 +229,78 @@
   0% {
     left: 0%;
     top: 33%;
-  }
-  5% {
+}
+
+5% {
     transform: rotate(180deg);
-  }
-  10% {
+}
+10% {
     left: 5%;
     top: 33%;
-  }
-  15% {
+}
+15% {
     transform: rotate(270deg);
-  }
-  20% {
+}
+20% {
     left: 5%;
     top: 53%;
-  }
-  25% {
+}
+25% {
     transform: rotate(180deg);
-  }
-  30% {
-    left: 19%;
+}
+30% {
+    left: 18.5%;
     top: 53%;
-  }
-  35% {
+}
+35% {
     transform: rotate(90deg);
-  }
-  40% {
-    left: 19%;
+}
+40% {
+    left: 18.5%;
     top: 33%;
-  }
-  45% {
+}
+45% {
     transform: rotate(180deg);
-  }
-  50% {
-    left: 31%;
+}
+50% {
+    left: 30%;
     top: 33%;
-  }
-  55% {
+}
+55% {
     transform: rotate(90deg);
-  }
-  60% {
-    left: 31%;
-    top: 21.7%;
-  }
-  65% {
+}
+60% {
+    left: 30%;
+    top: 21%;
+}
+65% {
     transform: rotate(180deg);
-  }
-  70% {
-    left: 45%;
-    top: 22%;
-  }
-  75% {
+}
+70% {
+    left: 43.5%;
+    top: 21%;
+}
+75% {
     transform: rotate(90deg);
-  }
-  80% {
-    left: 45%;
-    top: 10%;
-  }
-  85% {
+}
+80% {
+    left: 43.5%;
+    top: 9.5%;
+}
+85% {
     transform: rotate(0deg);
-  }
-  90% {
-    left: 19%;
-    top: 10%;
-  }
-  95% {
+}
+90% {
+    left: 18.3%;
+    top: 9.5%;
+}
+95% {
     transform: rotate(90deg);
-  }
-  100% {
-    left: 19%;
-    top: -1%;
-  }
+}
+100% {
+    left: 18.3%;
+    top: 0%;
+}
 }
 .car4 {
   transform: rotate(90deg);
@@ -313,79 +312,79 @@
 }
 @keyframes car4 {
   0% {
-    left: 31.2;
+    left: 30%;
     top: 0%;
-  }
-  5% {
+}
+5% {
     transform: rotate(90deg);
-  }
-  10% {
-    left: 31.2%;
+}
+10% {
+    left: 30%;
     top: 8.5%;
-  }
-  15% {
+}
+15% {
     transform: rotate(0deg);
-  }
-  20% {
-    left: 45.1%;
+}
+20% {
+    left: 43.2%;
     top: 8.5%;
-  }
-  25% {
+}
+25% {
     transform: rotate(90deg);
-  }
-  30% {
-    left: 45.1%;
+}
+30% {
+    left: 43.2%;
     top: 32.5%;
-  }
-  35% {
+}
+35% {
     transform: rotate(0deg);
-  }
-  40% {
-    left: 56.9%;
+}
+40% {
+    left: 54.9%;
     top: 32.5%;
-  }
-  45% {
+}
+45% {
     transform: rotate(90deg);
-  }
-  50% {
-    left: 56.9%;
+}
+50% {
+    left: 54.9%;
     top: 51.9%;
-  }
-  55% {
+}
+55% {
     transform: rotate(0deg);
-  }
-  60% {
-    left: 71.1%;
+}
+60% {
+    left: 68.1%;
     top: 52.5%;
-  }
-  65% {
+}
+65% {
     transform: rotate(-90deg);
-  }
-  70% {
-    left: 71.1%;
+}
+70% {
+    left: 68.1%;
     top: 32.5%;
-  }
-  75% {
+}
+75% {
     transform: rotate(0deg);
-  }
-  80% {
-    left: 82.6%;
+}
+80% {
+    left: 79.1%;
     top: 32.7%;
-  }
-  85% {
+}
+85% {
     transform: rotate(90deg);
-  }
-  90% {
-    left: 82.6%;
+}
+90% {
+    left: 79.1%;
     top: 52.3%;
-  }
-  95% {
+}
+95% {
     transform: rotate(0deg);
-  }
-  100% {
-    left: 102%;
+}
+100% {
+    left: 106%;
     top: 52.3%;
-  }
+}
 }
 
 .car5 {
@@ -398,77 +397,76 @@
 }
 @keyframes car5 {
   0% {
-    left: 56.7%;
+    left: 54.5%;
     top: 0%;
-  }
-  5% {
+}
+5% {
     transform: rotate(180deg);
-  }
-  10% {
-    left: 56.7%;
+}
+10% {
+    left: 54.5%;
     top: 7.7%;
-  }
-  15% {
+}
+15% {
     transform: rotate(270deg);
-  }
-  20% {
-    left: 44.7%;
+}
+20% {
+    left: 43.2%;
     top: 7.7%;
-  }
-  25% {
+}
+25% {
     transform: rotate(180deg);
-  }
-  30% {
-    left: 44.7%;
-    top: 51.9%;
-  }
-  35% {
+}
+30% {
+    left: 43.2%;
+    top: 51.7%;
+}
+35% {
     transform: rotate(90deg);
-  }
-  40% {
-    left: 70.5%;
-    top: 51.9%;
-  }
-  45% {
+}
+40% {
+    left: 67.5%;
+    top: 51.7%;
+}
+45% {
     transform: rotate(180deg);
-  }
-  50% {
-    left: 70.5%;
-    top: 75.9%;
-  }
-  55% {
-    transform: rotate(90deg);
-  }
-  60% {
-    left: 82.5%;
-    top: 75.9%;
-  }
-  65% {
-    transform: rotate(0deg);
-  }
-  70% {
-    left: 82.5%;
-    top: 64.5%;
-  }
-  75% {
-    transform: rotate(90deg);
-  }
-  80% {
-    left: 96.5%;
-    top: 64.5%;
-  }
-  85% {
-    transform: rotate(180deg);
-  }
-  90% {
-    left: 96.5%;
+}
+50% {
+    left: 67.5%;
     top: 75.3%;
-  }
-  95% {
+}
+55% {
     transform: rotate(90deg);
-  }
-  100% {
+}
+60% {
+    left: 79%;
+    top: 75.3%;
+}
+65% {
+    transform: rotate(0deg);
+}
+70% {
+    left: 79%;
+    top: 64%;
+}
+75% {
+    transform: rotate(90deg);
+}
+80% {
+    left: 92.3%;
+    top: 64%;
+}
+85% {
+    transform: rotate(180deg);
+}
+90% {
+    left: 92.3%;
+    top: 75.3%;
+}
+95% {
+    transform: rotate(90deg);
+}
+100% {
     left: 100%;
     top: 75.3%;
-  }
-}
+}}

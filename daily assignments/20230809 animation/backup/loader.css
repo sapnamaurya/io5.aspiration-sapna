@@ -20,9 +20,9 @@ body {
   left: 30%;
   top: 13%;
   position: absolute;
-  height: 50vh;
-  width: 42%;
-  border: 91px solid white;
+  height: 340px;
+  width: 340px;
+  border: 64px solid white;
   animation-name: large-circle;
   animation-duration: 6s;
   animation-timing-function: ease-in-out;
@@ -38,9 +38,9 @@ body {
 }
 .loader-small-circle-rotate {
   background: gray;
-  left: 91%;
+  left: 90%;
   position: absolute;
   border-radius: 50%;
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
 }

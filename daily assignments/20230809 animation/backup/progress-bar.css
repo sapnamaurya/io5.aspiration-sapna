@@ -18,7 +18,7 @@ body {
 .progress-bar-border {
   border-radius: 98px;
   height: 7vh;
-  border: 26px solid #d93b3b;
+  border: 8px solid #d93b3b;
   left: 26%;
   top: 40%;
   box-shadow: 2px 4px 7px;
@@ -26,8 +26,6 @@ body {
   width: 50%;
 }
 .progress-bar {
-  position: absolute;
-  top: 3%;
   background: #4f4747;
   border-radius: 82px;
   animation-iteration-count: infinite;
@@ -46,19 +44,18 @@ body {
   }
 }
 h3 {
-  font-size: 6rem;
+  font-size: 2.4rem;
   left: 29%;
   position: absolute;
   top: 54%;
 }
 .boader-bottom {
-  width: 6%;
-  height: 1rem;
+  width: 3%;
   position: absolute;
-  left: 45%;
-  animation: loading 6s linear 7s infinite;
-  border-bottom: 34px dotted;
-  top: 57%;
+  left: 53%;
+  animation: loading 6.5s linear infinite;
+  border-bottom: 11px dotted;
+  top: 58%;
 }
 @keyframes loading {
   from {

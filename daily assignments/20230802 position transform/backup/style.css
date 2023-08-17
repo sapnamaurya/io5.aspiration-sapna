@@ -41,17 +41,17 @@ body {
   width: 30%;
   height: 30vh;
   position: absolute;
-  left: 26%;
+  left: 27%;
   top: 29%;
   filter: drop-shadow(10px 7px 8px black);
   transform: rotate(45deg);
   z-index: 2;
 }
 .int-cont5 {
-top:20.5%;
+top:21.2%;
   border-radius: 13px;
   transform: rotate(45deg);
-  left: 76%;
+  left: 74%;
   background-image: linear-gradient(
     45deg,
     #376241,
@@ -93,19 +93,19 @@ top:20.5%;
 .int-cont7 {
   top: 66%;
   position: absolute;
-  left: -18%;
+  left: -17%;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
   height: 10vh;
   transform: rotate(-44deg);
   background-image: linear-gradient(to bottom, #376241, #376241, #4e996a);
-  width: 81%;
+  width: 79%;
 }
 .int-cont8 {
   transform: rotate(45deg);
   left: 44%;
   z-index: 2;
-  top: 58%;
+  top: 59%;
   filter: drop-shadow(10px 7px 8px black);
   position: absolute;
   width: 54%;
@@ -126,8 +126,8 @@ p {
   border-radius: 11px;
   transform: rotate(45deg);
   height: 24vh;
-  left: 53%;
-  top: 13.7%;
+  left: 52.4%;
+  top: 13.2%;
   filter: drop-shadow(10px 7px 8px black);
   position: absolute;
   width: 23%;
@@ -190,7 +190,7 @@ p {
   font-weight: bold;
 
   font-size: 1.9rem;
-  margin-top: 26%;
+  margin-top: 20%;
   margin-left: 26%;
   list-style-type: none;
 }

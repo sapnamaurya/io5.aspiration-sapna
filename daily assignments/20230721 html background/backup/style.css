@@ -21,7 +21,7 @@ h1 {
 }
 .navbar {
   margin-top: 1.8%;
-  margin-left: 21.4%;
+  margin-left: 14.4%;
   font-size: 2rem;
   display: flex;
 }
@@ -38,9 +38,9 @@ input {
   margin-top: 11%;
   height: 5vh;
   border-radius: 93px;
-  padding: 7%;
-  width: 119%;
-  font-size: 1.5rem;
+  padding: 2%;
+  width: 129%;
+  font-size: 1.2rem;
   color: white;
   background-color: rgb(243, 43, 73);
 }
@@ -83,13 +83,13 @@ h2 {
   color: white;
   background-color: rgb(243, 43, 73);}
 .footer {
-  margin-top: 13%;
+  margin-top: 11%;
 }
 .tag {
   margin-left: 4%;
-  margin-top: 12.5%;
+  margin-top: 10.5%;
 }
 .tag1 {
-  margin-top: 12.5%;
+  margin-top: 10.5%;
   margin-left: 1%;
 }
