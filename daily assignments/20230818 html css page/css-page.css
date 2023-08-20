@@ -77,6 +77,8 @@ h2 {
   width: 15%;
   padding: 0.5%;
   font-size: 19px;
+  transition-property: all;
+  transition-duration: 2s;
   height: 5.7vh;
   color: white;
   background: #ff8672;
@@ -88,12 +90,17 @@ h2 {
   text-align: center;
   width: 11%;
   padding: 0.5%;
+  transition-property: all;
+  transition-duration: 2s;
   font-size: 19px;
   height: 5.7vh;
   color: white;
   background: #ff8672;
 }
 .btn3:hover {
+  background: #2a4149;
+}
+.btn9:hover {
   background: #2a4149;
 }
 .main {
@@ -125,10 +132,18 @@ h1 {
   font-weight: bold;
   width: 29%;
   padding: 0.7%;
+  transition-property: all;
+  transition-duration: 2s;
   font-size: 19px;
   height: 5.7vh;
   color: white;
   background: #ff8672;
+}
+.btn4:hover {
+  background: #2a4149;
+}
+.btn5:hover {
+  background: #2a4149;
 }
 .btn5 {
   margin: 6% 0% 0 4%;
@@ -138,6 +153,8 @@ h1 {
   padding: 0.7%;
   font-size: 19px;
   height: 5.7vh;
+  transition-property: all;
+  transition-duration: 2s;
   color: white;
   background: #ff8672;
 }
@@ -573,10 +590,38 @@ h3 {
   top: 75%;
 }
 .border9 {
+  border-radius: 0 50px;
+  background: white;
+  position: absolute;
+  width: 90%;
+  height: 53%;
+  top: 24%;
+  left: 0%;
   font-family: "Merriweather", serif;
 }
-.border10 {
+.border9-title1 {
   font-family: "Merriweather", serif;
+  position: absolute;
+  top: 24%;
+  font-size: 1.5rem;
+  color: #3d7b8b;
+  margin-left: 7%;
+  margin-top: 1%;
+}
+.border9-title2 {
+  font-family: "Merriweather", serif;
+  left: 9%;
+  font-size: 14px;
+  color: #3d7b8b;
+  position: absolute;
+  top: 53%;
+}
+.border9-img {
+  height: 59%;
+  width: 63%;
+  position: absolute;
+  left: 47%;
+  top: 41%;
 }
 .second-image {
   margin-left: 14%;
@@ -638,4 +683,11 @@ footer {
 .fa-music {
   font-size: 1.3rem;
   margin-left: 33%;
+}
+.image-cont:hover {
+  filter: brightness(0.5);
+}
+.image-cont {
+  transition-property: all;
+  transition-duration: 2s;
 }
