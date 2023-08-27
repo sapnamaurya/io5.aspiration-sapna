@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 50%;
+  height: 95vh;
+  background-color: #f2f2f2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 0.2fr 0.3fr 0.1fr 0.3fr 0.1fr 0.2fr;
+  grid-template-areas:
+    "logo logo logo logo"
+    "embox1 embox2 embox3 embox4"
+    "embox5 embox6 embox7 embox8"
+    "embox9 embox10 embox11 embox12"
+    "embox13 embox14 embox15 embox16"
+    "box1 box2 box3 empty"
+    "footer footer footer footer";
+  place-items: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.item {
+  width: 95%;
+  height: 5vh;
+  background-color: #c1c1c1;
+}
+.logo {
+  height: 11vh;
+  grid-area: logo;
+}
+.embox1 {
+  width: 80%;
+  height: 10vh;
+  grid-area: embox1;
+}
+.embox2 {
+  height: 10vh;
+  grid-area: embox2;
+  width: 80%;
+}
+.embox3 {
+  height: 10vh;
+  grid-area: embox3;
+  width: 80%;
+}
+.embox4 {
+  height: 10vh;
+  grid-area: embox4;
+  width: 80%;
+}
+.embox5 {
+  height: 10vh;
+  grid-area: embox5;
+  width: 80%;
+}
+.embox6 {
+  height: 10vh;
+  grid-area: embox6;
+  width: 80%;
+}
+.embox7 {
+  height: 10vh;
+  grid-area: embox7;
+  width: 80%;
+}
+.embox8 {
+  height: 10vh;
+  grid-area: embox8;
+  width: 80%;
+}
+.embox9 {
+  height: 10vh;
+  grid-area: embox9;
+  width: 80%;
+}
+.embox10 {
+  height: 10vh;
+  grid-area: embox10;
+  width: 80%;
+}
+.embox11 {
+  height: 10vh;
+  grid-area: embox11;
+  width: 80%;
+}
+.embox12 {
+  height: 10vh;
+  grid-area: embox12;
+  width: 80%;
+}
+.embox13 {
+  height: 10vh;
+  grid-area: embox13;
+  width: 80%;
+}
+.embox14 {
+  height: 10vh;
+  grid-area: embox14;
+  width: 80%;
+}
+.embox15 {
+  height: 10vh;
+  grid-area: embox15;
+  width: 80%;
+}
+.embox16 {
+  height: 10vh;
+  grid-area: embox16;
+  width: 80%;
+}
+.footer {
+  height: 7vh;
+  grid-area: footer;
+}
+.box1 {
+  height: 14vh;
+  margin-left: 40%;
+  width: 120%;
+  grid-area: box1;
+}
+.box2 {
+  height: 14vh;
+  width: 120%;
+  margin-left: 100%;
+  grid-area: box2;
+}
+.box3 {
+  height: 14vh;
+  width: 120%;
+  margin-left: 160%;
+  grid-area: box3;
+}
