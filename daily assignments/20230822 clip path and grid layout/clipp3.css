@@ -1,0 +1,9 @@
+.clip {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border: 1px solid black;
+}
+.clip1 {
+  clip-path: polygon(50%, 0%);
+}
