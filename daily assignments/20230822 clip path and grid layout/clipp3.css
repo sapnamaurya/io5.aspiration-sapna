@@ -5,5 +5,5 @@
   border: 1px solid black;
 }
 .clip1 {
-  clip-path: polygon(50%, 0%);
+  clip-path: polygon(50% 0%, 20% 30%, 0% 50%);
 }

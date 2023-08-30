@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  border: 1px solid;
+  padding: 2%;
+  margin: auto;
+  /* justify-items: center; */
+  /* place-items: center; */
+  /* align-items: center; */
+  width: 80%;
+  height: 1197vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.3fr repeat(25, 1fr);
+  grid-template-areas:
+    "items1 items1"
+    "items2 items2"
+    "items3 items3"
+    "items4 items5"
+    "items6 items7"
+    "items8 items9"
+    "items10 items11"
+    "items12 items12"
+    "items13 items13"
+    "items14 items14"
+    "items15 items15"
+    "items16 items16"
+    "items17 items17"
+    "items18 items18"
+    "items19 items19"
+    "items20 items20"
+    "items21 items21"
+    "items22 items23"
+    "items24 items24"
+    "items25 items26";
+}
+.item {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+}
+.items1 {
+  grid-area: items1;
+  height: 8vh;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+.parts {
+  border: 1px solid;
+}
+.items2 {
+  grid-area: items2;
+  height: 81vh;
+}
+.items3 {
+  grid-area: items3;
+  height: 25vh;
+}
+.items4 {
+  height: 25vh;
+}
+.items5 {
+  height: 25vh;
+}
+.items6 {
+  height: 25vh;
+}
+.items7 {
+  height: 25vh;
+}
+.items8 {
+  height: 50vh;
+}
+.items9 {
+  height: 50vh;
+}
+.items10 {
+  height: 60vh;
+}
+.items11 {
+  height: 60vh;
+}
+.items12 {
+  grid-area: items12;
+  height: 80vh;
+}
+.items13 {
+  grid-area: items13;
+  height: 40vh;
+}
+.items14 {
+  grid-area: items14;
+  height: 25vh;
+}
+.items15 {
+  grid-area: items15;
+  height: 40vh;
+}
+.items16 {
+  grid-area: items16;
+  height: 95vh;
+}
+.items17 {
+  grid-area: items17;
+  height: 95vh;
+}
+.items18 {
+  grid-area: items18;
+  height: 40vh;
+}
+.items19 {
+  grid-area: items19;
+  height: 50vh;
+}
+.items20 {
+  grid-area: items20;
+  height: 90vh;
+}
+.items21 {
+  grid-area: items21;
+  height: 90vh;
+}
+.items22 {
+  height: 90vh;
+}
+.items23 {
+  height: 90vh;
+}
+.items24 {
+  grid-area: items24;
+  height: 90vh;
+}
+.items25 {
+  height: 90vh;
+}
+.items26 {
+  height: 90vh;
+}
