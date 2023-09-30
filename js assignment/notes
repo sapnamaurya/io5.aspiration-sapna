@@ -1,0 +1,140 @@
+// 1. -------comments------------
+// --single line comment--
+// double slash is used to write any single line comment
+
+// --multi line comment---
+/*
+    This is multi line comment
+    this is line number 2
+    line number 3
+*/
+
+/* 2. Reserved keywords
+  this var const let do for forEach if return break switch
+    Reserved keywords can not be used as in variables
+  */
+
+/**  3. variable declaration
+ * let x = 10;
+ * const a = 12;
+ * var b = 15;
+ *
+ *
+ * let variable can be reuseable
+ *
+ */ // const firstNum = prompt("Enter First number");
+// const secondNum = prompt("Enter Second number");
+
+// console.log("keyboardInput--", firstNum, secondNum);
+// addTwoNum(firstNum, secondNum);
+
+/**
+ * --- data types
+ * 1. Primitive datatype
+ *          a. number : 45,852,0,45474,-98
+ *          b. string : 'Vinay', "Victory", `Punjab`
+ *          c. boolean : true, false
+ *          d. null
+ *          e. undefined:
+ *
+ * 2. Non-Primitive datatype
+ *          a. Array : [1,2,'vinay', true, null]
+ *          b. object: {name: 'vinay', class:'6th'}
+ *
+ */ /**
+ * Operators
+ * 1. Arithmetic operator
+ *          addition
+ *          subtraction
+ *          division
+ *          multiplication
+ *          modulus
+ * 2. logical operator
+ *          AND
+ *          OR
+ * 3. Conditional Operator
+ *          >
+ *          <
+ *          <=
+ *          >=
+ *          !
+ *          !=
+ *          ==
+ *          ===
+ *          !==
+ */
+
+// 1. Datatypes:
+// number : 10,2,1,-78,
+// string :
+
+// NaN : Not a number
+// When we do mathematical calculation with a string it will return NaN
+
+// falsy value
+
+// 0
+// ''
+// null
+// undefined
+// false
+
+// // alert("This is warning");
+// const salary = prompt("Enter your salary");
+// const isSure = confirm("Are you sure to delete it?");
+
+// console.log("salary--", salary);
+// console.log("isSure--", isSure);
+
+/**
+ * Data type conversion
+ */
+
+/**
+ * Arithmetic operators
+ * 1. Addition
+ * 2. Subtraction
+ * 3. Multiplication
+ * 4. Division
+ * 5. Modulus
+ *
+ */
+// Addition
+// +
+// ++ increment
+// += increment and equal
+
+// '10' ==> Number('10') ==> 10
+// 'Delhi' ==> Number('Delhi') ==> NaN
+// true ==> Number(true) ==> true == 1  ==> 1
+
+// total++; // 36+1 == 37
+
+// console.log("incrementing total with ++", total);
+
+// total += 1; // 37 +1 == 38
+// console.log("incrementing total with +=", total);
+
+/**
+ * ! -- not
+ * =
+ * ==
+ * ===
+ * !=
+ * !==
+ * <
+ * >
+ * <=
+ * >=
+ *
+ * &&
+ * ||
+ *
+ */
+
+// false values
+// 0
+// null
+// false
+// undefined
+// ""
