@@ -78,3 +78,16 @@ function simpleinterest(principle, rate, time) {
     console.log("simple interset =", interest)
 }
 simpleinterest(1200, 3000, 2)
+
+// 7. check if number if positive or negative
+const numbr = prompt("enter a number")
+console.log("enterd number=", numbr)
+function number(numbr) {
+    if (numbr > 0) {
+        console.log(`${numbr} is positive`)
+    }
+    else {
+        console.log(`${numbr} is negative`)
+    }
+}
+number(numbr)
