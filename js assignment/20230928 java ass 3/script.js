@@ -91,3 +91,18 @@ function number(numbr) {
     }
 }
 number(numbr)
+//8. wap to find leap year or not
+function year() {
+    const years = prompt("enter a year")
+    console.log("entered year")
+    if (isNaN(years)) {
+        return console.log(`${years} is not valid yaer`)
+    }
+    if (years % 4 == 0) {
+        console.log(`${years}is leap year`)
+    }
+    else {
+        console.log(`${years}is not leap year`)
+    }
+}
+year()
