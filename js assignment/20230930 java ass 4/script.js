@@ -34,19 +34,7 @@
 //3.if a five-digit number is input through the keyboard, program to reverse the number.
 // (Hint: Use the modulus operator ‘%’)
 
-// const num1 = prompt("enter first number")
-// const num2 = prompt("enter second number")
-// const num3 = prompt("enter third number")
-// const num4 = prompt("enter fourth number")
-// const num5 = prompt("enter fifth number")
-// console.log("enter five number", num1, num2, num3, num4, num5)
-// function remainder() {
-//     rem1 = num1 % num2;
-//     rem2 = num2 % num3;
-//     rem3 = num3 % num4;
-//     rem4 = num4 % num5;
-//     rem5 = num5 % num1;
-//     console.log(`reaminder of five digit ${rem1},${rem2},${rem3},${rem4},${rem5}`)}
+
 
 //4.Any integer is input through the keyboard. Write a program to find out whether it
 //is an odd number or even number.
@@ -152,3 +140,35 @@ function triangle(side1, side2, side3) {
 }
 triangle(120, 30, 30)
 triangle(12, 30, 30)
+
+//11.If cost price and selling price of an item are input through the keyboard, 
+//write a program to determine whether the seller has made profit or incurred loss.
+// Also determine how much profit he made or loss he incurred.
+
+// const sellingprice = prompt("enter selling price")
+// const costprice = prompt("enter cost price")
+// console.log("enterd selling and cost price", sellingprice, costprice)
+// function profitloss() {
+//     if (sellingprice > costprice) {
+//         profit = sellingprice - costprice
+//         console.log(`we earn profit on selling item=${profit}`)
+//     }
+//     else if (sellingprice < costprice) {
+//         loss = costprice - sellingprice
+//         console.log(`we incured loss on selling item=${loss}`)
+//     }
+//     else {
+//         console.log("we have not profit and loss")
+//     }
+// }
+// profitloss()
+
+
+//12.Write a program to find the absolute value of a number entered through the keyboard. 
+let num = prompt("enter a positive negative number")
+console.log("enterd a number", num)
+function number() {
+    let num = Math.abs(num)
+    console.log(`value of absoute number ${num}`)
+
+} number()
