@@ -25,16 +25,16 @@ function areaperimeterofcircle() {
 // Formula Percentage = (obtained marks / Total marks) * 100
 
 function marks() {
-    let sub1 = Number(prompt("enter the marks of first subject"))
-    let sub2 = Number(prompt("enter the marks of second subject"))
-    let sub3 = Number(prompt("enter the marks of third subject"))
-    let sub4 = Number(prompt("enter the marks of fourth subject"))
-    let sub5 = Number(prompt("enter the marks of fifth subject"))
-    let obtainedmarks = (sub1 + sub2 + sub3 + sub4 + sub5)
+    let english = Number(prompt("enter the marks of english subject"))
+    let maths = Number(prompt("enter the marks of maths subject"))
+    let chemistry = Number(prompt("enter the marks of chemistry subject"))
+    let physics = Number(prompt("enter the marks of physics subject"))
+    let pps = Number(prompt("enter the marks of pps subject"))
+    let obtainedmarks = (english + maths + chemistry + physics + pps)
     let averagemarks = obtainedmarks / 5
-    console.log(`average of sub1 ${sub1}, sub2 =${sub2} , sub3=${sub3}, sub4=${sub4} , sub5=${sub5}is ${averagemarks}`)
+    console.log(`average of english ${english}, maths =${maths} , chemistry=${chemistry}, physics=${physics} , pps=${pps}is ${averagemarks}`)
     let percentage = (obtainedmarks / 500) * 100
-    console.log(`percentage of sub1 ${sub1} sub2 =${sub2}  sub3=${sub3} sub4=${sub4}  sub5=${sub5}is ${percentage}`)
+    console.log(`percentage of english ${english} ,maths =${maths},  chemistry=${chemistry}, physics=${physics} , pps=${pps} is ${percentage}`)
 }
 // marks()
 
@@ -88,4 +88,11 @@ function distancebetweentwocities() {
     let cm = 100
     let kmtomtr = km * mtr * cm
     console.log("calculate km to mtr", kmtomtr)
-} distancebetweentwocities()
+    let inchfromkm = ft * 12 * km
+    console.log("calculate inch from km", inchfromkm)
+}
+//distancebetweentwocities()
+for (let i = 1000; i <= 5000; i++) {
+    if (i % 4 == 0)
+        console.log("leap year", i)
+}

@@ -334,7 +334,8 @@ function Salary() {
 for (let i = 1; i <= 10; i++) {
     console.log(`5 x ${i} = ${5 * i}`)
 }
-for (let i = 51; i <= 100; i++) {
-    if (i % 2 == 0)
-        console.log("even number", i)
+for (let i = 1000; i <= 5000; i++) {
+    if (i % 4 == 0) {
+        console.log("leap year", i)
+    }
 }
