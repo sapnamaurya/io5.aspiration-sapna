@@ -45,14 +45,21 @@ function triangle() {
     const side1 = Number(prompt("enter the first side"))
     const side2 = Number(prompt("enter the second side"))
     const side3 = Number(prompt("enter the third side"))
-    if (side1 < (side2 + side3) && side2 < (side3 + side1) && side3 < (side1 + side2)) {
+    const sum = side1 + side2 + side3;
+    const sum1 = side1 + side2
+    const sum2 = side2 + side3
+    const sum3 = side3 + side1
+    if (sum == 180) {
         console.log("triangle is valid")
+    }
+    else if (sum1 > side1 || sum2 > side2 || sum3 > side3) {
+        console.log("sum of two sides is greater than the largest of the three sides")
     }
     else {
         console.log("traingle is not valid")
     }
 }
-// triangle()
+triangle()
 
 //4.If the three sides of a triangle are entered through the keyboard, write a program 
 //to check whether the triangle is isosceles, equilateral, scalene or right angled triangle.
@@ -64,11 +71,98 @@ function provetriangle() {
     if (sidea == sideb && sideb == sidec && sidec == sidea) {
         console.log("triangle is equilvalent")
     }
-    else if (sidea == sideb || sideb == sidec || sidec == sidea) {
-        console.log("triangle is isosceles")
+    else
+        if (sidea == sideb || sideb == sidec || sidec == sidea) {
+            console.log("triangle is isosceles")
+        }
+        else {
+            console.log("triangle is scalene")
+        }
+}
+// provetriangle()
+
+
+//4.An Insurance company follows following rules to calculate premium.
+//(1) If a person’s health is excellent and the person is between 25 and 35 years 
+//of age and lives in a city and is a male then the premium is Rs. 4 per thousand 
+//and his policy amount cannot exceed Rs. 2 lakhs. (2) If a person satisfies all 
+//the above conditions except that the sex is female then the premium is Rs. 3 per 
+//thousand and her policy amount cannot exceed Rs. 1 lakh. (3) If a person’s health
+// is poor and the person is between 25 and 35 years of age and lives in a village 
+//and is a male 90 Let Us C then the premium is Rs. 6 per thousand and his policy 
+//cannot exceed Rs. 10,000. (4) In all other cases the person is not insured.
+
+//Write a program to output whether the person should be insured or not, his/her 
+//premium rate and maximum amount for which he/she can be insured.
+
+function premium() {
+    const age = Number(prompt("enter the age of person"))
+    const gen = prompt("enter the gender")
+    const policyamount = Number(prompt("enter the policy amount"))
+    const place = prompt("enter the city or village")
+    if (age >= 25 && age <= 35 && gen == 'M' && policyamount <= 100000 && place == "city") {
+        console.log("person health is excelent anf his premium is RS.4 per thousand")
+    }
+    else if (age >= 25 && age <= 35 && gen == 'F' && policyamount <= 100000 && place == "city") {
+        console.log("person health is excelent and his premium is RS. 3 per thousand")
+    }
+    else if (age >= 25 && age <= 35 && gen == 'M' && policyamount < 10000 && place == "village") {
+        console.log("person health is poor anf his premium is RS.6per thousand")
     }
     else {
-        console.log("triangle is scalene")
+        console.log("all other cases the person is not insured")
     }
 }
-provetriangle()
+// premium()
+
+//5.A library charges a fine for every book returned late. For first 5 days the fine
+// is 50 paise, for 6-10 days fine is one rupee and above 10 days fine is 5 rupees. 
+//If you return the book after 30 days your membership will be cancelled. Write a 
+//program to accept the number of days the member is late to return the book and 
+//display the fine or the appropriate message.
+
+function fine() {
+    const days = Number(prompt("enter the day in number"))
+    console.log("enter the value of days in number")
+    if (days >= 0 && days <= 5) {
+        console.log("a library charges a fine is 50 paise ")
+    }
+    if (days >= 6 && days <= 10) {
+        console.log("a library charges a fine is 1 rupee")
+    }
+    if (days >= 10 && days <= 30) {
+        console.log("a library charges a fine is 5 rupees")
+    }
+    else {
+        console.log("membership will be cancelled")
+    }
+}
+//fine()
+
+
+//6.In a company, worker efficiency is determined on the basis of the time required
+// for a worker to complete a particular job. If the time taken by the worker is 
+//between 2 – 3 hours, then the worker is said to be highly efficient. If the time
+// required by the worker is between 3 – 4 hours, then the worker is ordered to 
+//improve speed. If the time taken is between 4 – 5 hours, the worker is given 
+//training to improve his speed, and if the time taken by the worker is more than 5 
+//hours, then the worker has to leave the company. If the time taken by the worker is
+// input through the keyboard, find the efficiency of the worker.
+
+
+function workerefficiency() {
+    const timeperiod = Number(prompt("enter the time taken by the worker"))
+    if (timeperiod >= 2 && timeperiod <= 3) {
+        return console.log("the worker is to be highly efficient")
+    }
+    if (timeperiod >= 3 && timeperiod <= 4) {
+        return console.log(" the worker is ordered to improved speed")
+    }
+    if (timeperiod >= 4 && timeperiod <= 5) {
+        return console.log(" the worker is given training to improve his speed")
+    }
+    else {
+        return console.log("the worker has to leave the company")
+    }
+}
+//workerefficiency()
