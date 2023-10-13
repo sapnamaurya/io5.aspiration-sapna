@@ -334,8 +334,49 @@ function Salary() {
 for (let i = 1; i <= 10; i++) {
     console.log(`5 x ${i} = ${5 * i}`)
 }
-for (let i = 1000; i <= 5000; i++) {
-    if (i % 4 == 0) {
-        console.log("leap year", i)
+function leapyear() {
+    for (let i = 1000; i <= 5000; i++) {
+        if (i % 4 == 0) {
+            console.log("leap year", i)
+        }
     }
 }
+leapyear()
+
+/* A certain grade of steel is graded according to the following conditions:
+ *
+* (i) Hardness must be greater than 50
+* (ii) Corbon content must be less than 0.7
+* (iii) Tensile strength must be greater than 5600
+*
+*
+* The grades are follows
+* 1. Grade is 10 is all three conditions are met
+* 2. Grade is 9: if (i) and (ii)  are met
+* 3. Grade is 8: if (ii) and (iii)  are met
+* 4. Grade is 7: if (i) and (iii)  are met
+* 5. Grade is 6: if only one is met
+* 6. Grade is 5: if none of the conditions are met
+*/
+
+function grade() {
+    const carbon = Number(prompt("enter the value of carbon"))
+    const hardness = Number(prompt("enter the value of harness"))
+    const tensile = Number(prompt("enter the value of tansile strength"))
+
+    if (carbon < 0.7 && tensile > 5600 && hardness > 50) {
+        console.log("grade is 10 all condition is met")
+    }
+    if (carbon < 0.7 && tensile > !5600 && hardness > 50) {
+        console.log("grade is 9 only ist and second condition is met")
+    }
+    if (carbon < 0.7 && tensile > 5600 && hardness > !50) {
+        console.log("grade is 8 only second and third  condition is met")
+    }
+    if (carbon < !0.7 && tensile > 5600 && hardness > 50) {
+        console.log("grade is 7 ist and third condition is met")
+    }
+    if (carbon < !0.7 && tensile > !5600 && hardness > !50) {
+        console.log("grade is 5 no one condition is met")
+    }
+} grade()
