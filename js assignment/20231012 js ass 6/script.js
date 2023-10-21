@@ -59,7 +59,7 @@ function triangle() {
         console.log("traingle is not valid")
     }
 }
-triangle()
+//triangle()
 
 //4.If the three sides of a triangle are entered through the keyboard, write a program 
 //to check whether the triangle is isosceles, equilateral, scalene or right angled triangle.
@@ -124,7 +124,7 @@ function premium() {
 function fine() {
     const days = Number(prompt("enter the day in number"))
     console.log("enter the value of days in number")
-    if (days >= 0 && days <= 5) {
+    if (days >= 1 && days <= 5) {
         console.log("a library charges a fine is 50 paise ")
     }
     if (days >= 6 && days <= 10) {
@@ -149,7 +149,6 @@ function fine() {
 //hours, then the worker has to leave the company. If the time taken by the worker is
 // input through the keyboard, find the efficiency of the worker.
 
-
 function workerefficiency() {
     const timeperiod = Number(prompt("enter the time taken by the worker"))
     if (timeperiod >= 2 && timeperiod <= 3) {
@@ -166,3 +165,6 @@ function workerefficiency() {
     }
 }
 //workerefficiency()
+
+
+document.write("hello")
