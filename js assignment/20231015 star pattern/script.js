@@ -68,10 +68,24 @@ answer = factorial(n)
 
 console.log("Factorial of " + n + " : " + answer);
 
-const shorts = []
-const str = ["if", "we", "remove", "space", "from", "the", "answer", "s", "approch"]
-for (i = 0; i <= str.length; i++)
-    console.log("${i}", str[i])
-if (str[i].length <= 3) {
-    Shorts.push(str[i])
-} console.log("print", shorts)
+// const shorts = []
+// const str = ["if", "we", "remove", "space", "from", "the", "answer", "s", "approch"]
+// for (i = 0; i <= str.length; i++)
+//     console.log("${i}", str[i])
+// if (str[i].length <= 3) {
+//     Shorts.push(str[i])
+// } console.log("print", shorts)
+const days = ['Friday',
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+    'Wednesday',
+    'Wednesday',
+    'Friday',
+    'Friday',]
+const withoutdupes = [...new Set(days)]
+console.log("withoutdupes=", withoutdupes)
