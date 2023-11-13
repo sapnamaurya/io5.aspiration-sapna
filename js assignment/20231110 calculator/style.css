@@ -1,0 +1,39 @@
+.cal-cont {
+  border-radius: 8px;
+  margin: auto;
+  border: 1px solid black;
+  width: 31%;
+  height: 76vh;
+  background-color: black;
+  box-shadow: 2px 4px 25px #181818;
+}
+.input {
+  text-align: right;
+  height: 15vh;
+  font-size: 59px;
+  width: 98%;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 13px;
+}
+button {
+  margin: 2%;
+  font-size: 23px;
+  height: 10vh;
+  width: 20%;
+  font-weight: bold;
+  box-shadow: 0px 1px 5px 1px white;
+  border-radius: 50%;
+  color: white;
+  background: black;
+  border: none;
+}
+.btn-color {
+  color: rgb(6, 61, 6);
+  font-weight: bold;
+  color: rgb(28 198 28);
+}
+.btn-clr {
+  background-color: orange;
+}

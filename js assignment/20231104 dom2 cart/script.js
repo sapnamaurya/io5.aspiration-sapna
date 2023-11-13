@@ -1,0 +1,16 @@
+const body = document.querySelector("body")
+const div = document.createElement("div")
+console.log("---", div)
+
+const p = document.createElement("p")
+p.classList.add("flipcart")
+p.innerText = ("Flipcart")
+p.setAttribute("class", "name")
+
+const input = document.createElement("input")
+input.classList.add("flipcart")
+input.innerText = ("Flipcart")
+input.setAttribute("class", "search")
+body.appendChild(div)
+div.appendChild(p)
+div.appendChild(input)

@@ -6,7 +6,7 @@ const div1 = document.createElement("div1")
 div1.setAttribute("class", "logo-cont")
 console.log("--", div1)
 const h2 = document.createElement("h2")
-h2.classList.add("Mycompany")
+
 h2.innerText = "My Company"
 console.log("--", h2)
 const div2 = document.createElement("div2")
@@ -19,7 +19,7 @@ p1.innerText = " Sign UP Of Your Newsletter"
 console.log("--", p1)
 let p = document.createElement("p")
 p.setAttribute("class", "content1")
-p.classList.add("Filloutyourinformationbelowtobesignedupforourinformativenewsletter.")
+
 p.innerText = " Fill out your information below to be signed up for our informative newsletter."
 console.log("--", p)
 
@@ -32,7 +32,7 @@ console.log("--", div4)
 const div5 = document.createElement("div5")
 console.log("--", div5)
 const label = document.createElement("label")
-label.classList.add("FirstName")
+
 label.innerText = "First Name"
 console.log("--", label)
 const input = document.createElement("input")
@@ -40,28 +40,28 @@ input.setAttribute("class", "inp1")
 console.log("--", input)
 
 const label1 = document.createElement("label1")
-label1.classList.add("LastName")
+
 label1.innerText = "Last Name"
 console.log("--", label1)
 const input1 = document.createElement("input")
 input1.setAttribute("class", "inp1")
 console.log("--", input1)
 const label2 = document.createElement("label")
-label.classList.add("Email")
+
 label2.innerText = "Email"
 console.log("---", label2)
 const input2 = document.createElement("input")
 input2.setAttribute("class", "inp2")
 console.log("---", input2)
 const label3 = document.createElement("label")
-label.classList.add("Company")
+
 label3.innerText = "Company"
 console.log("---", label3)
 const input3 = document.createElement("input")
 input3.setAttribute("class", "inp3")
 console.log("---", input3)
 const p2 = document.createElement("p")
-p2.classList.add("Addmetoyourmailinglist")
+
 p2.innerText = "Add me to your mailing list"
 console.log("---", p2)
 const input4 = document.createElement("input")
@@ -69,7 +69,7 @@ input4.setAttribute("class", "box")
 input4.setAttribute("type", "checkbox")
 console.log("---", input4)
 const label4 = document.createElement("label")
-label.classList.add("Iagreetoreceivee-mailfromyourcompanyandyourtermsandconditions")
+
 label4.innerText = "I agree to receive e-mail from your company and your terms and conditions"
 console.log("---", label4)
 const button = document.createElement("button")
@@ -78,11 +78,10 @@ button.setAttribute("type", "checkbox")
 console.log("---", button)
 
 const label5 = document.createElement("label")
-label.classList.add("SignMeUp")
+
 label5.innerText = "Sign Me Up"
 console.log("---", label5)
-//Sign Me Up
-{/* <button class="btn">Sign Me Up</button> */ }
+
 body.appendChild(div)
 div.appendChild(div1)
 div1.appendChild(h2)

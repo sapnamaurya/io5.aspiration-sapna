@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: #0c0c7d;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin: 2% 2% 2% 2%;
+}
+h1 {
+  color: white;
+  margin: 7% auto 2%;
+  width: fit-content;
+}
+.btn {
+  margin: 2%;
+  height: 8vh;
+  width: 45%;
+  font-size: 18px;
+  border-radius: 11px;
+  box-shadow: -1px -1px 3px 0px #00000059;
+}
+.btn:hover {
+  margin: 2%;
+  height: 8vh;
+  width: 45%;
+  background-color: aquamarine;
+  font-size: 18px;
+  border-radius: 11px;
+  box-shadow: -1px -1px 3px 0px #00000059;
+  cursor: pointer;
+}
+.exit {
+  border-radius: 11px;
+  box-shadow: -1px -1px 3px 0px #00000059;
+  font-size: 18px;
+  color: white;
+  margin: 2%;
+  height: 8vh;
+  width: 45%;
+  background-color: rgb(77, 7, 7);
+}
+.btn-cont {
+  margin: auto;
+  width: 33%;
+}
+.pin-container {
+  display: flex;
+  border-radius: 8px;
+  width: 50%;
+  border: 1px solid black;
+  height: 26vh;
+  margin: 4% auto 2%;
+  flex-direction: column;
+  align-items: center;
+}
+#old-pin {
+  width: 86%;
+  height: 5vh;
+  margin: 2%;
+  padding: 2%;
+  font-size: 17px;
+  border-radius: 9px;
+}
+#new-pin {
+  width: 86%;
+  height: 5vh;
+  padding: 2%;
+  font-size: 17px;
+  border-radius: 9px;
+}
+.change-pin {
+  margin: 2%;
+  height: 4vh;
+  padding: 2%;
+  font-size: 15px;
+  width: 21%;
+  border-radius: 7px;
+  background-color: rgb(77, 7, 7);
+  color: white;
+  cursor: pointer;
+  box-shadow: -1px -1px 3px 0px #00000059;
+}
+.match-cont {
+  width: 86%;
+  display: flex;
+}

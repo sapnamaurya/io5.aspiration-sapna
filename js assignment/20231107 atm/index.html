@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>atm</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div>
+    <header class="header">
+      <p>Name</p>
+      <p>Login</p>
+      <p>logo</p>
+    </header>
+  </div>
+  <div class="pin-container">
+    <div class="match-cont">
+      <input type="number" value="" maxlength="4" minlength="4" placeholder="Enter old pin" id="old-pin"
+        class="display-none" />
+      <input class="match-pin" type="subit" value="match Pin" onclick="matchpin()" />
+    </div>
+    <input type="number" value="" maxlength="4" minlength="4" placeholder="Enter new pin" id="new-pin" />
+    <input class="change-pin" type="submit" value="Change Pin" class="display-none " onclick="getpin()" />
+  </div>
+  <h1>Please Select a Service</h1>
+  <div class="btn-cont">
+    <button class="btn" onclick="withdrawamount()">
+      Withdraw
+    </button>
+    <button class="btn" onclick="depoistamount()">
+      Deposit
+    </button>
+    <button class="btn" onclick="transferamount()">
+      Transfer
+    </button>
+    <button class="btn" onclick="balanceenquiry()">
+      Balance Enquiry
+    </button>
+    <button class="btn" onclick="changepin()">
+      Change Pin
+    </button>
+    <button class="exit" onclick="exit()">
+      Exit
+    </button>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

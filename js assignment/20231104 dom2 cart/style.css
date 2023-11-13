@@ -1,0 +1,17 @@
+div {
+  display: flex;
+}
+.name {
+  font-weight: bold;
+  color: blue;
+  margin: 1%0%0%2%;
+  font-size: 28px;
+  font-family: "Vollkorn", serif;
+}
+.search {
+  border-radius: 6px;
+  border: 1px solid black;
+  width: 33%;
+  margin: 0.8%0 0 4%;
+  height: 3.5vh;
+}
