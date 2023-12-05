@@ -1,0 +1,53 @@
+.img-email-cont {
+  border: 1px solid black;
+  height: 28vh;
+  width: 29%;
+  margin: 3%auto 0%;
+  border: none;
+}
+.inp1 {
+  margin: 6%auto 0;
+  width: 50%;
+  padding: 2%;
+  display: block;
+  background-color: beige;
+  border: none;
+}
+button {
+  margin: 3%auto 0;
+  width: 55%;
+  padding: 2%;
+  display: block;
+  font-weight: bold;
+  border: none;
+}
+button:hover {
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.title4 {
+  color: green;
+  font-weight: bold;
+  font-size: 15px;
+}
+.passque {
+  color: blue;
+  font-weight: bold;
+}
+.home {
+  margin-left: 41%;
+}
+.home,
+.supp,
+.cont {
+  color: grey;
+  font-size: 15px;
+}
+.supp {
+  margin-left: 3%;
+}
+.cont {
+  margin-left: 3%;
+}

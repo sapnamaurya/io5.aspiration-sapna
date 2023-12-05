@@ -1,0 +1,24 @@
+.head {
+  margin-top: 3%;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+li {
+  color: blue;
+  font-weight: bold;
+  font-size: 20px;
+}
+.product1 {
+  color: grey;
+  margin-left: 35%;
+}
+.product2 {
+  color: grey;
+  margin-left: 6%;
+}
+.product3 {
+  color: orange;
+  margin-left: 28%;
+}
