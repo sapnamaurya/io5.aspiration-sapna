@@ -1,0 +1,94 @@
+.name-cont {
+  align-items: center;
+  display: flex;
+  margin-bottom: 6%;
+  margin-top: 4%;
+}
+.logo-cont {
+  align-items: center;
+  float: center;
+  justify-content: center;
+  display: flex;
+  color: #e59e6e;
+}
+.img-cont {
+  height: 46px;
+  width: 60px;
+}
+.border {
+  margin: 3% 0 0 9%;
+  border: 1px solid grey;
+  width: 42%;
+  height: 77vh;
+  color: grey;
+}
+.title {
+  border: 1px solid #f7f4f3;
+  width: 88%;
+  margin: auto;
+  height: 15vh;
+  background-color: #f7ede8;
+}
+.content {
+  margin-top: 3%;
+  margin-bottom: 1%;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+}
+.content1 {
+  margin: auto;
+  text-align: center;
+  width: 48%;
+}
+form {
+  margin: 3% 6% 0%;
+}
+.inp1 {
+  width: 32%;
+  margin-right: 3%;
+  border-radius: 4px;
+  margin-left: 2%;
+  height: 4vh;
+  border: 1px solid grey;
+}
+.inp2 {
+  width: 32%;
+  margin-left: 3%;
+  border-radius: 4px;
+  height: 4vh;
+  border: 1px solid grey;
+}
+.company-cont {
+  display: flex;
+}
+.email-cont {
+  display: flex;
+  margin-bottom: 6%;
+}
+.inp3 {
+  border-radius: 4px;
+  margin-left: 8%;
+  width: 92%;
+  height: 4vh;
+  border: 1px solid grey;
+}
+.inp4 {
+  border-radius: 4px;
+  margin-left: 3%;
+  width: 92%;
+  height: 4vh;
+  border: 1px solid grey;
+}
+.line {
+  margin-top: 5%;
+}
+.btn {
+  font-size: large;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 2%;
+  height: 7vh;
+  background-color: #e59e6e;
+  color: white;
+}

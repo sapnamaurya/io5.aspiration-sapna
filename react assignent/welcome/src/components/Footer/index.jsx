@@ -5,8 +5,8 @@ function Footer() {
   return (
     <ul className="name-cont">
       <li className="home">Home</li>
-      <li className="home supp">Support </li>
-      <li className="home cont">Contact</li>
+      <li className=" supp">Support </li>
+      <li className=" cont">Contact</li>
     </ul>
   );
 }
