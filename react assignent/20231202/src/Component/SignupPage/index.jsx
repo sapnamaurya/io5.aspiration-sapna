@@ -98,7 +98,7 @@ function SignUp() {
               conditions
             </label>
             <div className="b">
-              <button onClick={handleSignUpClick} className="btn">
+              <button onClick={handleSignUpClick} className="btn" type="button">
                 Sign Me Up
               </button>
             </div>
@@ -106,18 +106,17 @@ function SignUp() {
         </div>
         <div className="final-detail">
           <h3>
-            {isSignClick ? fName : ""}
-            Enter your First name:
+            First name:
             <strong>{isSignClick ? fName : ""}</strong>
           </h3>
           <h3>
-            Enter your Last name:<strong>{isSignClick ? lName : ""}</strong>
+            Last name:<strong>{isSignClick ? lName : ""}</strong>
           </h3>
           <h3>
-            Enter your Email:<strong>{isSignClick ? email : ""}</strong>
+            Email:<strong>{isSignClick ? email : ""}</strong>
           </h3>
           <h3>
-            Enter your Company:<strong>{isSignClick ? email : ""}</strong>
+            Company:<strong>{isSignClick ? email : ""}</strong>
           </h3>
         </div>
       </div>

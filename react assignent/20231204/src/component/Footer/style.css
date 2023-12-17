@@ -1,0 +1,12 @@
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  border: 1px slid black;
+  background-color: black;
+}
+.para-footer {
+  color: grey;
+  font-weight: bold;
+}

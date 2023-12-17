@@ -3,11 +3,11 @@ import Header from "../../Component/Header";
 import Footer from "../../Component/Footer";
 
 function HomePage() {
-  console.log("HomePage javascript here");
+  const currentPage = "Contact";
 
   return (
     <React.Fragment>
-      <Header />
+      <Header curPage={currentPage} />
       <h1>HomePage</h1>
       <Footer />
     </React.Fragment>

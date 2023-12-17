@@ -39,7 +39,7 @@
 .content1 {
   margin: auto;
   text-align: center;
-  width: 48%;
+  width: 50%;
 }
 form {
   margin: 3% 6% 0%;
@@ -84,11 +84,21 @@ form {
   margin-top: 5%;
 }
 .btn {
-  font-size: large;
+  margin-top: 1%;
+}
+.b {
+  background: #e59e6e;
+  color: white;
   border-radius: 4px;
+  font-size: large;
+  text-align: center;
   width: 100%;
   margin-top: 2%;
   height: 7vh;
-  background-color: #e59e6e;
-  color: white;
+}
+.main {
+  display: flex;
+}
+.final-detail {
+  margin: 10% 0 0 10%;
 }

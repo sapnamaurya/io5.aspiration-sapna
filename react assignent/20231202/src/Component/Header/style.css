@@ -7,3 +7,21 @@
   color: grey;
   font-weight: bold;
 }
+.cont {
+  height: 6.5vh;
+}
+.font-color1 {
+  color: grey;
+  font-weight: bold;
+}
+.text {
+  margin-top: 0.5%;
+  font-size: 17px;
+  color: black;
+  margin-right: 2%;
+  border-radius: 15px;
+  background: wheat;
+  font-weight: bold;
+  border: 1px solid;
+  padding: 0.2% 2%;
+}

@@ -4,11 +4,12 @@ import Footer from "../../Component/Footer";
 import SignUpPage from "../../Component/SignupPage";
 
 function SignUp() {
-  console.log("SignUp javascript here");
+  const currentPage = "Signup";
 
   return (
     <React.Fragment>
-      <Header />
+      <Header curPage={currentPage} />
+
       <SignUpPage />
       <Footer />
     </React.Fragment>

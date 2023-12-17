@@ -1,0 +1,145 @@
+.background {
+  position: relative;
+  margin: auto;
+  width: 44%;
+  height: 87vh;
+  background-color: black;
+}
+
+.inner-portion-1 {
+  border-radius: 150px 150px 0 0;
+  border: 1px solid black;
+  left: 3%;
+  top: 3%;
+  position: absolute;
+  background-color: rgb(70, 68, 68);
+  width: 40%;
+  height: 84vh;
+}
+
+.image {
+  height: 26vh;
+  box-shadow: 2px 2px 12px black;
+  left: 12%;
+  position: absolute;
+  width: 74%;
+  border-radius: 50%;
+  top: 4.5%;
+}
+
+ul {
+  color: white;
+  position: absolute;
+  top: 44%;
+  left: 2%;
+}
+
+.h12 {
+  left: 6%;
+  position: absolute;
+  font-size: 32px;
+  top: 37%;
+  color: wheat;
+  font-size: 31px;
+}
+
+.h11 {
+  font-size: 31px;
+  color: wheat;
+  position: absolute;
+  top: 64%;
+  left: 6%;
+}
+
+.ul {
+  position: absolute;
+  top: 71%;
+}
+
+.h1-1 {
+  color: wheat;
+  font-size: 31px;
+  position: absolute;
+  top: 87%;
+  left: 9%;
+}
+
+.ul-1 {
+  position: absolute;
+  top: 93%;
+}
+
+.inner-portion-2 {
+  background-color: rgb(114, 111, 111);
+  top: 16%;
+  height: 72.5vh;
+  border: 1px solid white;
+  position: absolute;
+  width: 54%;
+  right: 1.5%;
+}
+
+.para {
+  color: white;
+  left: 6%;
+  margin: 0;
+  font-size: 17px;
+  position: absolute;
+  top: 9%;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+.h1-2 {
+  font-size: 32px;
+  color: wheat;
+  left: 5%;
+  margin: 0;
+  position: absolute;
+  top: 1%;
+}
+
+.h1-0,
+.h1-01 {
+  font-size: 29px;
+  position: absolute;
+  color: white;
+  left: 63%;
+  top: 4%;
+}
+
+.ul-2 {
+  color: white;
+  position: absolute;
+  top: 43%;
+  font-size: 18px;
+}
+
+.h1-3 {
+  color: wheat;
+  margin: 0;
+  position: absolute;
+  top: 34%;
+  left: 5%;
+  font-size: 32px;
+}
+
+.h1-4 {
+  color: wheat;
+  margin: 0;
+  position: absolute;
+  top: 74%;
+  left: 6%;
+  font-size: 32px;
+}
+
+.h1-01 {
+  top: 9%;
+}
+
+.ul-3 {
+  color: white;
+  position: absolute;
+  top: 82%;
+  font-size: 18px;
+}
