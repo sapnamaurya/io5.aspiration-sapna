@@ -4,11 +4,9 @@ import Footer from "../../Component/Footer";
 import SignUpPage from "../../Component/SignupPage";
 
 function SignUp() {
-  const currentPage = "Signup";
-
   return (
     <React.Fragment>
-      <Header curPage={currentPage} />
+      <Header />
 
       <SignUpPage />
       <Footer />

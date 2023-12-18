@@ -3,11 +3,9 @@ import Header from "../../Component/Header";
 import Footer from "../../Component/Footer";
 
 function HomePage() {
-  const currentPage = "Contact";
-
   return (
     <React.Fragment>
-      <Header curPage={currentPage} />
+      <Header />
       <h1>HomePage</h1>
       <Footer />
     </React.Fragment>

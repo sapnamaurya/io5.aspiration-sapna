@@ -7,6 +7,17 @@
   color: grey;
   font-weight: bold;
 }
+.imag {
+  margin-right: 0.5%;
+  height: 5vh;
+  border-radius: 50%;
+  border: 1px solid beige;
+  width: 40px;
+}
+.name {
+  margin-right: 1%;
+  margin-bottom: 0;
+}
 .cont {
   height: 6.5vh;
 }
@@ -15,13 +26,19 @@
   font-weight: bold;
 }
 .text {
-  margin-top: 0.5%;
   font-size: 17px;
   color: black;
-  margin-right: 2%;
   border-radius: 15px;
   background: wheat;
   font-weight: bold;
+  position: absolute;
+
+  top: -22.2%;
   border: 1px solid;
   padding: 0.2% 2%;
+}
+.text1 {
+  position: absolute;
+  top: -21%;
+  right: 10%;
 }

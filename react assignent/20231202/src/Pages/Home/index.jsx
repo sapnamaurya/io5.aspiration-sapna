@@ -4,11 +4,9 @@ import Carousal from "../../Component/Carousal";
 import Footer from "../../Component/Footer";
 
 function Home() {
-  const currentPage = "Home";
-
   return (
     <React.Fragment>
-      <Header curPage={currentPage} />
+      <Header curPage={"Home"} />
       <Carousal />
       <Footer />
     </React.Fragment>

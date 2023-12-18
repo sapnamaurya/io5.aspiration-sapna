@@ -18,11 +18,10 @@ function Product() {
     setProductList(products);
   };
   console.log("----", productList);
-  const currentPage = "Product";
 
   return (
     <React.Fragment>
-      <Header curPage={currentPage} />
+      <Header curPage={"Product"} />
       <div className="parent">
         {productList.map((product, index) => {
           return (
@@ -31,6 +30,7 @@ function Product() {
               description={product?.description}
               title={product?.title}
               images={product?.thumbnail}
+              // {...product}
             />
           );
         })}
