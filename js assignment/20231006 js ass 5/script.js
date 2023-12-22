@@ -7,7 +7,7 @@ function areaperimeter() {
     const perimterofrectangle = 2 * (length + breadth)
     console.log(`length=${length} and breadth=${breadth} of rectangle and its perimter of rectangle = ${perimterofrectangle}`)
 }
-// areaperimeter()
+// areaperimeterr()
 
 
 //2. Enter the radius of Circle and find the circumstance and area of circle

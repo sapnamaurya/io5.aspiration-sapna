@@ -3,12 +3,13 @@ import "./style.css";
 import { Button } from "react-bootstrap";
 
 function ProductCard(props) {
-  const { price, description, title, images } = props || {};
+  const { price, description, title, images, onCartClick } = props || {};
   const handleAddCart = (event, props) => {
     console.log("clicking add cart page", props);
+    onCartClick(props);
   };
-  const handleGoToPage = () => {
-    console.log("clicking");
+  const handleGoToPage = (dataFromChild) => {
+    console.log("clicking", dataFromChild);
   };
 
   return (

@@ -105,7 +105,8 @@ function Header(props) {
             <Nav.Link>
               <Link className="Link-deco" to="/Login">
                 <Button variant="secondary" className="text1">
-                  <GrCart />1
+                  <GrCart />
+                  cartCounting
                 </Button>
               </Link>
             </Nav.Link>
