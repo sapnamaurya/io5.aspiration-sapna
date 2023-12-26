@@ -10,8 +10,8 @@ import { Navigate } from "react-router-dom";
 import { GrCart } from "react-icons/gr";
 function Header(props) {
   console.log("props", props);
-  const { curPage } = props || {};
-
+  const { curPage, cartCounting } = props || {};
+  const [cartCount, setCartCount] = useState(0);
   const navigate = useNavigate();
   const [user, setUser] = useState(
     JSON.parse(localStorage.getItem("userdata"))
@@ -43,6 +43,7 @@ function Header(props) {
     localStorage.clear();
     navigate("/Login");
   };
+
   return (
     <>
       <Navbar bg="dark" className="cont" data-bs-theme="dark">
@@ -106,7 +107,7 @@ function Header(props) {
               <Link className="Link-deco" to="/Login">
                 <Button variant="secondary" className="text1">
                   <GrCart />
-                  cartCounting
+                  {cartCounting}
                 </Button>
               </Link>
             </Nav.Link>
