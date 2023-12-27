@@ -20,6 +20,7 @@ import ListItemAvatar from "@mui/material/ListItemAvatar";
 import FolderIcon from "@mui/icons-material/Folder";
 import DeleteIcon from "@mui/icons-material/Delete";
 import ListItemText from "@mui/material/ListItemText";
+import { Box, Button, TextField } from "@mui/material";
 // const styleForDelete = {
 //   display: "none",
 // };
@@ -48,6 +49,21 @@ function SingleToDo() {
           title="Shrimp and Chorizo Paella"
           subheader="September 14, 2016"
         />
+        <Box>
+          <TextField
+            id="outlined-basic"
+            className="text-field"
+            label="Add ToDo"
+            variant="outlined"
+          />
+          <TextField
+            id="outlined-basic"
+            className="text-field"
+            label="Time"
+            variant="outlined"
+          />
+          <Button variant="contained">+</Button>
+        </Box>
         <CardContent>
           {arrayList.map((list, index) => {
             return (

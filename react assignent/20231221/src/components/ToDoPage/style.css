@@ -8,10 +8,6 @@
 .todo-list:hover {
   background-color: beige;
 }
-/* .icons {
-  display: none;
-} */
-
-.todo-list:hover .icons {
+.text-field {
   display: block;
 }
