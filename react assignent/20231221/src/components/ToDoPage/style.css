@@ -1,0 +1,17 @@
+.todo-cont {
+  padding: 30px;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.todo-list:hover {
+  background-color: beige;
+}
+/* .icons {
+  display: none;
+} */
+
+.todo-list:hover .icons {
+  display: block;
+}

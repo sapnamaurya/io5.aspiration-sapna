@@ -1,7 +1,17 @@
 .header-cont {
-  height: 7vh;
+  display: flex;
 }
 .item-cont {
-  margin-left: 30%;
-  /* display: flex; */
+  margin-left: 21%;
+  margin-right: 17%;
+  padding-top: 0.4%;
+}
+.text {
+  height: 6vh;
+  width: 23%;
+  padding: 0.1%;
+  margin-left: 11%;
+}
+input {
+  padding: 0;
 }

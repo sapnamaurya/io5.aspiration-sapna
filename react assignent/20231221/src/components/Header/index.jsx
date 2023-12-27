@@ -3,8 +3,6 @@ import React from "react";
 import "./style.css";
 import Face2Icon from "@mui/icons-material/Face2";
 import MenuIcon from "@mui/icons-material/Menu";
-import IconButton from "@mui/material/IconButton";
-import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 
 const styleForLogo = {
@@ -30,7 +28,7 @@ const styleForItems = {
 function Header() {
   return (
     <>
-      <Box>
+      <Box className="header-main-cont">
         <Paper className="header-cont" elevation={7}>
           <Face2Icon style={styleForLogo} />
           <MenuIcon style={styleForMenu} />
@@ -58,8 +56,8 @@ function Header() {
 
           <TextField
             id="search-bar"
-            className="text"
             label="Enter a city name"
+            className="text"
             variant="outlined"
             placeholder="Search..."
             size="small"

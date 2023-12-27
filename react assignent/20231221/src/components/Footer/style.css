@@ -1,0 +1,11 @@
+.footer {
+  width: 100%;
+}
+
+.footer-paper {
+  text-align: center;
+  font-weight: bold;
+  height: 4vh;
+  padding-top: 1%;
+  background-color: rgb(191, 191, 191) !important;
+}
