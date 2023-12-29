@@ -19,13 +19,14 @@ function Product() {
     setProductList(products);
   };
   const handleCart = (dataFromChild) => {
-    console.log("parent to child", dataFromChild);
+    console.log(" child--- parent ", dataFromChild);
+    setCount(count + 1);
   };
   console.log("----", productList);
 
   return (
     <React.Fragment>
-      <Header curPage={"Product"} cartCounting={200} />
+      <Header curPage={"Product"} cartCounting={count} />
       <div className="parent">
         {productList.map((product, index) => {
           return (

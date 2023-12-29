@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css";
 import { Carousel } from "react-bootstrap";
-import img1 from "../Assests/Images/img1.webp";
-import img2 from "../Assests/Images/img22.avif";
-import img3 from "../Assests/Images/img3.avif";
+import img1 from "../../assets/Images/img1.webp";
+import img2 from "../../assets/Images/img22.avif";
+import img3 from "../../assets/Images/img3.avif";
 function Carousal() {
   return (
     <Carousel>

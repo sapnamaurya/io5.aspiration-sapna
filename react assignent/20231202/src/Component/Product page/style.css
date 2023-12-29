@@ -41,6 +41,15 @@ a:hover {
   background: beige;
   box-shadow: 0px 0px 4px 6px grey;
 }
+.alreadyAdd {
+  background: red;
+  margin-left: 2%;
+  padding: 0.5%;
+  color: white;
+  font-weight: bold;
+
+  width: 36;
+}
 .row {
   width: 100%;
 }

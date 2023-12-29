@@ -104,7 +104,7 @@ function Header(props) {
           )}
           {curPage == "Product" && (
             <Nav.Link>
-              <Link className="Link-deco" to="/Login">
+              <Link className="Link-deco">
                 <Button variant="secondary" className="text1">
                   <GrCart />
                   {cartCounting}

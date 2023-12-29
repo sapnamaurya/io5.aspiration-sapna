@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import image from "../Assests/Images/sapna1.jpeg";
+import image from "../../assets/Images/sapna1.jpeg";
 function AboutPage() {
   return (
     <React.Fragment>
