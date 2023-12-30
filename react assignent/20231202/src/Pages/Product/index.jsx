@@ -5,7 +5,7 @@ import axios from "axios";
 import ProductCard from "../../Component/Product page";
 
 function Product() {
-  const [count, setCount] = useState(0);
+  const [cardData, setCardData] = useState([]);
   const [productList, setProductList] = useState([]);
   useEffect(() => {
     fethProduct();
@@ -19,14 +19,17 @@ function Product() {
     setProductList(products);
   };
   const handleCart = (dataFromChild) => {
-    console.log(" child--- parent ", dataFromChild);
-    setCount(count + 1);
+    setCardData([...cardData, dataFromChild]);
   };
-  console.log("----", productList);
+  console.log("----", cardData);
 
   return (
     <React.Fragment>
-      <Header curPage={"Product"} cartCounting={count} />
+      <Header
+        isCartEnables={true}
+        cartCounting={cardData.length}
+        cardData={cardData}
+      />
       <div className="parent">
         {productList.map((product, index) => {
           return (

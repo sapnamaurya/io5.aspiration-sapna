@@ -6,18 +6,13 @@ function ProductCard(props) {
   const { price, description, title, images, onCartClick } = props || {};
   const [alreadyAdd, setAlreadyAdd] = useState(false);
   const handleAddCart = (event, props) => {
-    console.log("clicking add cart page", props);
     onCartClick(props);
     setAlreadyAdd(true);
   };
 
-  const handleGoToPage = (dataFromChild) => {
-    console.log("clicking", dataFromChild);
-  };
-
   return (
     <React.Fragment>
-      <div className="section-products" onClick={handleGoToPage}>
+      <div className="section-products">
         <div className="container">
           <div className="row">
             <div id="product-1" className="single-product">

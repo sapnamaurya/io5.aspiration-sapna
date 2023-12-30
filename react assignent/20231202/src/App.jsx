@@ -8,6 +8,7 @@ import Contact from "./Pages/Contact/index.jsx";
 import Product from "./Pages/Product/index.jsx";
 import Home from "./Pages/Home/index.jsx";
 import Login from "./Pages/Login/index.jsx";
+import Cart from "./Pages/Cart/index.jsx";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/Signup" element={<SignUp />} />
           <Route path="/Product" element={<Product />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/Cart" element={<Cart />} />
         </Routes>
       </BrowserRouter>
     </React.Fragment>

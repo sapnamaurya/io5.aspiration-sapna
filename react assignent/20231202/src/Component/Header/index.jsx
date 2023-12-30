@@ -6,17 +6,17 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
-import { Navigate } from "react-router-dom";
+
 import { GrCart } from "react-icons/gr";
+
 function Header(props) {
-  console.log("props", props);
-  const { curPage, cartCounting } = props || {};
-  const [cartCount, setCartCount] = useState(0);
   const navigate = useNavigate();
+  const { cartCounting, isCartEnables = false, cardData } = props || {};
+  const [cartCount, setCartCount] = useState(0);
+
   const [user, setUser] = useState(
     JSON.parse(localStorage.getItem("userdata"))
   );
-  console.log("userdata", user);
 
   const [count, setCount] = useState(0);
   // const [sec, setSec] = useState(new Date().getSeconds);
@@ -34,7 +34,7 @@ function Header(props) {
   const hour = new Date().getHours();
   const min = new Date().getMinutes();
   const sec = new Date().getSeconds();
-  // console.log(secs);
+
   setInterval(() => {
     setUser(JSON.parse(localStorage.getItem("userdata")));
   }, 1000);
@@ -43,7 +43,10 @@ function Header(props) {
     localStorage.clear();
     navigate("/Login");
   };
-
+  const handleCartButton = () => {
+    console.log("cart", cardData);
+    navigate("/Cart");
+  };
   return (
     <>
       <Navbar bg="dark" className="cont" data-bs-theme="dark">
@@ -102,14 +105,16 @@ function Header(props) {
               </p>
             </>
           )}
-          {curPage == "Product" && (
+          {isCartEnables && (
             <Nav.Link>
-              <Link className="Link-deco">
-                <Button variant="secondary" className="text1">
-                  <GrCart />
-                  {cartCounting}
-                </Button>
-              </Link>
+              <Button
+                variant="secondary"
+                className="text1"
+                onClick={handleCartButton}
+              >
+                <GrCart />
+                {cartCounting > 0 && cartCounting}
+              </Button>
             </Nav.Link>
           )}
 
@@ -135,11 +140,6 @@ function Header(props) {
             </Nav.Link>
           )}
         </Container>
-        {curPage == "Home" && (
-          <Nav className="font-color1">
-            {date}/{month + 1}/{year} --- {hour}:{min}:{sec}
-          </Nav>
-        )}
       </Navbar>
     </>
   );
