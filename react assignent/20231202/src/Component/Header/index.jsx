@@ -47,6 +47,8 @@ function Header(props) {
     console.log("cart", cardData);
     navigate("/Cart");
   };
+  const localStorageCartCounting = JSON.parse(localStorage.getItem("cartData"));
+  console.log("localStorageCartCounting", localStorageCartCounting);
   return (
     <>
       <Navbar bg="dark" className="cont" data-bs-theme="dark">
@@ -113,7 +115,9 @@ function Header(props) {
                 onClick={handleCartButton}
               >
                 <GrCart />
-                {cartCounting > 0 && cartCounting}
+                {/* {cartCounting > 0 && cartCounting} */}
+                {(localStorageCartCounting?.length || cartCounting) > 0 &&
+                  (cartCounting || localStorageCartCounting?.length)}
               </Button>
             </Nav.Link>
           )}

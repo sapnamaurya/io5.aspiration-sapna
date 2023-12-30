@@ -2,10 +2,8 @@ import React from "react";
 import "./style.css";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
-
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
-
 import Avatar from "@mui/material/Avatar";
 import IconButton, { IconButtonProps } from "@mui/material/IconButton";
 import ModeEditIcon from "@mui/icons-material/ModeEdit";
@@ -49,20 +47,21 @@ function SingleToDo() {
           title="Shrimp and Chorizo Paella"
           subheader="September 14, 2016"
         />
-        <Box>
+        <Box className="add-todo">
           <TextField
             id="outlined-basic"
             className="text-field"
             label="Add ToDo"
             variant="outlined"
           />
-          <TextField
-            id="outlined-basic"
-            className="text-field"
-            label="Time"
-            variant="outlined"
-          />
-          <Button variant="contained">+</Button>
+        </Box>
+        <Box>
+          <Button
+            className="todo-btn MuiButton-containedSizeLarge "
+            variant="contained"
+          >
+            +
+          </Button>
         </Box>
         <CardContent>
           {arrayList.map((list, index) => {

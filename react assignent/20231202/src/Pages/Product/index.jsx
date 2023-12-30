@@ -17,9 +17,14 @@ function Product() {
     const dataCont = await axios.get(api);
     const { data: { products = [] } = {} } = dataCont || {};
     setProductList(products);
+    console.log("api", products);
   };
   const handleCart = (dataFromChild) => {
     setCardData([...cardData, dataFromChild]);
+    localStorage.setItem(
+      "cartData",
+      JSON.stringify([...cardData, dataFromChild])
+    );
   };
   console.log("----", cardData);
 
@@ -30,6 +35,7 @@ function Product() {
         cartCounting={cardData.length}
         cardData={cardData}
       />
+
       <div className="parent">
         {productList.map((product, index) => {
           return (

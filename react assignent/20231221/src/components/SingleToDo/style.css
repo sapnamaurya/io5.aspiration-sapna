@@ -2,3 +2,15 @@
   margin-bottom: 2%;
   margin-right: 2%;
 }
+.todo-btn {
+  margin-top: 4%;
+  margin-left: 7%;
+  width: 86%;
+}
+.add-todo {
+  margin-left: 7%;
+  width: 86%;
+}
+.MuiButton-containedSizeLarge {
+  size: large;
+}

@@ -4,6 +4,7 @@ import { Button } from "react-bootstrap";
 
 function ProductCard(props) {
   const { price, description, title, images, onCartClick } = props || {};
+  console.log("sapu image", images);
   const [alreadyAdd, setAlreadyAdd] = useState(false);
   const handleAddCart = (event, props) => {
     onCartClick(props);
