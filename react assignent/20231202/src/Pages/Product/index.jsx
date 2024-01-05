@@ -26,7 +26,7 @@ function Product() {
       JSON.stringify([...cardData, dataFromChild])
     );
   };
-  console.log("----", cardData);
+  //  const localStorageData
 
   return (
     <React.Fragment>
@@ -40,10 +40,12 @@ function Product() {
         {productList.map((product, index) => {
           return (
             <ProductCard
+              key={index}
               price={product?.price}
               description={product?.description}
               title={product?.title}
-              images={product?.thumbnail}
+              image={product?.thumbnail}
+              {...product}
               onCartClick={handleCart}
             />
           );

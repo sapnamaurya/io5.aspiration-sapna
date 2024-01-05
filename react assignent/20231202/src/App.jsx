@@ -9,6 +9,7 @@ import Product from "./Pages/Product/index.jsx";
 import Home from "./Pages/Home/index.jsx";
 import Login from "./Pages/Login/index.jsx";
 import Cart from "./Pages/Cart";
+import ProductMagnify from "./Pages/ProductMagnify/index.jsx";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/Product" element={<Product />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Cart" element={<Cart />} />
+          <Route path="/product-magnify" element={<ProductMagnify />} />
         </Routes>
       </BrowserRouter>
     </React.Fragment>

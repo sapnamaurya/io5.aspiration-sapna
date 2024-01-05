@@ -1,29 +1,34 @@
 import React, { useState } from "react";
 import "./style.css";
 import { Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 function ProductCard(props) {
-  const { price, description, title, images, onCartClick } = props || {};
-  console.log("sapu image", images);
+  const navigate = useNavigate();
+  const { price, description, title, image, onCartClick } = props || {};
+  console.log("sapu image", image);
   const [alreadyAdd, setAlreadyAdd] = useState(false);
   const handleAddCart = (event, props) => {
     onCartClick(props);
     setAlreadyAdd(true);
   };
-
+  const handleProducts = (e, product) => {
+    navigate("/product-magnify", { state: { type: "id", value: product?.id } });
+  };
   return (
     <React.Fragment>
       <div className="section-products">
         <div className="container">
           <div className="row">
             <div id="product-1" className="single-product">
-              <img className="part-1" src={images} alt="img" />
-              <div className="part-2">
-                <h5 className="product-title">{title}</h5>
-                <h5 className="product-title">{description}</h5>
-                <h4 className="product-old-price">$79.99</h4>
-                <h4 className="product-price">{price}</h4>
-                <div className="btn-cont">
+              <div onClick={(e) => handleProducts(e, props)}>
+                <img className="part-1" src={image} alt="img" />
+                <div className="part-2">
+                  <h5 className="product-title">{title}</h5>
+                  <h5 className="product-title">{description}</h5>
+                  <h4 className="product-old-price">$79.99</h4>
+                  <h4 className="product-price">{price}</h4>
+                  <div className="btn-cont"></div>
                   {!alreadyAdd ? (
                     <Button
                       variant="danger"
