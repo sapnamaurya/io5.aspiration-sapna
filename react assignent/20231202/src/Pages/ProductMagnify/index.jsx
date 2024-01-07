@@ -31,18 +31,29 @@ function ProductMagnify(props) {
   const [isLoading, setIsLoading] = useState(false);
   const [hoverImage, setHoverImage] = useState(Dummy);
   console.log("datadetail", dataDetail);
+
   useEffect(() => {
     getData();
   }, [type, value]);
   const getData = async () => {
-    let api = "";
-    if (type == "id") return (api = `https://dummyjson.com/products/${value}`);
-
-    const response = await axios.get(api);
-    const { data, status } = response || {};
-    console.log("data", data);
-    setDataDetail(data);
+    try {
+      setIsLoading(true);
+      let api = "";
+      if (type == "id") {
+        api = `https://dummyjson.com/products/${value}`;
+      }
+      const response = await axios.get(api);
+      const { data, status } = response || {};
+      if (status == 200) {
+        setDataDetail(data);
+      }
+      setIsLoading(false);
+    } catch (err) {
+      console.error("facing a error");
+      setIsLoading(false);
+    }
   };
+
   const { images = [] } = dataDetail;
   const handleHoverImage = (e, image) => {
     setHoverImage(image);
@@ -50,7 +61,7 @@ function ProductMagnify(props) {
   return (
     <>
       <Header />
-      <Spinner />
+      {isLoading && <Spinner />}
       <div className="main-cont">
         <div className="section-1">
           <div className="small-img-cont">
