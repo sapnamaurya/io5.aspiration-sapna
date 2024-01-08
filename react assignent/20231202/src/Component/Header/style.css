@@ -20,6 +20,8 @@
 }
 .cont {
   height: 6.5vh;
+  position: sticky;
+  top: 0;
 }
 .font-color1 {
   color: grey;

@@ -76,7 +76,7 @@ function Header(props) {
               </Link>
             </Nav.Link>
 
-            <Nav.Link>
+            {/* <Nav.Link>
               <Link className="Link-deco" to="/Product">
                 Product
               </Link>
@@ -93,7 +93,7 @@ function Header(props) {
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">Headphones</NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
             <Nav.Link>
               <Button onClick={Count}>+</Button> Count : {count}
               <Button onClick={Minus}>-</Button>
