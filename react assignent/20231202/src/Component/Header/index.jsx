@@ -3,37 +3,32 @@ import "./style.css";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import flipkart from "../../assets/Images/flipkart.png";
+import { IoSearchOutline } from "react-icons/io5";
+import Form from "react-bootstrap/Form";
 import { Link, useNavigate } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import { Button, InputGroup, NavDropdown } from "react-bootstrap";
 
 import { GrCart } from "react-icons/gr";
 
 function Header(props) {
   const navigate = useNavigate();
   const { cartCounting, isCartEnables = false, cardData } = props || {};
-  const [cartCount, setCartCount] = useState(0);
+  // const [cartCount, setCartCount] = useState(0);
 
   const [user, setUser] = useState(
     JSON.parse(localStorage.getItem("userdata"))
   );
 
-  const [count, setCount] = useState(0);
-  // const [sec, setSec] = useState(new Date().getSeconds);
-  const Count = () => {
-    setCount(count + 1);
-  };
-  const Minus = () => {
-    if (count === 0) return;
-    setCount(count - 1);
-  };
-
-  const date = new Date().getDate();
-  const month = new Date().getMonth();
-  const year = new Date().getFullYear();
-  const hour = new Date().getHours();
-  const min = new Date().getMinutes();
-  const sec = new Date().getSeconds();
+  // const [count, setCount] = useState(0);
+  // // const [sec, setSec] = useState(new Date().getSeconds);
+  // const Count = () => {
+  //   setCount(count + 1);
+  // };
+  // const Minus = () => {
+  //   if (count === 0) return;
+  //   setCount(count - 1);
+  // };
 
   setInterval(() => {
     setUser(JSON.parse(localStorage.getItem("userdata")));
@@ -51,98 +46,95 @@ function Header(props) {
   console.log("localStorageCartCounting", localStorageCartCounting);
   return (
     <>
-      <Navbar bg="dark" className="cont" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link>
-              <Link className="Link-deco" to="/home-Page">
+      <Navbar expand="lg" className="nav-bar">
+        <Container className="nav-fixed">
+          <Navbar.Brand href="/">
+            <img src={flipkart} alt="flip" width={"100px"} />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link className="nav-item" href="/home-page">
                 Home
-              </Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link className="Link-deco" to="/About">
-                About
-              </Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link className="Link-deco" to="/Contact">
-                Contact
-              </Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link className="Link-deco" to="/SignUp">
-                SignUp
-              </Link>
-            </Nav.Link>
+              </Nav.Link>
 
-            {/* <Nav.Link>
-              <Link className="Link-deco" to="/Product">
+              <Nav.Link className="nav-item" href="/products">
                 Product
-              </Link>
-            </Nav.Link>
-            <NavDropdown
-              className="font-color"
-              title="Dropdown"
-              id="basic-nav-dropdown"
-            >
-              <NavDropdown.Item href="#action/3.1">Mobile</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Laptops</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                Electronics
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Headphones</NavDropdown.Item>
-            </NavDropdown> */}
-            <Nav.Link>
-              <Button onClick={Count}>+</Button> Count : {count}
-              <Button onClick={Minus}>-</Button>
-            </Nav.Link>
-          </Nav>
-          {Boolean(user) && (
-            <>
-              <img className="imag" src={user?.image} alt={user?.username} />
-              <p className="Link-deco name">
-                {user?.firstName} {user?.lastName}
-              </p>
-            </>
-          )}
-          {isCartEnables && (
-            <Nav.Link>
-              <Button
-                variant="secondary"
-                className="text1"
-                onClick={handleCartButton}
-              >
-                <GrCart />
-                {/* {cartCounting > 0 && cartCounting} */}
-                {(localStorageCartCounting?.length || cartCounting) > 0 &&
-                  (cartCounting || localStorageCartCounting?.length)}
-              </Button>
-            </Nav.Link>
-          )}
+              </Nav.Link>
+              <NavDropdown title="Quick Search" id="basic-nav-dropdown">
+                <NavDropdown.Item>Phone</NavDropdown.Item>
+                <NavDropdown.Item>Laptops</NavDropdown.Item>
+                <NavDropdown.Item>Mackbook</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item>Skin Care</NavDropdown.Item>
+                <NavDropdown.Item>Book</NavDropdown.Item>
+                <NavDropdown.Item>Daal</NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Link className="nav-item" href="/about-us">
+                About
+              </Nav.Link>
+              <Nav.Link className="nav-item" href="/contact-us">
+                Contact
+              </Nav.Link>
+            </Nav>
 
-          {!user?.email && (
-            <Nav.Link>
-              <Link className="Link-deco" to="/Login">
-                <Button className="text">Login</Button>
-              </Link>
-            </Nav.Link>
-          )}
+            <InputGroup className="search-field">
+              <InputGroup.Text id="basic-addon1">
+                <IoSearchOutline />
+              </InputGroup.Text>
+              <Form.Control
+                placeholder="Search for products, Brands and more"
+                aria-label="Search for products, Brands and more"
+                aria-describedby="basic-addon1"
+              />
+              <Button variant="dark">Search</Button>
+            </InputGroup>
 
-          {user?.email && (
-            <Nav.Link>
-              <Link className="Link-deco" to="/Login">
+            {Boolean(user) && (
+              <>
+                <img className="imag" src={user?.image} alt={user?.username} />
+                <p className="Link-deco name">
+                  {user?.firstName} {user?.lastName}
+                </p>
+              </>
+            )}
+            {isCartEnables && (
+              <Nav.Link>
                 <Button
-                  variant="success"
-                  className="text"
-                  onClick={handleLogout}
+                  variant="secondary"
+                  className="text1"
+                  onClick={handleCartButton}
                 >
-                  Logout
+                  <GrCart />
+
+                  {(localStorageCartCounting?.length || cartCounting) > 0 &&
+                    (cartCounting || localStorageCartCounting?.length)}
                 </Button>
-              </Link>
-            </Nav.Link>
-          )}
+              </Nav.Link>
+            )}
+
+            {!user?.email && (
+              <Nav.Link>
+                <Link className="Link-deco" to="/Login">
+                  <Button className="text">Login</Button>
+                </Link>
+              </Nav.Link>
+            )}
+
+            {user?.email && (
+              <Nav.Link>
+                <Link className="Link-deco" to="/Login">
+                  <Button
+                    variant="success"
+                    className="text"
+                    onClick={handleLogout}
+                  >
+                    Logout
+                  </Button>
+                </Link>
+              </Nav.Link>
+            )}
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </>
