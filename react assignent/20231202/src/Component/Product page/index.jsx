@@ -25,9 +25,9 @@ function ProductCard(props) {
                 <img className="part-1" src={image} alt="img" />
                 <div className="part-2">
                   <h5 className="product-title">{title}</h5>
-                  <h5 className="product-title">{description}</h5>
+                  <h5 className="product-title1">{description}</h5>
                   <h4 className="product-old-price">$79.99</h4>
-                  <h4 className="product-price">{price}</h4>
+                  <h4 className="product-price">₹ {price}</h4>
                 </div>{" "}
               </div>
               <div className="btn-cont">

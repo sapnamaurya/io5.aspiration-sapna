@@ -10,6 +10,9 @@
   justify-content: space-evenly;
   padding: 0 2% 0 2%;
 }
+.card {
+  width: 60% !important;
+}
 .phone-img {
   top: 14%;
   left: 65%;
@@ -19,11 +22,12 @@
   border-radius: 7px;
 }
 .card-cont {
-  width: 28%;
+  width: 100%;
   border: none;
   padding-top: 0.1%;
   box-shadow: 0px 2px 8px 0px grey;
   color: wheat;
+  margin-right: 2%;
   background-image: linear-gradient(45deg, #2d0606, transparent);
   height: 35vh;
   color: white;
@@ -32,12 +36,13 @@
   height: 29vh;
   padding-top: 0.1%;
   display: flex;
-  justify-content: space-evenly;
+  margin: 2% 6%;
+  width: 91%;
 }
 
 .card-txt {
   width: 62%;
-
+  margin-bottom: 0;
   color: white;
 }
 .txt {

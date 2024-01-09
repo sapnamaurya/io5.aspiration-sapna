@@ -14,9 +14,9 @@ a:hover {
   height: 0%;
 }
 .section-products {
-  width: 19%;
+  width: 100%;
   display: flex;
-  height: 0%;
+  height: 31%;
   margin-left: 1%;
   margin-top: 2%;
 }
@@ -34,12 +34,11 @@ a:hover {
 
 .section-products .single-product {
   margin-bottom: 26px;
-
-  border-radius: 19px;
+  border-radius: 9px;
   height: 56vh;
+  display: flex;
   padding: 0;
   background: beige;
-  box-shadow: 0px 0px 4px 6px grey;
 }
 .alreadyAdd {
   background: red;
@@ -54,10 +53,13 @@ a:hover {
   width: 100%;
 }
 .section-products .single-product .part-1 {
+  margin: 13%;
+
   position: relative;
-  height: 29vh;
-  max-height: 290px;
-  border-radius: 19px 19px 0 0;
+  height: 29vh !important;
+
+  max-height: 290px !important;
+  border-radius: none !important;
   margin-bottom: 20px;
   width: 100%;
   overflow: hidden;
@@ -129,6 +131,14 @@ a:hover {
   opacity: 0;
   /* transition: bottom 0.5s, opacity 0.5s; */
 }
+.part-2 {
+  margin: 7%;
+}
+.part {
+  margin: 10%;
+  height: 31vh;
+  border-radius: 2px;
+}
 .parent {
   flex-wrap: wrap;
   display: flex;
@@ -157,9 +167,9 @@ a:hover {
   cursor: pointer;
   transition: color 0.2s;
 }
-.section-products .single-product:hover {
+/* .section-products .single-product:hover {
   box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
-}
+} */
 .section-products .single-product .part-1 ul li a:hover {
   color: #fe302f;
 }
@@ -201,4 +211,36 @@ a:hover {
   margin-left: 2%;
   justify-content: space-between;
   display: flex;
+}
+.cart-sec {
+  margin: auto;
+  width: 80%;
+  border: 1px solid black;
+  border-radius: 6px;
+  display: flex;
+}
+.pro-sec {
+  width: 70%;
+
+  padding: 2%;
+}
+.payment-sec {
+  width: 30%;
+  height: 51vh;
+  margin-top: 2%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2%;
+}
+.dis-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.strike {
+  text-decoration: line-through;
+}
+.bra-des {
+  display: flex;
+  margin-top: 34%;
+  margin-left: 8%;
 }

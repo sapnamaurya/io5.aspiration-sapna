@@ -136,7 +136,13 @@ a:hover {
   bottom: 30px;
   opacity: 1;
 }
-
+.product-title1 {
+  overflow: hidden;
+  height: 4vh;
+  font-size: 12px;
+  /* font-weight: normal; */
+  text-align: center;
+}
 .section-products .single-product .part-1 ul li {
   display: inline-block;
   margin-right: 4px;
@@ -162,9 +168,10 @@ a:hover {
 }
 
 .section-products .single-product .part-2 .product-title {
-  margin-bottom: 3.5px;
-  font-size: 1rem;
+  margin-bottom: 5px;
+  font-weight: bold;
   font-size: 15px;
+  text-align: center;
   width: 248px;
   display: -webkit-box;
   -webkit-line-clamp: 2;

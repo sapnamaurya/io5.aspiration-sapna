@@ -10,6 +10,7 @@ import flight from "../../assets/Images/air-india.webp";
 import moto from "../../assets/Images/moto.jfif";
 import motoLogo from "../../assets/Images/Motorola_new_logo.svg.png";
 import OfferPage from "../../Component/OfferPage/index.jsx";
+import ProductList from "../../Component/ProductList/index.jsx";
 function Home() {
   const offer1 = [
     {
@@ -73,8 +74,9 @@ function Home() {
     <React.Fragment>
       <Header />
       <Carousal />
+
       <OfferPage offer1={offer1} />
-      <Carousal />
+
       <OfferPage offer1={offer2} />
       <Footer />
     </React.Fragment>
