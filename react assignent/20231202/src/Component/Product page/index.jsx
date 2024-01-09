@@ -28,22 +28,23 @@ function ProductCard(props) {
                   <h5 className="product-title">{description}</h5>
                   <h4 className="product-old-price">$79.99</h4>
                   <h4 className="product-price">{price}</h4>
-                  <div className="btn-cont"></div>
-                  {!alreadyAdd ? (
-                    <Button
-                      variant="danger"
-                      onClick={(e) => handleAddCart(e, props)}
-                    >
-                      Add to Cart
-                    </Button>
-                  ) : (
-                    <Button variant="secondary" className="alreadyAdd">
-                      Already to Cart
-                    </Button>
-                  )}
+                </div>{" "}
+              </div>
+              <div className="btn-cont">
+                {!alreadyAdd ? (
+                  <Button
+                    variant="danger"
+                    onClick={(e) => handleAddCart(e, props)}
+                  >
+                    Add to Cart
+                  </Button>
+                ) : (
+                  <Button variant="secondary" className="alreadyAdd">
+                    Already add
+                  </Button>
+                )}
 
-                  <Button variant="success">Buy Now</Button>
-                </div>
+                <Button variant="success">Buy Now</Button>
               </div>
             </div>
           </div>

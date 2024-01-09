@@ -14,21 +14,11 @@ import { GrCart } from "react-icons/gr";
 function Header(props) {
   const navigate = useNavigate();
   const { cartCounting, isCartEnables = false, cardData } = props || {};
-  // const [cartCount, setCartCount] = useState(0);
+  const [searchDataHandle, setSearchDataHandle] = useState("");
 
   const [user, setUser] = useState(
     JSON.parse(localStorage.getItem("userdata"))
   );
-
-  // const [count, setCount] = useState(0);
-  // // const [sec, setSec] = useState(new Date().getSeconds);
-  // const Count = () => {
-  //   setCount(count + 1);
-  // };
-  // const Minus = () => {
-  //   if (count === 0) return;
-  //   setCount(count - 1);
-  // };
 
   setInterval(() => {
     setUser(JSON.parse(localStorage.getItem("userdata")));
@@ -43,7 +33,23 @@ function Header(props) {
     navigate("/Cart");
   };
   const localStorageCartCounting = JSON.parse(localStorage.getItem("cartData"));
-  console.log("localStorageCartCounting", localStorageCartCounting);
+  // console.log("localStorageCartCounting", localStorageCartCounting);
+
+  const handleProductCategory = (e, path, productName) => {
+    navigate(`/${path}`, {
+      state: { type: productName.type, value: productName.value },
+    });
+  };
+  const handleSearch = (e) => {
+    setSearchDataHandle(e.target.value);
+  };
+  const handleSearchButton = () => {
+    // if (!searchDataHandle) return;
+    // navigate("/product", {
+    //   state: { type: "search", value: searchDataHandle },
+    // });
+  };
+
   return (
     <>
       <Navbar expand="lg" className="nav-bar">
@@ -58,65 +64,119 @@ function Header(props) {
                 Home
               </Nav.Link>
 
-              <Nav.Link className="nav-item" href="/products">
+              <Nav.Link className="nav-item" href="/product">
                 Product
               </Nav.Link>
               <NavDropdown title="Quick Search" id="basic-nav-dropdown">
-                <NavDropdown.Item>Phone</NavDropdown.Item>
-                <NavDropdown.Item>Laptops</NavDropdown.Item>
-                <NavDropdown.Item>Mackbook</NavDropdown.Item>
+                <NavDropdown.Item
+                  onClick={(e) =>
+                    handleProductCategory(e, "product", {
+                      type: "Phone",
+                      value: "phone",
+                    })
+                  }
+                >
+                  Phone
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  onClick={(e) =>
+                    handleProductCategory(e, "product", {
+                      type: "laptop",
+                      value: "laptop",
+                    })
+                  }
+                >
+                  Laptops
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  onClick={(e) =>
+                    handleProductCategory(e, "product", {
+                      type: "macbook",
+                      value: "macbook",
+                    })
+                  }
+                >
+                  Mackbook
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item>Skin Care</NavDropdown.Item>
-                <NavDropdown.Item>Book</NavDropdown.Item>
-                <NavDropdown.Item>Daal</NavDropdown.Item>
+                <NavDropdown.Item
+                  onClick={(e) =>
+                    handleProductCategory(e, "product", {
+                      type: "skin care",
+                      value: "skin care",
+                    })
+                  }
+                >
+                  Skin Care
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  onClick={(e) =>
+                    handleProductCategory(e, "product", {
+                      type: "book",
+                      value: "book",
+                    })
+                  }
+                >
+                  Book
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  onClick={(e) =>
+                    handleProductCategory(e, "product", {
+                      type: "daal",
+                      value: "daal",
+                    })
+                  }
+                >
+                  Daal
+                </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link className="nav-item" href="/about-us">
+              <Nav.Link className="nav-item" href="/about">
                 About
               </Nav.Link>
-              <Nav.Link className="nav-item" href="/contact-us">
+              <Nav.Link className="nav-item" href="/contact">
                 Contact
               </Nav.Link>
             </Nav>
-
-            <InputGroup className="search-field">
-              <InputGroup.Text id="basic-addon1">
-                <IoSearchOutline />
-              </InputGroup.Text>
-              <Form.Control
-                placeholder="Search for products, Brands and more"
-                aria-label="Search for products, Brands and more"
-                aria-describedby="basic-addon1"
-              />
-              <Button variant="dark">Search</Button>
-            </InputGroup>
-
-            {Boolean(user) && (
-              <>
-                <img className="imag" src={user?.image} alt={user?.username} />
-                <p className="Link-deco name">
-                  {user?.firstName} {user?.lastName}
-                </p>
-              </>
-            )}
-            {isCartEnables && (
-              <Nav.Link>
+            <div>
+              <InputGroup className="search-field">
+                <InputGroup.Text id="basic-addon1">
+                  <IoSearchOutline />
+                </InputGroup.Text>
+                <Form.Control
+                  placeholder="Search for products, Brands and more"
+                  aria-label="Search for products, Brands and more"
+                  aria-describedby="basic-addon1"
+                  value={searchDataHandle}
+                  onChange={(e) => handleSearch(e)}
+                />
                 <Button
-                  variant="secondary"
-                  className="text1"
-                  onClick={handleCartButton}
+                  variant="dark"
+                  disabled={!searchDataHandle}
+                  onClick={handleSearchButton}
                 >
-                  <GrCart />
-
-                  {(localStorageCartCounting?.length || cartCounting) > 0 &&
-                    (cartCounting || localStorageCartCounting?.length)}
+                  Search
                 </Button>
-              </Nav.Link>
-            )}
+              </InputGroup>
+            </div>
+            <div style={{ display: " flex", marginRight: " 12%" }}>
+              {Boolean(user) && (
+                <>
+                  <img
+                    className="imag"
+                    src={user?.image}
+                    alt={user?.username}
+                  />
+                  <p className="Link-deco name">{user?.firstName}</p>
+                </>
+              )}
+            </div>
 
             {!user?.email && (
               <Nav.Link>
                 <Link className="Link-deco" to="/Login">
-                  <Button className="text">Login</Button>
+                  <Button variant="success" className="text">
+                    Login
+                  </Button>
                 </Link>
               </Nav.Link>
             )}
@@ -134,6 +194,19 @@ function Header(props) {
                 </Link>
               </Nav.Link>
             )}
+
+            <Nav.Link>
+              <Button
+                variant="secondary"
+                className="text1"
+                onClick={handleCartButton}
+              >
+                <GrCart />
+
+                {(localStorageCartCounting?.length || cartCounting) > 0 &&
+                  (cartCounting || localStorageCartCounting?.length)}
+              </Button>
+            </Nav.Link>
           </Navbar.Collapse>
         </Container>
       </Navbar>

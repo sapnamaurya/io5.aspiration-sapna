@@ -13,6 +13,7 @@
 .name {
   margin-right: 1%;
   margin-bottom: 0;
+  margin-top: 7%;
 }
 
 .navbar {
@@ -31,15 +32,18 @@
   background: wheat;
   font-weight: bold;
   position: absolute;
+  right: 12%;
+  top: -12.2%;
 
-  top: -22.2%;
   border: 1px solid;
   padding: 0.2% 2%;
 }
 .text1 {
   position: absolute;
-  top: -21%;
-  right: 10%;
+  top: -12%;
+  right: 9.5%;
+
+  margin-right: -1.5%;
 }
 .nav-bar {
   background-color: #2975f0;
@@ -48,17 +52,25 @@
   position: sticky !important;
   z-index: 2;
   top: 0%;
+  height: 7.5vh;
   width: 100%;
   margin: auto;
+}
+.btn-dark {
+  height: 6vh !important;
+  margin-top: 0 !important;
+  width: 19%;
+  margin-right: 3%;
 }
 
 .me-auto {
   color: white !important;
+  width: 20%;
+  margin-right: none !important;
 }
 
 .me-auto .nav-item {
   color: white !important;
-  margin-right: 0px !important;
 }
 
 #basic-nav-dropdown {
@@ -89,8 +101,8 @@
 }
 
 .nav-bar .search-field {
-  width: 45%;
-  margin: auto;
+  width: 100%;
+  margin: 0 57px 0 1px;
 }
 
 .cart-icon-cont {
@@ -107,4 +119,7 @@
   height: 25px;
   padding: 0;
   text-align: center;
+}
+.me-auto .navbar-nav {
+  margin-right: 0 !important;
 }

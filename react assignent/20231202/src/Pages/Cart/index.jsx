@@ -22,7 +22,7 @@ function Cart(props) {
               <div className="container">
                 <div className="row">
                   <div id="product-1" className="single-product">
-                    <img className="part-1" src={cartData.images} alt="img" />
+                    <img className="part-1" src={cartData.image} alt="img" />
                     <div className="part-2">
                       <h5 className="product-title">{cartData.title}</h5>
                       <h5 className="product-title">{cartData.description}</h5>
