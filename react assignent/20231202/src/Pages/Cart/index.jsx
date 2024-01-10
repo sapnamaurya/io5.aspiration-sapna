@@ -30,14 +30,14 @@ function Cart(props) {
           {localGetData?.map((cartData, index) => {
             console.log("cardData", cartData);
             return (
-              <div className="section-products" key={index}>
+              <div className="section-product" key={index}>
                 <div className="container">
                   <div className="row">
-                    <div id="product-1" className="single-product">
+                    <div id="product" className="single-product">
                       <div>
                         <img className="part" src={cartData.image} alt="img" />
                       </div>
-                      <div className="part-2">
+                      <div className="part-21">
                         <h5 className="product-title">{cartData.title}</h5>
                         <h5 className="product-title1">
                           {cartData.description}
