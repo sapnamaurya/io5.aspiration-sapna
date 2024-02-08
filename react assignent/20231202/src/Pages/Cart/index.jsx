@@ -43,7 +43,7 @@ function Cart(props) {
                           {cartData.description}
                         </h5>
                         <h4 className="product-old-price">$79.99</h4>
-                        <h4 className="product-price">{cartData.price}</h4>
+                        <h4 className="product-price">₹{cartData.price}</h4>
                         <div className="btn-cont">
                           <Button variant="success">Buy Now</Button>
                         </div>

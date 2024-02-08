@@ -247,7 +247,7 @@ a:hover {
 .cart-sec {
   margin: 2% auto;
   width: 80%;
-  border: 1px solid black;
+
   border-radius: 6px;
   display: flex;
 }
@@ -279,17 +279,26 @@ a:hover {
 .section-product {
   width: 100%;
   display: flex;
-  height: 19%;
+  height: 24%;
   margin-left: 1%;
   margin-top: 2%;
 }
+.product-old-price {
+  font-size: 16px;
+}
+.product-price {
+  font-size: 20px;
+}
 .part {
-  width: 68%;
+  width: 79%;
   margin: 8%;
   height: 28vh;
   border-radius: 2px;
 }
 #product {
+  border-radius: 10px;
+  height: 39vh;
+  border: 1px solid black;
   display: flex;
 }
 .part-21 {
